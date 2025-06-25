@@ -1,0 +1,24 @@
+title: 'Team Section'
+fields:
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: collections
+    field:
+      mode: select
+      type: collections
+      display: Collections
+      max_items: 1
+  -
+    handle: paginate
+    field:
+      type: text
+      display: Paginate
+  -
+    handle: limit
+    field:
+      type: integer
+      display: Limit

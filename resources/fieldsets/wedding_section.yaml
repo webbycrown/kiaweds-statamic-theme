@@ -1,0 +1,27 @@
+title: 'Wedding Section'
+fields:
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: image
+    field:
+      max_files: 1
+      min_files: 1
+      container: assets
+      type: assets
+      display: Image
+  -
+    handle: video_url
+    field:
+      type: text
+      display: 'Video Url'
+      validate:
+        - required

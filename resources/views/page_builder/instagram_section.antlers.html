@@ -1,0 +1,42 @@
+ <!-- Start instagram section -->
+    <section class="instagram-section">
+        <!-- container fluid -->
+        <div class="container-fluid">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12 p-0">
+                    <!-- testimonials-slider -->
+                    <div class="testimonial-slider">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                {{ if collections_field }}
+                                {{ if collections_field contains "photography" }}
+                                {{ collection:photography limit="{limit}" }}
+                                <!-- swiper slider -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-box">
+                                        <div class="testimonial-img img-cover">
+                                           {{ image }} <img src="{{ url }}" alt="instagram" class="object-cover">{{ /image }}
+                                        </div>
+                                        <div class="icon">
+                                            <p>Follow On </p>
+                                            <a href="{{ instagram_url }}"><i class="fa-brands fa-instagram"></i>
+                                                <p>Instagram</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {{ /collection:photography }}
+                                {{ /if }}
+                                {{ /if }}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End instagram section -->

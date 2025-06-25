@@ -1,0 +1,119 @@
+  {{ if is_homepage }}
+     <section class="wp-about-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- reveal text content -->
+                    <div class="reveal-text-content">
+                        <div class="wp-about-images">                           
+
+                            {{ hover_images }}
+
+                            <img class="hover-img object-cover"
+                            src="{{ url }}"
+                            alt="{{ alt }}"
+                            data-image="{{ alt }}">
+                            {{ /hover_images }}
+
+                        </div>
+                        <div class="wp-about-content">
+                            <div class="wp-about-content-images-show">
+                                {{ description }}
+                                {{ if type == "text" }}
+                                {{ text }}
+                                {{ /if }}
+
+                                {{ if type == "images" }}
+                                {{ image }}
+                                {{ if index == 1 }}
+                                <span class="images-hover-one" data-label="reveal-one">
+                                    {{ elseif index == 3 }}
+                                    <span class="images-hover-two" data-label="reveal-two">
+                                        {{ elseif index == 4 }}
+                                        <span class="images-hover-three" data-label="reveal-three">
+                                            {{ elseif index == 6 }}
+                                            <span class="images-hover-four" data-label="reveal-four">
+                                                {{ else }}
+                                                <span class="" data-label="{{ alt }}">
+                                                    {{ /if }}
+                                                    <img src="{{ url }}" alt="{{ alt }}" class="object-cover">
+                                                </span>
+
+                                                {{ /image }}
+                                                {{ /if }}
+                                                {{ /description }}
+                                               
+                                            </div>
+                            <div class="reveal-btn"><a href="/about-us" class="btn btn-primary">About Us</a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  {{ /if }}
+
+ {{ if segment_1 == "about-us" }}
+
+<!-- Start Wp about section -->
+<section class="wp-about-section wp-about-section-style-2">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- column -->
+            <div class="col-12">
+                <!-- reveal text content -->
+                <div class="reveal-text-content">
+                    <div class="wp-about-images">
+                     {{ hover_images }}
+
+                     <img class="hover-img object-cover"
+                     src="{{ url }}"
+                     alt="{{ alt }}"
+                     data-image="{{ alt }}">
+                     {{ /hover_images }}
+                    </div>
+                </div>
+                <div class="wp-about-content">
+                    <div class="wp-about-content-images-show">
+                        {{ description }}
+                        {{ if type == "text" }}
+                        {{ text }}
+                        {{ /if }}
+
+                        {{ if type == "images" }}
+                        {{ image }}
+                        {{ if index == 1 }}
+                        <span class="images-hover-one" data-label="reveal-one">
+                        {{ elseif index == 3 }}
+                        <span class="images-hover-two" data-label="reveal-two">
+                        {{ elseif index == 4 }}
+                        <span class="images-hover-three" data-label="reveal-three">
+                        {{ elseif index == 6 }}
+                        <span class="images-hover-four" data-label="reveal-four">
+                        {{ else }}
+                        <span class="" data-label="{{ alt }}">
+                        {{ /if }}
+                            <img src="{{ url }}" alt="{{ alt }}" class="object-cover">
+                        </span>
+
+                        {{ /image }}
+                        {{ /if }}
+                        {{ /description }}
+                    
+                </div>
+                <div class="reveal-btn"><a href="/about-us" class="btn btn-primary">About Us</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- Close Wp about section -->
+{{ /if }}

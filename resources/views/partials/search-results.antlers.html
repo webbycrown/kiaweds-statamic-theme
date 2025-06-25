@@ -1,0 +1,62 @@
+{{ if blog or our_events or our_services }}
+
+    <section>
+    {{ if blog }}
+        <h6>Recent Searched Blogs:</h6>
+        <ul id="blog-list">
+            {{ blog limit="5" }}
+            <li>
+                <div class="img-cover"> {{ image }}<img src="{{ url }}" alt="logo">{{ /image }}</div>
+                <a href="{{ url }}">{{ title }}</a></li>
+            {{ /blog }}
+        </ul>
+
+        {{ if blog | count > 5 }}
+        <div class="search_view_btn"><a href="javascript:;" class="toggle-view-btn btn btn-primary" data-type="blog" data-query="{{ query }}">View All</a></div>
+        {{ /if }}
+    {{ else }}
+    <p class="">No Recent Searched Blogs.</p>
+    {{ /if }}
+    </section>
+
+    <section>
+    {{ if our_events }}
+        <h6>Recent Events:</h6>
+        <ul id="our_events-list">
+            {{ our_events limit="5" }}
+            <li><div class="img-cover"> {{ image }}<img src="{{ url }}" alt="logo">{{ /image }}</div>
+                <a href="{{ url }}">{{ title }}</a></li>
+            {{ /our_events }}
+        </ul>
+
+        {{ if our_events | count > 5 }}
+        <div class="search_view_btn"><a href="javascript:;" class="toggle-view-btn btn btn-primary" data-type="our_events" data-query="{{ query }}">View All</a></div>
+        {{ /if }}
+     {{ else }}
+    <p class="">No Recent Searched Events.</p>
+    {{ /if }}
+    </section>
+
+
+    <section>
+    {{ if our_services }}
+        <h6>Recent Services:</h6>
+        <ul id="our_services-list">
+            {{ our_services limit="5" }}
+            <li><div class="img-cover"> {{ image }}<img src="{{ url }}" alt="logo">{{ /image }}</div>
+                <a href="{{ url }}">{{ title }}</a></li>
+            {{ /our_services }}
+        </ul>
+
+         {{ if our_services | count > 5 }}
+        <div class="search_view_btn"><a href="javascript:;" class="toggle-view-btn btn btn-primary" data-type="our_services" data-query="{{ query }}">View All</a></div>
+         {{ /if }}
+        
+     {{ else }}
+     <p class="">No Recent Searched Services.</p>
+     {{ /if }}
+     </section>
+
+{{ else }}
+<p>No Data Found.</p>
+{{ /if }}

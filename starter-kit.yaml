@@ -1,0 +1,14 @@
+export_paths:
+  - routes
+  - content
+  - app/Http
+  - resources/blueprints
+  - resources/forms
+  - resources/users
+  - resources/views
+  - resources/fieldsets
+  - public/assets
+  - public/build
+  - storage/forms
+  - package.json
+  - README.md

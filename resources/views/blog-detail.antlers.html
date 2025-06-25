@@ -1,0 +1,157 @@
+    <!-- Start back button -->
+    <div class="back-button">
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12 p-0">
+                    <a href="/blog"><img src="{{ theme:asset }}assets/images/back.svg" alt="back-btn" class="object-cover">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close back button -->
+
+    <!-- Start latest blog section -->
+    <section class="blog-grid-section blog-detail-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- Blog grid title -->
+                    <div class="style-3-title">
+                        <h2 class="title">Blog Detail</h2>
+                    </div>
+                    <!-- Project slider -->
+                    <div class="blog-slider blog-standard-single">
+                        <!-- blog-box -->
+                        <div class="blog-box">
+                            <div class="blog-img img-cover">
+                                <a href="/blog/{{ slug }}">{{ image }}<img src="{{ url }}" alt="blog-img" class="object-cover">{{ /image }}</a>
+                                <div class="date-project-btn">
+                                    <p class="date">{{ updated_at format="d" }}</p>
+                                    <p class="day">{{ updated_at format="F" }}</p>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h3><a href="/blog/{{ slug }}">{{ title }}</a></h3>
+                                 {{ description }}
+
+                                {{ if  type ==  'heading' }}
+                                {{ text }}
+                                {{ /if }}
+
+                                {{ if type == "text" }}
+                                {{ text }}
+                                {{ /if }} 
+
+                                {{ if type == "blockquote" }}
+                                <blockquote class="wp-block-quote">{{ blockquote }}</blockquote>
+                                {{ /if }}
+
+                                {{ lists }}
+                                <ul>
+                                    <li><i class="fa fa-check"></i>
+                                        <p>{{ point }}</p>
+                                    </li>
+                                </ul>
+                                {{ /lists }}
+
+
+                                {{ if type == "gallery_images" }}
+
+                                <div class="row mt-md-3 mb-md-5">
+                                    {{ gallery_images }}
+                                    {{ if index == 0 }}
+                                    <!-- First two images in one column -->
+                                    <div class="col-12 col-md-6">
+                                        <div class="raid_main">
+                                            {{ /if }}
+
+                                            {{ if index < 2 }}
+                                            <div class="modal-img">
+                                                <a href="javascript:;"><img src="{{ url }}" alt="modal-img" class="object-cover"></a>
+                                            </div>
+                                            {{ /if }}
+
+                                            {{ if index == 1 }}
+                                        </div> <!-- .raid_main -->
+                                    </div> <!-- .col -->
+                                    {{ /if }}
+
+                                    {{ if index == 2 }}
+                                    <!-- Third image in second column -->
+                                    <div class="col-12 col-md-6">
+                                        <div class="modal-img">
+                                            <a href="javascript:;"><img src="{{ url }}" alt="modal-img" class="object-cover"></a>
+                                        </div>
+                                    </div>
+                                    {{ /if }}
+                                    {{ /gallery_images }}
+                                </div>
+                                {{ /if }}
+
+
+                                {{ /description }}
+                                <!-- post footer tag-->
+                                <div class="post-footer-tag">
+                                    <!-- post footer tag -->
+                                    <div class="post-tag">
+                                        {{ category }}
+                                        <a href="/photography">{{ title }}</a>
+                                        {{ /category }}
+                                    </div>
+                                    <!-- post footer social -->
+                                    <div class="post-social">
+                                        <ul>
+
+                                         {{ socials }}
+                                         {{ if name == 'facebook' }}<li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
+                                         {{ if name == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
+                                         {{ if name == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
+                                         {{ if name == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
+                                         {{ /socials }}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Related Blogs -->
+                    <div class="related-blogs">
+                        <h2 class="title">Related Blogs</h2>
+                        <div class="row">
+                            {{ related_blog limit="3" }}
+                            <!-- column -->
+                            <div class="col-12 col-md-4">
+                                <!-- blog-box -->
+                                <div class="blog-box">
+                                    <!-- blog-img -->
+                                    <div class="blog-img img-cover">
+                                        <a href="/blog/{{ slug }}">{{ image }}<img src="{{ url }}" alt="blog-img">{{ /image }}</a>
+                                        <div class="date-project-btn">
+                                         <p class="date">{{ updated_at format="d" }}</p>
+                                         <p class="day">{{ updated_at format="F" }}</p>
+                                     </div>
+                                    </div>
+                                    <!-- blog-content -->
+                                    <div class="blog-content">
+                                        <h3><a href="/blog/{{slug}}">{{ title }}</a>
+                                        </h3>
+                                        <p>{{ short_description }}
+                                        </p>
+                                        <a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{ /related_blog }}
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End latest blog section -->

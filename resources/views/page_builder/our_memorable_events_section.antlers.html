@@ -1,0 +1,99 @@
+{{ if is_homepage }}
+
+   <!-- Start Our events section -->
+    <section class="Our-events-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- Our events wrapper -->
+                    <div class="our-events-wrapper">
+                        <!-- Our events content -->
+                        <div class="our-events-content">
+                            <h2 class="title">{{ section_title }}</h2>
+                            <p>{{ description }}</p>
+                            <div class="our-events-main">
+                                <!-- our events product  -->
+                                {{ if collections == "our_events" }}
+                                {{ collection:our_events as="our_events" limit="1" }}
+
+                                {{ /if }}
+                                {{ our_events }}
+                                <div class="our-events-product">
+                                    <!-- events thumbnail -->
+                                    <div class="events-thumbnail">
+                                        <a href="/events/{{ slug }}">{{ image }}<img src="{{ url }}" alt="events img" class="object-cover">{{ /image }}</a>
+                                    </div>
+                                    <!-- events tile -->
+                                    <h3 class="events-title">
+                                        <a href="/events/{{ slug }}">{{ title }}</a>
+                                    </h3>
+                                </div>
+                                {{ /our_events }}
+                                {{ if collections == "our_events" }}
+                                {{ /collection:our_events  }}
+
+                                {{ /if }}
+                                <p>{{ description1 }}</p>
+                                <a href="/events" class="btn btn-primary">View All Events</a>
+                            </div>
+                        </div>
+                        <!-- Our events wrap -->
+                        <div class="our-events-wrap">
+                            {{ if collections == "our_events" }}
+                            {{ collection:our_events as="our_events" offset="1" limit="1" }}
+
+                            {{ /if }}
+                            {{ our_events }}
+                            <!-- our events product  -->
+                            <div class="our-events-products">
+                                <!-- events thumbnail -->
+                                <div class="events-thumbnail">
+                                    <a href="/events/{{ slug }}">{{ image }}<img src="{{ url }}" alt="events img" class="object-cover">{{ /image }}</a>
+                                </div>
+                                <!-- events tile -->
+                                <h3 class="events-title">
+                                     <a href="/events/{{ slug }}">{{ title }}</a>
+                                </h3>
+                            </div>
+                            {{ /our_events }}
+                            {{ if collections == "our_events" }}
+                            {{ /collection:our_events}}
+
+                            {{ /if }}
+                            <div class="our-events-p">
+                                <p>{{ description2 }}</p>
+                            </div>
+                            <div class="our-events-grid">
+                                {{ if collections == "our_events" }}
+                                {{ collection:our_events as="our_events" offset="2" limit="2" }}
+
+                                {{ /if }}
+                                {{ our_events }}
+                                <div class="our-events-product">
+                                    <div class="events-thumbnail img-cover">
+                                         <a href="/events/{{ slug }}">{{ image }}<img src="{{ url }}" alt="events img" class="object-cover">{{ /image }}</a>
+                                    </div>
+                                    <h3 class="events-title">
+                                       <a href="/events/{{ slug }}">{{ title }}</a>
+                                    </h3>
+                                </div>
+                                {{ /our_events }}
+
+                                {{ if collections == "our_events" }}
+                                {{ /collection:our_events}}
+
+                                {{ /if }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our events section -->
+
+
+{{ /if }}

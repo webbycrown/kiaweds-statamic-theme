@@ -1,0 +1,190 @@
+        {{ if segment_1 == "about-us" }}
+      <!-- Start team section  -->
+    <section class="team-section about-team-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="about-title">
+                        <div class="style-3-title">
+                            <h2 class="title">{{ section_title }}</h2>
+                        </div>
+                        <a href="/team" class="btn btn-primary">All Team Member</a>
+                    </div>
+                </div>
+            </div>
+                     <!-- main team box -->
+                    <div class="main-team-box">
+                         <!-- row -->
+            <div class="row">
+                <!-- column -->
+                
+                {{ if collections }}
+                {{ if collections contains "team" }}
+                {{ collection:team limit="{limit}" }}
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- team content -->
+                    <div class="team-content">
+                        <div class="team-img">
+                            <a href="/team/{{ slug }}">
+                                {{ image }}
+                                <img src="{{ url }}" alt="team-img" class="object-cover">
+                                {{ /image }}
+                            </a>
+                        </div>
+                        <h3><a href="/team/{{ slug }}">{{ title }}</a></h3>
+                        <p>{{ position }}</p>
+                    </div>
+                </div>
+                {{ /collection:team }}
+                {{ /if }}
+                {{ /if }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End team section -->
+    {{ /if }}
+
+    {{ if segment_1 == "team" }}
+
+      <!-- Start team section -->
+      <section class="team-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="style-3-title">
+                        <h2 class="title">{{ section_title }}</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- main team box -->
+            <div class="main-team-box">
+                <!-- row -->
+                <div class="row">
+                     {{ if collections == "team" }}
+            {{ collection:team as="team" paginate="{paginate}" limit="{limit}" }}
+
+            {{ /if }}
+            <div class="row grid ">
+                {{ team }}
+                    <!-- column -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+                        <!-- team content -->
+                        <div class="team-content">
+                            <div class="team-img">
+                                <a href="/team/{{ slug }}">{{ image }}<img src="{{ url }}" alt="team-img" class="object-cover">{{ /image }}</a>
+                            </div>
+                            <h3><a href="/team/{{ slug }}">{{ title }}</a></h3>
+                            <p>{{ position }}</p>
+                        </div>
+                    </div>
+                  
+                
+                {{ /team }}
+            </div>
+            {{ paginate }}
+            <input type="hidden" class="lastPage" value="{{ total_pages }}">
+            {{ if next_page }}
+            <div class="load-more-btn load-more-wrap">
+                <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                    Load More
+                    <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                </a>
+            </div>
+            {{ /if }}
+            {{ /paginate }}
+
+            {{ if collections == "team" }}
+            {{ /collection:team }}
+            {{ /if }}
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+    {{ /if }}
+
+    {{ if is_homepage }}
+
+     <!-- Start testimonial section -->
+    <section class="testimonials-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- testimonial slider -->
+                    <div class="main-testimonials-box">
+                        <div class="testimonials-box">
+                            <div class="testimonials-content" style="background-image: url(assets/images/quotation-mark.png)">
+                                <div class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                       {{ if collections == "team" }}
+                                       {{ collection:team as="team" limit="{limit}" }}
+                                       {{ /if }}
+                                       {{ team }}
+                                       <!-- swiper slide -->
+                                       <div class="swiper-slide">
+                                        <div class="testimonials-content-wrapper">
+                                            <p>{{ short_bio }}
+                                            </p>
+                                            <h4><a href="javascript:;">{{ title }}</a></h4>
+                                            <sub>{{ position }}</sub>
+                                        </div>
+                                    </div>
+                                    {{ /team }}
+                                    {{ if collections == "team" }}
+                                    {{ /collection:team}}
+
+                                    {{ /if }}
+                                    </div>
+                                </div>
+                                <!-- sldier arrow -->
+                                <div class="slider-arrow">
+                                    <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+                                    <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                            <!-- testimonials image -->
+                            <div class="testimonials-img">
+                                <div class="main-testimonials-img-wrapper">
+                                    <div class="testimonials-img-wrapper">
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <!-- swiper slide img -->
+                                                {{ if collections == "team" }}
+                                                {{ collection:team as="team" limit="{limit}" }}
+                                                {{ /if }}
+                                                {{ team }}
+
+                                                <div class="swiper-slide">
+                                                    <div class="img-cover">
+                                                        {{ image }}<img src="{{ url }}" alt="slider" class="object-cover">{{ /image }}
+                                                    </div>
+                                                </div>
+
+                                                {{ /team }}
+                                                {{ if collections == "team" }}
+                                                {{ /collection:team }}
+
+                                                {{ /if }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{ /if }}

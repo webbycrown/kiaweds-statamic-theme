@@ -1,0 +1,73 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: address
+            field:
+              type: textarea
+              display: Address
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              type: grid
+              display: Email
+              validate:
+                - required
+              fields:
+                -
+                  handle: email
+                  field:
+                    type: text
+                    display: Email
+                    validate:
+                      - required
+                      - email
+          -
+            handle: quick_link
+            field:
+              type: grid
+              display: 'Quick link'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+          -
+            handle: socials
+            field:
+              type: grid
+              display: Socials
+              fields:
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+          -
+            handle: copyright
+            field:
+              type: markdown
+              display: Copyright
+              validate:
+                - required

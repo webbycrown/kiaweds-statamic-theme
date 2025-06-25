@@ -1,0 +1,121 @@
+ {{ if segment_1 == "about-us" }}
+
+ <!-- Start our latest news section -->
+    <section class="our-latest-news-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="title-arrow-box">
+                        <div class="title-wrapper">
+                            <h2 class="title">{{ section_title }}</h2>
+                        </div>
+                        <!-- slider arrow -->
+                        <div class="slider-arrow">
+                            <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                            <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="latest-news-slider">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                               {{ if collections }}
+                               {{ if collections contains "testimonials" }}
+                               {{ collection:testimonials limit="{limit}" }}
+                                <!-- swiper slider -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-content">
+                                        <div class="star review-ratings" data-rating="{{ star }}">
+                                          
+                                       </div>
+                                        <p>{{ description }}</p>
+                                        <div class="testimonial-user-info">
+                                            {{ team }}
+                                            <h4><a href="/team/{{slug}}">{{ title }}</a></h4>
+                                            <sub>{{ position }}</sub>
+                                            {{ /team }}
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ /collection:testimonials }}
+                                {{ /if }}
+                                {{ /if }}
+                                
+                            </div>
+                        </div>
+                        <!-- slider arrow -->
+                        <div class="slider-arrow">
+                            <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                            <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End our latest news section -->
+    {{ /if }}
+
+     {{ if segment_1 == "testimonials" }}
+
+         <!-- Start testimonial section -->
+    <section class="testimonial-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <h2 class="title">{{ section_title }}</h2>
+                </div>
+                    <!-- main testimonial box -->
+                    <div class="main-testimonial-box">
+                        <!-- row -->
+                        <div class="row">
+                            <!-- column -->
+                            {{ if collections == "testimonials" }}
+                            {{ collection:testimonials as="testimonials" paginate="true" limit="6" }}
+
+                            {{ /if }}
+                            <div class="row grid">
+                             {{ testimonials }}
+                             <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-0 grid-item">
+                                <!-- testimonial content -->
+                                <div class="testimonial-content">
+                                    <div class="star review-ratings" data-rating="{{ star }}">
+                                    </div>
+                                    <p>{{ description }}</p>
+                                    <div class="testimonial-user-info">
+                                      {{ team }}
+                                      <h4><a href="/team/{{slug}}">{{ title }}</a></h4>
+                                      <sub>{{ position }}</sub>
+                                      {{ /team }}
+                                  </div>
+                              </div>
+                          </div>
+                          {{ /testimonials }}
+                      </div>
+                      {{ paginate }}
+                      <input type="hidden" class="lastPage" value="{{ total_pages }}">
+                      {{ if next_page }}
+                      <div class="load-more-btn load-more-wrap">
+                        <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                            Load More
+                            <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                        </a>
+                    </div>
+                    {{ /if }}
+                    {{ /paginate }}
+
+                    {{ if collections == "testimonials" }}
+                    {{ /collection:testimonials }}
+                    {{ /if }}
+
+                    </div>
+                </div>
+                </div>
+            </div>
+    </section>
+    {{ /if }}

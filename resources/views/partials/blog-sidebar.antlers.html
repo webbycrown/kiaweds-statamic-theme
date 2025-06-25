@@ -1,0 +1,42 @@
+<!-- blog detail right -->
+<div class="blog-detail-right">
+    <div class="detail-search-box">
+        <input class="search-input form-control" type="text" id="blog-search-input" name="search"
+        placeholder="Search here...">
+        <a href="javascript:;" class="search-btn">
+            <img src="{{ theme:asset }}assets/images/blog-search.svg" alt="search" class="object-cover">
+        </a>
+    </div>
+    <div class="blog-categories">
+        <h2>Categories</h2>
+        <ul>
+            {{ taxonomy:blog_category  }}
+            <li><a href="javascript:;">{{ title }}<i class="fa-solid fa-chevron-right"></i></a></li>
+            
+            {{ /taxonomy:blog_category  }}
+        </ul>
+    </div>
+    <div class="blog-post">
+        <h2>Latest Posts</h2>
+
+        {{ collection:blog updated_at="desc" limit="5" }}
+        <div class="blog-recent-post">
+            <div class="image img-cover">
+                {{ image }}<img src="{{ url }}" alt="blog-image" class="object-cover">{{ /image }}
+            </div>
+            <div class="content">
+                <p><a href="/blog/{{ slug }}">{{ title }}</a></p>
+            </div>
+        </div>
+        {{ /collection:blog }}
+
+    </div>
+    <div class="tags-wrapper">
+        <h2>Tags</h2>
+        <ul>
+            {{ taxonomy:tag_blog  }}
+            <li><a href="javascript:;">{{ title }}</a></li>
+            {{ /taxonomy:tag_blog  }}
+        </ul>
+    </div>
+</div>

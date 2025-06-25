@@ -1,0 +1,34 @@
+ <!-- Start term condition section -->
+    <section class="term-condition-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="style-3-title">
+                        <h2 class="title">{{ section_title }}</h2>
+                    </div>
+                    <!-- Terms-condition-content -->
+                    <div class="Terms-condition-content">
+                        {{ description }}
+                        <div class="terms-title">
+                            {{ if type == "text" }}
+                            {{ text }}
+                            {{ /if }} 
+
+                            {{ lists }}
+                            <ul>
+                                <li><i class="fa fa-check"></i>
+                                    <p>{{ point }}</p>
+                                </li>
+                            </ul>
+                            {{ /lists }}
+                        </div>
+                        {{ /description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End term condition section -->

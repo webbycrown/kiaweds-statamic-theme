@@ -1,0 +1,117 @@
+title: 'all page builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      collapse: true
+      type: replicator
+      display: 'Page Builder'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            contact_section:
+              display: 'Contact Section'
+              fields:
+                -
+                  import: contact_section
+            faq_section:
+              display: 'Faq Section'
+              fields:
+                -
+                  import: faq_section
+            back_button_section:
+              display: 'Back Button Section'
+              fields:
+                -
+                  import: back_button_section
+            terms_condition_section:
+              display: 'Terms Condition Section'
+              fields:
+                -
+                  import: terms_condition_section
+            privacy_policy_section:
+              display: 'Privacy Policy Section'
+              fields:
+                -
+                  import: privacy_policy_section
+            photography_section:
+              display: 'Photography Section'
+              fields:
+                -
+                  import: photography_section
+            events_section:
+              display: 'Events Section'
+              fields:
+                -
+                  import: events_section
+            service_section:
+              display: 'Service Section'
+              fields:
+                -
+                  import: service_section
+            blog_section:
+              display: 'Blog Section'
+              fields:
+                -
+                  import: blog_section
+            about_section:
+              display: 'About Section'
+              fields:
+                -
+                  import: about_section
+            reveal_about_section:
+              display: 'Reveal About Section'
+              fields:
+                -
+                  import: reveal_about_section
+            counts_section:
+              display: 'Counts Section'
+              fields:
+                -
+                  import: counts_section
+            team_section:
+              display: 'Team Section'
+              fields:
+                -
+                  import: team_section
+            customer_says_section:
+              display: 'Customer Says Section'
+              fields:
+                -
+                  import: customer_says_section
+            instagram_section:
+              display: 'Instagram Section'
+              fields:
+                -
+                  import: instagram_section
+            company_section:
+              display: 'Company Section'
+              fields:
+                -
+                  import: company_section
+            hero_section:
+              display: 'Hero Section'
+              fields:
+                -
+                  import: hero_section
+            latest_blog_section:
+              display: 'Latest Blog Section'
+              fields:
+                -
+                  import: latest_blog_section
+            our_memorable_events_section:
+              display: 'Our Memorable Events Section'
+              fields:
+                -
+                  import: our_memorable_events_section
+            wedding_section:
+              display: 'Wedding Section'
+              fields:
+                -
+                  import: wedding_section
+            upcoming_wedding_section:
+              display: 'Upcoming Wedding Section'
+              fields:
+                -
+                  import: upcoming_wedding_section

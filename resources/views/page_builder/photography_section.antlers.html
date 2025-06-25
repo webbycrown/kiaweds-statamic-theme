@@ -1,0 +1,67 @@
+<section class="Photography-section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- column -->
+            <div class="col-12">
+                <!-- Photography title -->
+                <div class="style-3-title">
+                    <h2 class="title">{{ section_title }}</h2>
+                </div>
+            </div>
+        </div>
+        <!-- row -->
+            {{ if collections == "photography" }}
+            {{ collection:photography as="photography" paginate="{paginate}" limit="{limit}" }}
+           
+            <div class="row grid">
+                {{ photography }}
+                <div class="col-12 col-sm-6 col-md-3 grid-item">
+                    <div class="modal_des">
+                        <div class="modal-img img-cover">
+                            {{ image }}
+                            <img src="{{ url }}" alt="img" class="object-cover">
+                            {{ /image }}
+                        </div>
+                        <div class="icon">
+                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modal-{{ id }}">
+                                <img src="{{ theme:asset }}assets/images/photograph-icon.svg" alt="icon" class="object-cover">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for this image -->
+                <div class="modal fade" id="modal-{{ id }}" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <img src="{{ theme:asset }}assets/images/close-outline.svg" alt="close" class="object-cover">
+                            </span>
+                        </button>
+                        <div class="modal-content">
+                            {{ image }}
+                            <img src="{{ url }}" alt="photography" class="object-cover">
+                            {{ /image }}
+                        </div>
+                    </div>
+                </div>
+                {{ /photography }}
+
+            </div>
+            {{ paginate }}
+             <input type="hidden" class="lastPage" value="{{ total_pages }}">
+             {{ if next_page }}
+            <div class="load-more-btn load-more-wrap">
+                <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                    Load More
+                    <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                </a>
+            </div>
+            {{ /if }}
+            {{ /paginate }}
+            {{ /collection:photography }}
+            {{ /if }}
+    </div>
+</section>

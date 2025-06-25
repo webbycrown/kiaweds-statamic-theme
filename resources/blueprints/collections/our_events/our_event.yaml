@@ -1,0 +1,94 @@
+title: 'Our Event'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: video_url
+            field:
+              type: text
+              display: 'Video Url'
+          -
+            handle: client_name
+            field:
+              type: text
+              display: 'Client Name'
+          -
+            handle: website
+            field:
+              type: text
+              display: Website
+          -
+            handle: location
+            field:
+              type: textarea
+              display: Location
+          -
+            handle: description
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Description
+              sets:
+                services_point:
+                  display: 'Services Point'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: lists
+                          field:
+                            type: grid
+                            display: Lists
+                            fields:
+                              -
+                                handle: point
+                                field:
+                                  type: text
+                                  display: point
+          -
+            handle: related_event
+            field:
+              mode: select
+              collections:
+                - our_events
+              type: entries
+              display: 'Related Event'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

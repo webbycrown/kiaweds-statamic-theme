@@ -1,0 +1,87 @@
+tree:
+  -
+    id: 52b88a1b-563e-4aab-82df-f76dbde96fc5
+    title: Home
+    url: /
+  -
+    id: a2ed0e03-60cb-40bf-8fc6-7e0062936150
+    title: 'About Us'
+    url: /about-us
+  -
+    id: 0133dfb9-2c61-43b4-b30e-d97214af1e14
+    title: 'Our Services'
+    url: /services
+  -
+    id: b5efb9da-9ca7-478c-94bf-6ada7c9e4291
+    title: Blog
+    url: /blog
+  -
+    id: 4e046fc8-c0d8-4674-9395-e591fae563e1
+    title: Pages
+    url: 'javascript:;'
+    children:
+      -
+        id: 54d5775e-2df9-40c2-a1fc-7a389a62d827
+        title: 'About us'
+        url: /about-us
+      -
+        id: 33f91135-6339-4290-8c2b-a5a408597e63
+        title: 'Latest Blog'
+        url: /blog
+        children:
+          -
+            id: b389af03-cb4c-40c3-8f91-1603f24e5644
+            title: 'Blog Detail'
+            url: '/blog-detail?slug=a-complete-guide-to-choosing-the-perfect-wedding-venue'
+          -
+            id: a20e36e6-f577-4835-a3aa-6d539465f000
+            title: 'Blog Detail Sidebar'
+            url: '/blog-detail-with-sidebar?slug=a-complete-guide-to-choosing-the-perfect-wedding-venue'
+      -
+        id: 11f35980-049f-423f-bfc7-53f115271aa9
+        title: 'Blog Grid'
+        url: /blog-grid
+      -
+        id: e3ead20a-8c66-4623-8957-b7dd0556b725
+        title: 'Blog Sidebar'
+        url: /blog-with-sidebar
+      -
+        id: 5172bb68-a627-47bd-8ec0-79b5e66a61b8
+        title: 'Blog Standard'
+        url: /blog-standard
+      -
+        id: c568a6d4-6162-41e8-a045-dcf869111bfb
+        title: 'Our Services'
+        url: /services
+      -
+        id: ff426315-7905-412d-b5da-0b42f8b769f7
+        title: 'Our Events'
+        url: /events
+      -
+        id: 78fd0251-cdfd-41ae-9d16-7a8daa58c60c
+        title: Photography
+        url: /photography
+      -
+        id: e8370c57-31d7-4b98-a496-4376edd44f25
+        title: Testimonial
+        url: /testimonials
+      -
+        id: c6c7dd38-5d6e-4300-9c43-008059eff410
+        title: 'Privacy Policy'
+        url: /privacy-police
+      -
+        id: 6eb81ee4-2915-4bba-8c1d-3102a306fae1
+        title: 'Terms & Condition'
+        url: /terms-condition
+      -
+        id: 8d95eff3-bed5-4855-88db-34c7d22b4424
+        title: FAQ’s
+        url: /faq
+      -
+        id: 3120ee32-a5f2-4ae3-baa4-89fc505580b5
+        title: '404'
+        url: /404
+  -
+    id: 6bab4abb-552c-423a-a02f-582995a5699a
+    title: 'Contact Us'
+    url: /contact-us

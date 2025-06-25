@@ -1,0 +1,281 @@
+{{ if segment_1 == 'blog' }}
+<!-- Start Wp blog section -->
+<section class="wc-blog-section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- column -->
+            <div class="col-12">
+                <div class="style-3-title">
+                    <h2 class="title">{{ title }}</h2>
+                </div>
+            </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+            
+            {{ if collections == "blog" }}
+            {{ collection:blog as="blog" paginate="{paginate}" limit="{limit}" }}
+
+            {{ /if }}
+            <div class="row grid blog_search">
+                {{ blog }}
+                <!-- column -->
+                <div class="col-12 col-md-6 grid-item">
+                    <div class="wc-blog-wrapper">
+                        <div class="wc-blog-image img-cover">
+                            <a href="/blog/{{ slug }}"> {{ image }}<img src="{{ url }}" alt="blog" class="object-cover">{{ /image }}</a>
+                        </div>
+                        <div class="wc-blog-content">
+                            <p>{{ updated_at format="F j, Y" }} </p>
+                            <h2><a href="/blog/{{slug}}">{{ title }}</a></h2>
+                            <P>{{ short_description }}</P>
+                        </div>
+                    </div>
+                </div>
+                {{ /blog }}
+            </div>
+
+            {{ paginate }}
+            <input type="hidden" class="lastPage" value="{{ total_pages }}">
+            {{ if next_page }}
+            <div class="load-more-btn load-more-wrap">
+                <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                    Load More
+                    <img src="{{ theme:asset src='assets/images/load-more.svg'}}" alt="load-more" class="object-cover d-none">
+                </a>
+            </div>
+            {{ /if }}
+            {{ /paginate }}
+
+            {{ if collections == "blog" }}
+            {{ /collection:blog }}
+            {{ /if }}
+        </div>
+    </div>
+</section>
+{{ /if }}
+
+
+{{ if segment_1 == 'blog-grid' }}
+    
+<!-- Start latest blog section -->
+<section class="blog-grid-section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- column -->
+            <div class="col-12">
+                <!-- Blog grid title -->
+                <div class="style-3-title">
+                    <h2 class="title">{{ title }}</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Project slider -->
+        <div class="blog-slider blog-grid">
+            <!-- row -->
+            <div class="row">
+                {{ if collections == "blog" }}
+                {{ collection:blog as="blog" paginate="{paginate}" limit="{limit}" }}
+
+                {{ /if }}
+                <div class="row grid">
+                    {{ blog }}
+                    <!-- column -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-0 grid-item">
+                        <!-- blog-box -->
+                        <div class="blog-box">
+                            <div class="blog-img img-cover">
+                                <a href="/blog/{{slug}}"> {{ image }}<img src="{{ url }}" alt="blog-img" class="object-cover">{{ /image }}</a>
+                                <div class="date-project-btn">
+                                    <p class="date">{{ updated_at format="d" }}</p>
+                                    <p class="day">{{ updated_at format="F" }}</p>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h3><a href="/blog/{{slug}}"> {{ title }}</a></h3>
+                                <p>{{ short_description }}</p>
+                                <a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /blog }}
+                </div>
+
+                {{ paginate }}
+                <input type="hidden" class="lastPage" value="{{ total_pages }}">
+                {{ if next_page }}
+                <div class="load-more-btn load-more-wrap">
+                    <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                        Load More
+                        <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                    </a>
+                </div>
+                {{ /if }}
+                {{ /paginate }}
+
+                {{ if collections == "blog" }}
+                {{ /collection:blog }}
+                {{ /if }}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ /if }}
+
+{{ if segment_1 == 'blog-standard' }}
+  
+   <section class="blog-grid-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- Blog grid title -->
+                    <div class="style-3-title">
+                        <h2 class="title">Blog Standard</h2>
+                    </div>
+                </div>
+                <div class="blog-wrap">
+                <div class="blog-wrapper">
+                {{ if collections == "blog" }}
+                {{ collection:blog as="blog" paginate="{paginate}" limit="{limit}" }}
+
+                {{ /if }}
+                <div class="grid" id="blog_search_div">
+                    {{ blog }}
+                <!-- column -->
+                <div class="grid-item">
+                    <!-- Blog Standard -->
+                    <div class="blog-slider blog-standard">
+                        <!-- blog-box -->
+                        <div class="blog-box">
+                            <div class="blog-img img-cover">
+                                <a href="/blog/{{slug}}"> {{ image }}<img src="{{ url }}" alt="blog-img" class="object-cover">{{ /image }}</a>
+                                <div class="date-project-btn">
+                                    <p class="date">{{ updated_at format="d" }}</p>
+                                    <p class="day">{{ updated_at format="F" }}</p>
+                                </div>
+                            </div>
+                            <div class="blog-content">
+                                <h3><a href="/blog/{{slug}}"> {{ title }}</a>
+                                </h3>
+                                <p>{{ short_description }}</p>
+                                <a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                {{ /blog }}
+                </div>
+
+                {{ paginate }}
+                <input type="hidden" class="lastPage" value="{{ total_pages }}">
+                {{ if next_page }}
+                <div class="load-more-btn load-more-wrap">
+                    <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                        Load More
+                        <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                    </a>
+                </div>
+                {{ /if }}
+                {{ /paginate }}
+
+                {{ if collections == "blog" }}
+                {{ /collection:blog }}
+                {{ /if }}
+
+            </div>
+
+                <!-- column -->
+                <div class="col-12 col-lg-4 d-md-block">
+                    {{ partial:blog-sidebar }}
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>  
+
+{{ /if }}
+
+{{ if segment_1 == 'blog-with-sidebar' }}
+    
+    <section class="blog-grid-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- Blog grid title -->
+                    <div class="style-3-title">
+                        <h2 class="title">Blog With Sidebar</h2>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="col-12 col-lg-8">
+                    <!-- Project slider -->
+                    <div class="blog-slider blog-grid">
+                        <div class="row">
+                            {{ if collections == "blog" }}
+                {{ collection:blog as="blog" paginate="{paginate}" limit="{limit}" }}
+
+                {{ /if }}
+                <div class="row grid" id="blog_search_div">
+                    {{ blog }}
+                        <!-- column -->
+                        <div class="col-12 col-sm-6 col-md-6 p-0 grid-item">
+                        <!-- blog-box -->
+                        <div class="blog-box">
+                            <div class="blog-img img-cover">
+                                <a href="/blog/{{slug}}"> {{ image }}<img src="{{ url }}" alt="blog-img" class="object-cover">{{ /image }}</a>
+                                <div class="date-project-btn">
+                                    <p class="date">{{ updated_at format="d" }}</p>
+                                    <p class="day">{{ updated_at format="F" }}</p>
+                                </div>                            </div>
+                            <div class="blog-content">
+                                <h3><a href="/blog/{{slug}}"> {{ title }}</a>
+                                </h3>
+                                <p>{{ short_description }}</p>
+                                <a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /blog }}
+                </div>
+
+                {{ paginate }}
+                <input type="hidden" class="lastPage" value="{{ total_pages }}">
+                {{ if next_page }}
+                <div class="load-more-btn load-more-wrap">
+                    <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                        Load More
+                        <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                    </a>
+                </div>
+                {{ /if }}
+                {{ /paginate }}
+
+                {{ if collections == "blog" }}
+                {{ /collection:blog }}
+                {{ /if }}
+                </div>
+            </div>
+            </div>
+                <!-- column -->
+                <div class="col-12 col-lg-4 d-md-block">
+                   {{ partial:blog-sidebar }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ /if }}

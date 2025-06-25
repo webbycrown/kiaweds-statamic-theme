@@ -1,0 +1,50 @@
+title: Footer
+data:
+  address: '134 Geraldine Lane NY street, New York 10013 ,United States'
+  email:
+    -
+      id: mc06mhix
+      email: Contact@wedding.com
+    -
+      id: mc06mn27
+      email: Contact@wedding.com
+  quick_link:
+    -
+      id: mc06n3i0
+      title: Home
+      url: /
+    -
+      id: mc06n6kg
+      title: 'About Us'
+      url: /about-us
+    -
+      id: mca2w406
+      title: 'Our Services'
+      url: /Services
+    -
+      id: mc06nr47
+      title: 'Latest Blog'
+      url: /blog
+    -
+      id: mc06r849
+      title: Contact
+      url: /contact-us
+  description: 'Creating unforgettable weddings with love, elegance, and timeless memories. Let us bring your vision to life.'
+  socials:
+    -
+      id: mc06pay0
+      url: 'https://www.facebook.com/'
+      name: facebook
+    -
+      id: mc06pnxs
+      url: 'https://www.twitter.com/'
+      name: twitter
+    -
+      id: mc06ptdc
+      url: 'https://www.youtube.com/'
+      name: youtube
+    -
+      id: mc06pi0v
+      url: 'https://www.instagram.com/'
+      name: instagram
+  copyright: '© Copyright <a href="/">Kiaweds</a> 2025. All Rights Reserved.'

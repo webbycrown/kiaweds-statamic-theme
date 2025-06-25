@@ -1,0 +1,127 @@
+title: 'Our Service'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: service_icon
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Service Icon'
+          -
+            handle: description
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Description
+              sets:
+                blockquote:
+                  display: Blockquote
+                  sets:
+                    blockquote:
+                      display: Blockquote
+                      fields:
+                        -
+                          handle: blockquote
+                          field:
+                            type: textarea
+                            display: Blockquote
+                    gallery_images:
+                      display: 'Gallery Images'
+                      fields:
+                        -
+                          handle: gallery_images
+                          field:
+                            max_files: 3
+                            min_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Gallery Images'
+                    lists:
+                      display: Lists
+                      fields:
+                        -
+                          handle: lists
+                          field:
+                            type: grid
+                            display: Lists
+                            fields:
+                              -
+                                handle: point
+                                field:
+                                  type: text
+                                  display: Point
+          -
+            handle: event
+            field:
+              mode: select
+              collections:
+                - our_events
+              type: entries
+              display: Event
+          -
+            handle: related_event
+            field:
+              mode: select
+              collections:
+                - our_services
+              type: entries
+              display: 'Related Event'
+          -
+            handle: socials
+            field:
+              type: grid
+              display: Socials
+              validate:
+                - required
+              fields:
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

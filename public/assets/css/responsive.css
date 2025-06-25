@@ -1,0 +1,4018 @@
+/* =====================================
+Template Name: Kia Wedding
+Author Name: WebbyCrown
+Author URI: 
+Description: Kia Wedding
+Version:1.0
+========================================*/
+/*======================================
+[ CSS Table of contents ]
+|
+|___ Home one style
+| |
+| |___ 1440 Laptop Screen 
+| |___ 01. hero section CSS
+| |___ 02. wp about section CSS
+| |___ 03. events section CSS
+| |___ 04. video section CSS
+| |___ 05. our events section CSS
+| |___ 06. latest blog section CSS
+| |___ 07. testimomials section CSS
+| |___ 08. footer CSS
+| |
+| |___ 1366 min Laptop Screen CSS
+| |___ 01. testimonials section CSS
+| |___ 02. footer section CSS
+| |
+| |___ 1199 Tablet Screen
+| |___ 01. hero section CSS
+| |___ 02. our events section CSS
+| |___ 03. events section CSS
+| |___ 04. testimonials section CSS
+| |___ 05. footer section CSS
+| |
+| |___ 1024 Tablet Screen
+| |___ 01. latest blog section CSS
+| |___ 02. testimomials section CSS
+| |___ 03. our wedding section style CSS
+| |___ 04. faq-section style 2 CSS
+| |___ 05. counts section style CSS
+| |
+| |___ 991 Tablet Screen
+| |___ 01. header CSS
+| |___ 02. hero section CSS
+| |___ 03. latest blog section CSS
+| |___ 04. events section CSS
+| |___ 05. wp about section CSSOur events section CSS
+| |
+| |___ 767 Mobile Screen
+| |___ 01. header section CSS
+| |___ 02. hero section CSS
+| |___ 03. latest blog section CSS
+| |___ 04. our events section CSS
+| |___ 05. video section CSS
+| |___ 06. latest blog section CSS
+| |___ 07. testimonials section CSS
+| |___ 08. events section CSS
+| |___ 09. reval text section CSS
+| |___ 10. footer section CSS
+| |
+| |___ 575 Mobile Screen
+| |___ 01. side bar content CSS
+| |___ 02. header CSS
+| |___ 03. wp about section CSS
+| |___ 04. events section CSS
+| |___ 05. latest blog section CSS
+| |___ 06. footer section CSS
+| |
+|___ Home two style
+| |
+| |___ 1440 leptop Screen
+| |___ 01. Hero banner section style 2 CSS
+| |___ 02. about section style 2 CSS
+| |___ 03. blog page section style 2 CSS
+| |___ 04. offer banner section style 2 CSS
+| |___ 05. our wedding section style 2 CSS
+| |___ 06. testimonial section style 2 CSS
+| |___ 07. faq section style 2 CSS
+| |___ 08. footer style 2 CSS
+| |
+| |___ 1366 leptop Screen
+| |___ 01. header style 2 CSS
+| |___ 02. home hero section style CSS
+| |___ 03. blog page section style CSS
+| |
+| |___ 1199 leptop Screen
+| |___ 01. counts section style CSS
+| |___ 02. testimonial section style 2 CSS
+| |___ 03. testimonial section style-2 CSS
+| |___ 04. faq section style 2 CSS
+| |___ 05. our services section CSS
+| |___ 06. our wedding section style CSS
+| |___ 07. footer style 2 CSS
+| |
+| |___ 1024 leptop Screen
+| |___ 01. team section CSS
+| |___ 02. counts section style CSS
+| |
+| |___ 991 Tablet Screen
+| |___ 01. Header style 2 CSS
+| |___ 02. home hero section style CSS
+| |___ 03. about section style CSS
+| |___ 04. offer banner section style CSS 
+| |___ 05. our product box style CSS 
+| |___ 06. faq section style-2 CSS
+| |___ 07. testimonial section style CS
+| |___ 08. footer style 2 CSS
+| |
+| |___ 767 Mobile Screen
+| |___ 01. Header style 2 CSS
+| |___ 02. Hero banner section style 2 CSS
+| |___ 03. about section style CSS 
+| |___ 04. counts section style CSS 
+| |___ 05. testimonial section style 2 section CSS
+| |___ 06. our wedding section style CSS
+| |___ 07. faq section style 2 CSS 
+| |___ 08. footer style 2 section CSS
+| |
+| |___ 575 Mobile Screen
+| |___ 01. home hero section style 2 CSS
+| |___ 02. offer banner section style CSS
+| |___ 03. footer style 2 section CSS
+| |
+| |
+|___ Home three style
+| |
+| |___ 1440 leptop Screen
+| |___ 01. heros section style 3 CSS
+| |___ 02. wp about wedding style 3 CSS
+| |___ 03. our services section style 3 CSS
+| |___ 04. congratulations section style 3 CSS
+| |___ 05. team section style 3 CSS
+| |___ 06. choose section style 3 CSS
+| |___ 07. footer style 3 CSS
+| |
+| |___ 1366 min Laptop Screen CSS
+| |___ 01. header style 3 CSS
+| |___ 02. heros section style 3 CSS
+| |___ 03. about-wedding style-3 CSS
+| |___ 04. choose section style CSS
+| |
+| |___ 1199 leptop Screen
+| |___ 01. heros section style 3 CSS
+| |___ 02. our services section CSS
+| |___ 03. congratulations section CSS
+| |___ 04. team section style 3 CSS
+| |___ 05. choose section CSS
+| |
+| |___ 1024 leptop Screen
+| |___ 01. our services section CSS
+| |___ 02. team section style 3 CSS
+| |___ 03. footer three CSS
+| |
+| |___ 991 Tablet Screen
+| |___ 01. header-type3 style CSS 
+| |___ 02. heros section CSS
+| |
+| |___ 767 Mobile Screen
+| |___ 01. Header style 3 CSS
+| |___ 02. heros three section CSS
+| |___ 03. wp about wedding conten section style CSS 
+| |___ 04. our services section style CSS
+| |___ 05. offer banner section style CSS
+| |___ 06. choose section style CSS
+| |___ 07. counts section style CSS
+| |___ 08. instagram section style CSS
+| |___ 09. congratulations section style CSS
+| |___ 10. footer style 3 section CSS
+| |
+| |___ 575 Mobile Screen
+| |___ 01. heros three section CSS
+| |___ 02. footer style 3 section CSS
+| |
+----------------------------------------------
+|___ team page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. team style CSS
+| |
+-----------------------------------------------
+|___ team details page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. team details style CSS
+| |
+| |___ 1366 leptop Screen
+| |___ 01. team details style CSS
+| |
+| |___ 1199 leptop Screen
+| |___ 01. team details section style CSS
+| |___ 02. team section style CSS
+| |
+| |___ 1024 leptop Screen
+| |___ 01. team details section CSS
+| |
+| |___ 767 tablet Screen
+| |___ 01. team details section style CSS
+| |
+-----------------------------------------------
+|___ blog style page CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. blog slide section CSS
+| |___ 02. blog details style CSS
+| |
+| |___ 1366 leptop Screen
+| |___ 01. blog detail right style CSS
+| |___ 02. tags wrapper style CSS
+| |
+| |___ 1199 leptop Screen
+| |___ 01. blog grid section style CSS
+| |
+| |___ 767 mobile Screen
+| |___ 01. wc blog section style CSS
+| |___ 01.blog page section style CSS 
+| |
+------------------------------------------------
+|___ wc events page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. wc events section style CSS
+| |
+| |___ 1199 leptop Screen
+| |___ 01. wc events section style CSS
+| |___ 01. our events section style CSS
+| |
+------------------------------------------------
+|___  testimonial page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. testimonial style CSS
+| |
+| |___ 1366 leptop Screen
+| |___ 01. testimonial section style CSS
+| |
+| |___ 991 tablet Screen
+| |___ 01. blog detail right section style CSS
+| |
+| |___ 575 mobile Screen
+| |___ 01. testimonial section style CSS
+| |
+------------------------------------------------
+|___ our product box page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. our product box style CSS
+| |
+------------------------------------------------
+|___ events detail page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. events detail style CSS
+| |
+------------------------------------------------
+|___ Photography page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. Photography style CSS
+| |
+------------------------------------------------
+|___ pricing page style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. pricing style CSS
+| |
+| |___ 1366 leptop Screen
+| |___ 01. pricing section style CSS
+| |
+| |___ 1199 leptop Screen
+| |___ 01. pricing section style CSS
+| |
+| |___ 1024 leptop Screen
+| |___ 01. pricing section CSS
+| |
+| |___ 767 tablet Screen
+| |___ 01. pricing section style CSS
+| |
+| |___ 575 mobile Screen
+| |___ 01. pricing section style CSS
+| |
+| |___ 420 mobile Screen
+| |___ 01. pricing section style CSS
+| |
+------------------------------------------------
+|___ contact style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01.  contact style CSS
+| |
+------------------------------------------------
+|___ wc error style CS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. wc error style CS
+| |
+------------------------------------------------
+|___ Term condition style CSS
+| |
+| |___ 1440 leptop Screen
+| |___ 01. term condition style CSS
+| |
+| |___ 1366 leptop Screen
+| |___ 01. term condition style CSS
+| |
+=======================================*/
+
+
+/*=====================================
+Start Responsive CSS
+=======================================*/
+@media only screen and (max-width: 1575px) {
+
+	/* ------------// header CSS //--------------*/
+	.header-row {
+		padding: 10px 15px 10px;
+	}
+	body {
+    padding-top: 86px;
+}
+
+	/* ------------// two layout CSS //--------------*/
+	.back-button a {
+		padding: 0 15px;
+	}
+
+	/* ------------// footer style 2 CSS //--------------*/
+	.footer-style-2 .footer-column.footer-menu {
+		max-width: 90%;
+	}
+}
+
+/* ------------// 1440 Laptop Screen //--------------*/
+@media only screen and (max-width: 1440px) {
+	.container {
+		max-width: 1260px;
+	}
+
+	h2.title {
+		font-size: 57px;
+		line-height: 69px;
+	}
+
+	p {
+		font-size: var(--font-size-b2);
+		line-height: 26px;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		width: 37px;
+		height: 37px;
+	}
+
+	.slider-arrow svg {
+		font-size: 15px;
+	}
+
+	/* ------------// hero section CSS //--------------*/
+	.hero-section:before {
+		background-size: 50%;
+	}
+
+	.hero-section .hero-wrapper .hero-content {
+		max-width: 500px;
+	}
+
+	.hero-section .hero-wrapper .hero-img .hero-sm {
+		max-width: 320px;
+		right: 70%;
+	}
+
+	.hero-section .hero-wrapper .hero-content h1 {
+		font-size: 57px;
+		line-height: 65px;
+	}
+
+	/* ------------// wp about section CSS //--------------*/
+	.wp-about-section {
+		padding: 120px 0 150px;
+	}
+
+	.wp-about-section p {
+		font-size: 31px;
+		line-height: 45px;
+		padding-bottom: 41px;
+		max-width: 825px;
+	}
+
+	.wp-about-section:before,
+	.wp-about-section:after,
+	.video-section,
+	.latest-blog-section:before,
+	.latest-blog-section:after,
+	.testimonials-section:before,
+	.hero-section:after {
+		background-size: 160px;
+	}
+
+	.video-section::before,
+	.footer:before {
+		background-size: 127px;
+	}
+
+
+	/* ------------// events section CSS //--------------*/
+	.events-section .events-title h2.title {
+		line-height: 60px;
+	}
+
+	.hero-circle-text::before {
+		font-size: 57px;
+	}
+
+	.hero-circle-text {
+		max-width: 110px;
+		height: 110px;
+	}
+
+	.hero-circle-text .circle-text {
+		height: 155px;
+	}
+
+	.hero-circle-text .circle-text p {
+		font-size: 16px;
+	}
+
+	.hero-circle-text .circle-text span {
+		transform-origin: 0 75px;
+	}
+
+	/* ------------// video section CSS //--------------*/
+	.video-section {
+		padding: 90px 0;
+	}
+
+	.video-section .video-content {
+		margin-bottom: 52px;
+	}
+
+
+	/* ------------// our events section CSS //--------------*/
+	.Our-events-section .our-events-content .our-events-product {
+		margin-bottom: 50px;
+		margin-left: 0;
+	}
+
+	.Our-events-section .our-events-content .our-events-main {
+		padding-left: 67px;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-products {
+		margin-left: 100px;
+		margin-bottom: 86px;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-p {
+		padding-left: 98px;
+		padding-bottom: 61px;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-wrap {
+		max-width: 633px;
+	}
+
+
+	/* ------------// latest blog section CSS //--------------*/
+	.latest-blog-section {
+		padding: 135px 0;
+	}
+
+	/* ------------// testimomials section CSS //--------------*/
+	.testimonials-section {
+		padding-bottom: 112px;
+	}
+
+	.testimonials-content {
+		background-size: 135px;
+	}
+	.testimonial-section .main-testimonial-box .testimonial-content{
+		        margin: 0 11px 0;
+	}
+	.testimonial-section .main-testimonial-box .row.grid {
+    row-gap:40px;
+}
+.testimonial-section .main-testimonial-box .load-more-btn.load-more-wrap {
+    margin-top: 30px;
+}
+
+	.testimonials-content .testimonials-content-wrapper p {
+		font-size: var(--font-size-b2);
+		padding-bottom: 40px;
+	}
+
+	.testimonials-content-wrapper h4 {
+		font-size: 24px;
+	}
+
+	/* ------------// footer CSS //--------------*/
+	.footer {
+		padding-top: 67px;
+	}
+
+	.footer .footer-wrapper {
+		padding-bottom: 57px;
+	}
+
+	.footer .footer-wrapper .widget2 {
+		padding-left: 120px;
+	}
+
+	.footer .footer-wrapper .widget3 {
+		padding-left: 27px;
+	}
+
+	.footer .footer-wrapper .widget4 {
+		padding-left: 34px;
+	}
+
+	.footer .footer-wrapper h3 {
+		font-size: 22px;
+	}
+
+	form.footer-form {
+		margin: 25px 0;
+	}
+
+	.footer .footer-wrapper .widget4 li a {
+		width: 36px;
+		height: 36px;
+		font-size: 18px;
+	}
+
+	.footer .wc-copyright {
+		padding: 17px 0;
+	}
+
+	/* ------------// Hero banner section style 2 CSS //--------------*/
+	.home-hero-section .home-hero-content .main-title-content h1 {
+		margin-bottom: 24px;
+		font-size: 57px;
+		line-height: 50px;
+	}
+
+	/* ------------// about section style 2 CSS //--------------*/
+	.about-section {
+		padding: 97px 0 113px;
+	}
+
+	.about-img-wrapper .bottom-img-border {
+		max-width: 350px;
+		bottom: -85px;
+		right: -30px;
+	}
+
+	/* ------------// blog page section style 2 CSS //--------------*/
+	.blog-content-wrapper .blog-content h2 {
+		font-size: 30px;
+		padding-bottom: 10px;
+		line-height: 35px;
+	}
+
+	/* ------------// offer banner section style 2 CSS //--------------*/
+	.offer-banner-section .offer-banner-score {
+		margin-top: 60px;
+	}
+
+	.offer-banner-section .offer-banner-score h3 {
+		font-size: 38px;
+	}
+
+	.offer-banner-section .offer-banner-score p {
+		font-size: 20px;
+	}
+
+	/* ------------// our wedding section style 2 CSS //--------------*/
+	.our-wedding-section {
+		margin: 90px 0;
+	}
+
+	.our-wedding-section .style-two-title {
+		margin-bottom: 90px;
+	}
+
+	.our-wedding-section .our-product-box {
+		max-width: 294px;
+	}
+
+	.our-wedding-section .load-more-btn {
+		margin-top: 66px;
+	}
+
+	/* ------------// testimonial section style 2 CSS  //--------------*/
+	.testimonial-section-style-2 {
+		padding: 60px 0;
+	}
+
+	.testimonial-section-style-2 .content-wrapper {
+		padding-left: 85px;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content {
+		margin-left: 72px;
+		margin-top: 38px;
+		padding-bottom: 38px;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content p {
+		margin-bottom: 33px;
+	}
+
+	.testimonial-section-style-2 .testimonial-wrapper {
+		margin-left: 57px;
+	}
+
+	/* ------------// faq section style 2 CSS  //--------------*/
+	.faq-section-style-2 {
+		margin: 98px 0 113px;
+	}
+
+	.faq-section-style-2 .faq-content {
+		margin: 24px 0 0 50px !important;
+	}
+
+	.faq-section .wc-faq-accordian {
+		padding: 25px 0;
+	}
+
+	/* ------------// footer style 2 CSS //--------------*/
+	.footer-style-2 .site-brand {
+		margin-bottom: 45px;
+	}
+
+	.footer-style-2 .footer-column h2 {
+		font-size: 27px;
+		margin-bottom: 14px;
+	}
+
+	.footer-style-2 .footer-contact {
+		padding: 36px 60px;
+	}
+
+	.footer-style-2 .footer-column ul li {
+		margin-right: 12px;
+	}
+
+	.footer-style-2 .footer-column ul li a {
+		width: 36px;
+		height: 36px;
+		font-size: 18px;
+	}
+
+	.footer-style-2 .footer-menu .menu {
+		padding: 30px 0;
+		margin-top: 45px;
+	}
+
+	.footer-style-2 .footer-content {
+		padding: 0;
+	}
+
+	form.footer-form input[type=submit] {
+		padding: 0 20px;
+	}
+
+	form.footer-form input[type=email] {
+		padding: 10px 14px;
+	}
+
+
+	/* ------------// heros section style 3 CSS //--------------*/
+	.hero-title {
+		max-width: 450px;
+		margin-left: 75px;
+	}
+
+	.style-three .side-banner .column.top {
+		max-width: 126px;
+	}
+
+	.heros-section .hero-main-wrapper:before {
+		background-size: 162px;
+	}
+	.heros-section .side-banner .site-nav li{
+		    margin-bottom: 37px;
+	}
+	.heros-section .side-banner .site-nav li a {
+    font-size: 18px;
+}
+
+	/* ------------// wp about wedding style 3 CSS //--------------*/
+	.wp-about-wedding-content h3 {
+		font-size: 38px;
+	}
+
+	.wp-about-wedding-content h2 {
+		font-size: 42px;
+	}
+
+	.wp-about-wedding-section:before {
+		background-size: 207px;
+	}
+
+	/* ------------// our services section style 3 CSS //--------------*/
+	.our-services-section {
+		margin: 90px 0;
+	}
+
+	.style-three-title {
+		margin-bottom: 60px;
+	}
+
+	.back-button {
+		margin-bottom: 28px;
+	}
+
+	/* ------------// congratulations section style 3 CSS //--------------*/
+	.congratulations-section {
+		padding: 90px 0;
+	}
+
+	.congratulations-section:before {
+		background-size: 46%;
+	}
+
+	.congratulations-section .congratulations-content {
+		padding-left: 40px;
+		max-width: 475px;
+	}
+
+	.congratulations-section .congratulations-content h2.title {
+		padding-bottom: 18px;
+	}
+
+	.congratulations-section .congratulations-content p {
+		padding-bottom: 30px;
+	}
+
+	/* ------------// team section style 3 CSS //--------------*/
+	.team-details-section .style-3-title {
+		padding-bottom: 90px;
+	}
+
+	.team-section.style-3 {
+		margin: 90px 0;
+	}
+
+	/* ------------// choose section style 3 CSS //--------------*/
+	.choose-section {
+		margin-bottom: 160px;
+	}
+
+	.choose-section .site-wrapper h2.title {
+		margin-bottom: 49px;
+	}
+
+	.choose-section .tabs .choose-tabs {
+		padding-left: 135px;
+	}
+
+	/* ------------// footer style 3 CSS //--------------*/
+	.footer-three .gallery-wrapper {
+		margin-left: 0;
+	}
+
+	.footer-three .gallery-wrapper ul {
+		grid-gap: 10px;
+	}
+
+	.footer-three .footer-top {
+		padding: 71px 0 60px;
+	}
+
+	.footer-three .footer-logo {
+		max-width: 125px;
+	}
+
+	.footer-three h4.footer-title {
+		font-size: 23px;
+	}
+
+	.footer-three .footer-widget-about p {
+		max-width: 90%;
+		padding: 19px 0;
+	}
+
+	.footer-three .quick-wrapper ul li a,
+	.footer-three .contact-wrapper p,
+	.footer-three .footer-widget-about p {
+		font-size: 16px;
+	}
+
+	.footer-bottom {
+		padding: 20px 0 33px;
+	}
+
+	.footer-three ul.header-social li a {
+		width: 36px;
+		height: 36px;
+		font-size: 16px;
+	}
+
+	/* ------------// team style CSS //--------------*/
+	.team-section {
+		margin-bottom: 90px;
+	}
+
+	.team-section .main-team-box {
+		padding: 105px 0 30px;
+	}
+
+	.team-section .main-team-box .team-content h3 {
+		font-size: 22px;
+	}
+
+	.team-section .main-team-box .team-content {
+		padding: 33px 15px 27px;
+		    margin: 0 8px 30px;
+	}
+
+	/* ------------// team details style CSS //--------------*/
+	.team-details-section {
+		margin-bottom: 96px;
+	}
+
+	.team-details-section .team-author-details {
+		padding: 45px 38px 48px;
+	}
+
+	.team-details-section .team-author-details h2 {
+		font-size: 38px;
+		margin-bottom: 23px;
+	}
+
+	.team-details-section .info-details {
+		margin-top: 39px;
+	}
+
+	.team-details-section .team-details-wrapper {
+		margin-bottom: 49px;
+	}
+
+	.team-details-section .info-experince h2 {
+		font-size: 38px;
+		margin-bottom: 27px;
+	}
+
+	.team-details-section .info-experince h3 {
+		font-size: 23px;
+		line-height: 30px;
+	}
+
+	.team-details-section .wc-progress {
+		padding: 52px 0;
+	}
+
+	.team-details-section .info-details p {
+		max-width: 70%;
+	}
+
+	.team-details-section .info-content {
+		margin-bottom: 25px;
+	}
+
+	.team-details-section .info-details .icon {
+		width: 34px;
+		height: 34px;
+		font-size: 16px;
+	}
+
+	.skills-bar-container li .progressbar-title h3 {
+		font-size: 23px;
+	}
+
+	.skills-bar-container li .progressbar-title .percent {
+		font-size: 18px;
+	}
+
+	.skills-bar-container li {
+		margin-bottom: 25px;
+	}
+
+	.team-section.about-team-section {
+		margin-bottom: 68px;
+	}
+
+	.our-latest-news-section .latest-news-slider .swiper {
+		padding: 68px 0 105px;
+	}
+
+
+	/* ------------// blog slide section CSS //--------------*/
+	.blog-slider .blog-box .blog-content h3,
+	.related-blogs .blog-box .blog-content h3 {
+		font-size: 26px;
+		padding-top: 22px;
+		padding-bottom: 10px;
+	}
+
+	.blog-slider .date-project-btn p.date,
+	.related-blogs .date-project-btn p.date {
+		font-size: 26px;
+	}
+
+	.blog-slider .date-project-btn p.day,
+	.related-blogs .date-project-btn p.day {
+		font-size: 15px;
+	}
+
+	.blog-grid-section {
+		margin-bottom: 75px;
+	}
+
+	.blog-box .blog-content .mb-md-5 {
+		margin: 20px 0;
+	}
+
+	/* ------------// blog details style CSS //--------------*/
+	/*blog-detail-right*/
+	.blog-detail-right h2 {
+		font-size: 27px;
+		margin-bottom: 23px;
+	}
+
+	.tags-wrapper {
+		padding: 21px 23px;
+	}
+
+	.blog-post {
+		padding: 21px 18px;
+		margin-bottom: 23px;
+	}
+
+	.blog-page-section {
+		padding: 90px 10px;
+	}
+
+	.blog-grid-section .style-3-title {
+		margin-bottom: 90px;
+	}
+
+	.blog-slider .blog-box .blog-content .btn {
+		margin-top: 27px;
+	}
+
+	.blog-detail-right .blog-categories ul li {
+		font-size: 18px;
+	}
+
+
+	/* ------------// wc events section style CSS //--------------*/
+	.wc-events-section,
+	.events-detail-section .style-3-title{
+		margin-bottom: 90px;
+	}
+
+	.wc-events-section .our-events-grid {
+		margin: 90px auto 0;
+	}
+
+	.wc-events-section .our-events-product {
+		padding-bottom: 52px;
+	}
+
+	.counts {
+		padding-bottom: 112px;
+	}
+
+	.counts .count-box h3 {
+		font-size: 57px;
+	}
+
+	.counts .count-box p {
+		font-size: 18px;
+		padding: 16px 0 17px;
+		margin-top: 15px;
+	}
+
+
+	/* ------------// faq style 3 CSS //--------------*/
+	.faq-section .style-3-title p {
+		font-size: 23px;
+		padding-top: 30px;
+	}
+
+	.faq-section .faq-content {
+		margin: 87px auto 57px;
+	}
+
+	/* ------------// testimonial style CSS //--------------*/
+	.testimonial-section {
+		margin: 29px 0 75px;
+	}
+
+	.testimonial-section .main-testimonial-box {
+		margin-top: 135px;
+	}
+
+	.testimonial-content {
+		padding: 38px 38px 28px;
+		margin: 0 11px 43px;
+	}
+
+	.testimonial-content p {
+		margin-bottom: 21px;
+	}
+
+
+	/* ------------// company style CSS //--------------*/
+	.company-section .company-wrapper {
+		padding: 41px 0;
+	}
+
+	.company-section .company-wrapper a img {
+		max-width: 130px;
+	}
+
+
+	/* ------------// our product box style CSS  //--------------*/
+	.our-product-box h2 {
+		font-size: 30px;
+		padding-bottom: 17px;
+	}
+
+	.our-product-box p {
+		margin-bottom: 23px;
+	}
+
+	.our-product-box ul li a {
+		width: 36px;
+		height: 36px;
+		margin-right: 16px;
+	}
+
+	/* ------------// events detail style CSS //--------------*/
+	.events-detail-section {
+		margin-bottom: 90px;
+	}
+
+	.events-detail-section .container {
+		max-width: 1120px;
+	}
+
+	.events-wrap .count-box h3 {
+		font-size: 22px;
+	}
+
+	.events-detail-section .events-wrap {
+		padding: 37px 100px;
+		margin: 42px 0;
+	}
+
+	.events-wrap-description h3 {
+		font-size: 30PX;
+		padding-bottom: 27px;
+	}
+
+	.events-wrap-description {
+		margin-bottom: 68PX;
+	}
+
+	.related-blogs h2.title {
+		font-size: 38px;
+		line-height: 45px;
+		margin-bottom: 30px;
+	}
+
+	/* ------------// Photography style CSS //--------------*/
+	.Photography-section,
+	.Photography-section .style-3-title {
+		margin-bottom: 90px;
+	}
+
+	.Photography-section .load-more-btn {
+		margin-top: 60px;
+	}
+
+	blockquote.wp-block-quote {
+		margin: 30px 0;
+		padding: 30px;
+	}
+
+	blockquote.wp-block-quote p {
+		font-size: 16px;
+		line-height: 27px;
+	}
+
+	.post-footer-tag {
+		margin: 15px 0 67px;
+	}
+
+	/* ------------// pricing style CSS //--------------*/
+	.pricing-section {
+		margin-bottom: 90px;
+	}
+
+	.pricing-section .pricing-wrapper {
+		margin: 90px auto 60px;
+		grid-gap: 38px;
+	}
+
+	.pricing-section .pricing-wrapper .price-card h2 {
+		font-size: 42px;
+		padding-bottom: 17px;
+	}
+
+	.pricing-section .pricing-wrapper .price-card h3 {
+		font-size: 26px;
+		padding-bottom: 16px;
+	}
+
+	.pricing-section .pricing-wrapper .price-card {
+		padding: 30px;
+	}
+
+	/* ------------// contact style CSS //--------------*/
+	.contact-section .contact-form h2 {
+		font-size: 37px;
+		padding-bottom: 37px;
+	}
+
+	/* ------------// wc error style CSS //--------------*/
+	.wc-error {
+		padding: 98px 0 102px;
+	}
+
+	.wc-error .wc-error-content h2 {
+		font-size: 150px;
+		line-height: 150px;
+		margin-bottom: 19px;
+	}
+
+	.wc-error .wc-error-content h3 {
+		font-size: 22px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
+
+	.wc-error .wc-error-content p {
+		margin: auto auto 28px;
+	}
+
+	/* ------------// term condition style CSS //--------------*/
+	.term-condition-section .Terms-condition-content {
+		margin: 98px auto 113px;
+	}
+
+	.term-condition-section .Terms-condition-content .terms-title h2 {
+		font-size: 30px;
+		line-height: 40px;
+		margin-bottom: 19px;
+	}
+
+	.term-condition-section .Terms-condition-content .terms-title {
+		margin-bottom: 38px;
+	}
+
+	.term-condition-section .Terms-condition-content .terms-title h3 {
+		font-size: 23px;
+		line-height: 30px;
+		margin-bottom: 19px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+
+	/* ------------// testimonials section CSS //--------------*/
+	.testimonials-content {
+		max-width: 50%;
+		padding: 30px 0 0 0;
+		background-size: 80px;
+	}
+
+	.testimonials-img {
+		max-width: 50%;
+	}
+
+	.testimonials-box {
+		gap: 40px;
+	}
+
+	/* ------------// footer style CSS //--------------*/
+	.footer .footer-wrapper .widget4,
+	.footer .footer-wrapper .widget3 {
+		padding-left: 0;
+	}
+
+	.footer .footer-wrapper .widget2 {
+		padding-left: 60px;
+	}
+
+	/* ------------// header style 2 CSS //--------------*/
+	.header.header-type2 .header-row {
+		padding: 15px;
+	}
+
+	.header.header-type2 .header-row .logo-content {
+		max-width: 94px;
+	}
+
+	/* ------------// home hero section style CSS //--------------*/
+	.home-hero-section .home-hero-content .title-content {
+		margin-top: 0;
+	}
+
+
+	/* ------------// blog page section style CSS //--------------*/
+	.blog-page-section:after,
+	.blog-page-section:before {
+		background-size: 100px;
+	}
+
+	.style-two-title {
+		margin-bottom: 70px;
+	}
+
+	.blog-content-wrapper .blog-content p {
+		max-width: 100%;
+	}
+	.blog-slider.blog-grid{
+		margin: 0;
+	}
+
+	/* ------------// blog detail right style CSS //--------------*/
+	.blog-detail-right {
+		margin-left: 0;
+	}
+
+	.blog-detail-right h2 {
+		font-size: 25px;
+	}
+
+	.blog-detail-right .detail-search-box {
+		height: 60px;
+		margin-bottom: 18px;
+	}
+
+	.blog-detail-right .blog-categories {
+		padding: 26px 22px;
+		margin-bottom: 18px;
+	}
+
+	.blog-detail-right .blog-categories h2 {
+		margin-bottom: 18px;
+	}
+
+	/* ------------// tags wrapper style CSS //--------------*/
+	.tags-wrapper ul li {
+		font-size: var(--font-size-b2);
+		margin-right: 20px;
+		margin-bottom: 15px;
+	}
+
+	/* ------------// team details style CSS //--------------*/
+	.team-details-section .team-details-wrapper,
+	.info-experince {
+		padding: 0 15px;
+	}
+
+	/* ------------// header style 3 CSS //--------------*/
+	.header-type3 .search-cart-bar a {
+		font-size: var(--font-size-b2);
+	}
+
+	/* ------------// heros section style 3 CSS //--------------*/
+	.heros-section ul.header-social {
+		gap: 10px;
+	}
+
+	.heros-section .hero-main-wrapper:before {
+		background-size: 140px;
+	}
+
+	.heros-section ul.header-social li a {
+		width: 35px;
+		height: 35px;
+		font-size: var(--font-size-b3);
+	}
+
+	/* ------------// about-wedding style-3 CSS //--------------*/
+	.wp-about-wedding-section:before {
+		background-size: 120px;
+	}
+
+	.wp-about-wedding-content p {
+		padding: 10px 0 20px;
+	}
+
+
+	/* ------------// choose section style CSS //--------------*/
+	.choose-section .tabs .choose-tabs {
+		padding-left: 110px;
+	}
+
+}
+
+/* ------------// 1280 Tablet Screen //--------------*/
+@media only screen and (max-width: 1280px) {
+	.container {
+		max-width: 1120px;
+	}
+
+	h2.title {
+		font-size: 38px;
+		line-height: 46px;
+	}
+
+	.back-button {
+		margin-bottom: 25px;
+	}
+
+	.hero-section .hero-wrapper .hero-content h1 {
+		font-size: 50px;
+		line-height: 61px;
+	}
+
+	.hero-section .hero-wrapper .hero-content {
+		max-width: 380px;
+		padding: 78px 0;
+	}
+
+	.home-hero-section .home-hero-content .main-title-content h1 {
+		font-size: 50px;
+		line-height: 33px;
+	}
+
+	.home-hero-section .home-hero-content .main-title-content p {
+		max-width: 60%;
+		margin-bottom: 36px;
+	}
+
+	.wp-about-section {
+		padding: 105px 0 133px;
+	}
+
+	.wp-about-section p {
+		font-size: 28px;
+	}
+
+	.video-section .video-content {
+		margin-bottom: 47px;
+	}
+
+	.Our-events-section .our-events-content .our-events-main {
+		padding-left: 60px;
+		padding-right: 10px;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-products {
+		margin-left: 87px;
+		margin-bottom: 86px;
+	}
+
+	.Our-events-section .our-events-content .our-events-main .btn {
+		margin-top: 0;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-wrap {
+		max-width: 563px;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-p {
+		padding-left: 87px;
+		padding-bottom: 54px;
+	}
+
+	.blog-grid-section .style-3-title {
+		margin-bottom: 80px;
+	}
+
+	.counts {
+		padding-bottom: 100px;
+	}
+
+	.counts .count-box h3 {
+		font-size: 51px;
+	}
+
+	.blog-slider .date-project-btn p.date,
+	.blog-slider .date-project-btn p.day {
+		font-size: 21px;
+	}
+
+	.blog-slider .date-project-btn {
+		padding: 8px 15px 8px;
+	}
+
+	.contact-section .content-wrapper {
+		margin: 74px auto 67px;
+	}
+
+	.contact-section .contact-form h2 {
+		font-size: 33px;
+		padding-bottom: 33px;
+	}
+
+	.contact-section .contact-information-box .icon img {
+		max-width: 30px;
+	}
+
+	.contact-section .contact-information-box h2 {
+		padding: 12px 0 13px;
+		font-size: 20px;
+	}
+
+	.contact-section .contact-information-box p {
+		font-size: 16px;
+	}
+
+	.contact-section .contact-information-box p a {
+		display: block;
+	}
+
+	.contact-section .contact-form {
+		max-width: 100%;
+		margin-left: 0;
+		padding-left: 44px;
+	}
+
+	.blog-slider .blog-box .blog-content h3,
+	.related-blogs .blog-box .blog-content h3 {
+		font-size: 27px;
+		padding-top: 20px;
+		padding-bottom: 16px;
+	}
+
+	.wc-events-section,
+	.events-detail-section .style-3-title,
+	.our-services-single .style-3-title {
+		margin-bottom: 80px;
+	}
+
+	.wc-events-section .our-events-grid {
+		margin: 80px auto 0;
+	}
+
+	.wc-events-section .our-events-product {
+		padding-bottom: 47px;
+	}
+
+	.events-detail-section .events-wrap {
+		padding: 33px 100px;
+		margin: 37px 0;
+	}
+
+	.events-wrap-description {
+		margin-bottom: 60px;
+	}
+
+	.footer-three .footer-top {
+		padding: 64px 0 54px;
+	}
+
+	.footer-bottom {
+		padding: 18px 0 29px;
+	}
+
+	.related-blogs h2.title {
+		font-size: 34px;
+		line-height: 40px;
+	}
+
+	.events-detail-section {
+		margin-bottom: 80px;
+	}
+
+	.wc-error {
+		padding: 87px 0 91px;
+	}
+
+	.wc-error .wc-error-content h2 {
+		font-size: 134px;
+		line-height: 134px;
+	}
+
+	.term-condition-section .Terms-condition-content {
+		margin: 87px auto 100px;
+	}
+
+	.term-condition-section .Terms-condition-content .terms-title h2 {
+		font-size: 26px;
+		line-height: 36px;
+		margin-bottom: 17px;
+	}
+
+	.term-condition-section .Terms-condition-content .terms-title {
+		margin-bottom: 34px;
+	}
+
+	.term-condition-section .Terms-condition-content .terms-title h3 {
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 17px;
+	}
+
+	/* ------------// pricing section style CSS //--------------*/
+	.pricing-section {
+		margin-bottom: 80px;
+	}
+
+	.pricing-section .pricing-wrapper {
+		margin: 80px auto 54px;
+		grid-gap: 34px;
+	}
+
+	.pricing-section .pricing-wrapper .price-card h2 {
+		font-size: 37px;
+	}
+
+	.pricing-section .pricing-wrapper .price-card h3 {
+		font-size: 20px;
+	}
+
+	.testimonial-section .main-testimonial-box {
+		margin-top: 120px;
+	}
+
+	.testimonial-content {
+		padding: 26px 26px 19px;
+	}
+
+
+	.Photography-section,
+	.Photography-section .style-3-title {
+		margin-bottom: 60px;
+	}
+
+	.Photography-section .load-more-btn {
+		margin-top: 40px;
+	}
+
+	.blog-detail-section .container {
+		max-width: 1120px;
+	}
+
+	.post-footer-tag {
+		margin: 15px 0 60px;
+		padding: 15px 0;
+	}
+
+	.post-footer-tag .post-tag a {
+		padding: 10px 19px;
+		font-size: 16px;
+	}
+
+	.post-footer-tag .post-social ul li a {
+		width: 34px;
+		height: 34px;
+		font-size: 16px;
+	}
+
+	.team-section {
+		margin-bottom: 80px;
+	}
+
+	.team-section .main-team-box {
+		padding: 94px 0 26px;
+	}
+	.team-section .main-team-box .team-content{
+    margin: 0 0 26px;
+}
+	.team-section .main-team-box .team-content img {
+		margin-bottom: 24px;
+	}
+
+	.team-section .main-team-box .team-content h3 {
+		font-size: 20px;
+	}
+
+	.team-section .main-team-box .team-content p {
+		font-size: 16px;
+	}
+
+	.team-section .main-team-box .team-content img {
+		max-width: 125px;
+	}
+
+	.team-details-section .container {
+		max-width: 1120px;
+	}
+
+	.team-details-section .team-author-details h2 {
+		font-size: 34px;
+		margin-bottom: 16px;
+	}
+
+	.team-details-section {
+		margin-bottom: 86px;
+	}
+
+	.team-details-section .info-experince h2 {
+		font-size: 34px;
+		margin-bottom: 24px;
+	}
+
+	/*Home page two*/
+	/* ------------// about section CSS //--------------*/
+	.about-section {
+		padding: 89px 0 100px;
+	}
+
+	.about-section::before {
+		background-size: 184px;
+	}
+
+	.about-content-wrapper {
+		margin-left: 82px
+	}
+
+	.about-content-wrapper p {
+		margin-bottom: 16px;
+	}
+
+	.about-content-wrapper .about-btn {
+		padding-top: 27px;
+	}
+
+	.about-img-wrapper .top-img {
+		max-width: 304px;
+	}
+
+	.about-img-wrapper .bottom-img-border {
+		max-width: 322px;
+		bottom: -70px;
+		right: -12px;
+	}
+
+	.blog-page-section {
+		padding: 80px 10px;
+	}
+
+	.blog-content-wrapper .blog-content h2 {
+		font-size: 27px;
+	}
+
+	.offer-banner-section .offer-banner-content h2 {
+		margin-bottom: 22px;
+	}
+
+	.offer-banner-section .offer-banner-score {
+		margin-top: 40px;
+		gap: 46px;
+	}
+
+	.offer-banner-section .offer-banner-score h3 {
+		font-size: 34px;
+	}
+
+	/* ------------// offer banner section style CSS //--------------*/
+	.offer-banner-section {
+		padding: 80px 0;
+	}
+
+	.our-wedding-section {
+		margin: 80px 0;
+	}
+
+	.our-wedding-section .style-two-title {
+		margin-bottom: 80px;
+	}
+
+	.our-product-box h2 {
+		font-size: 26px;
+	}
+
+	.our-product-box h3 {
+		font-size: 18px;
+	}
+
+	/* ------------// testimonial section style-2 CSS //--------------*/
+	.testimonial-section-style-2 .content-wrapper .testimonial-content {
+		margin-left: 64px;
+		margin-top: 26px;
+		padding-bottom: 26px;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content h4 {
+		font-size: 19px;
+		padding-bottom: 0;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content sub {
+		font-size: 16px;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content p {
+		margin-bottom: 22px;
+	}
+
+	.faq-section-style-2 {
+		margin: 87px 0 100px;
+	}
+
+	.footer-style-2 .footer-column h2 {
+		font-size: 24px;
+	}
+
+	.footer-style-2 .site-brand {
+		margin-bottom: 40px;
+	}
+
+	.footer-style-2 .footer-contact {
+		padding: 32px 54px;
+	}
+
+	.footer-style-2 .footer-menu .menu {
+		padding: 26px 0;
+		margin-top: 40px;
+	}
+
+	.style-three .hero-title {
+		max-width: 380px;
+	}
+
+	.heros-section .side-banner {
+		padding: 37px 0 54px;
+	}
+
+	.hero-title {
+		max-width: 400px;
+		margin-left: 66px;
+		margin-right: 10px;
+	}
+
+	.heros-section .hero-main-wrapper {
+		margin-right: 80px;
+		margin-top: 107px;
+		padding-bottom: 54px;
+	}
+
+	.heros-section .side-banner .site-nav li {
+		margin-bottom: 34px;
+	}
+
+	.wp-about-wedding-content h2 {
+		font-size: 37px;
+	}
+
+	.wp-about-wedding-content h3 {
+		font-size: 34px;
+	}
+
+	.about-circle-text {
+		bottom: -100px;
+	}
+
+	.our-services-section {
+		margin: 80px 0;
+	}
+
+	.style-three-title {
+		margin-bottom: 54px;
+	}
+
+	.our-services-section .services-info a h3 {
+		font-size: 18px;
+	}
+
+	.our-services-section .load-more-btn {
+		margin-top: 48px;
+	}
+
+	/* ------------// team section style 3 CSS //--------------*/
+	.team-section.style-3 {
+		margin: 80px 0;
+	}
+}
+
+/* ------------// 1199 Tablet Screen //--------------*/
+@media only screen and (max-width: 1199px) {
+
+	/* ------------// hero section CSS //--------------*/
+	.hero-section:before {
+		background-size: 45%;
+	}
+
+	.hero-section .hero-wrapper .hero-content {
+		padding: 40px 0;
+	}
+
+	.hero-section .hero-wrapper .hero-content h1 {
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 15px;
+	}
+
+	.hero-section .hero-wrapper .hero-img .hero-sm {
+		max-width: 280px;
+		right: 65%;
+	}
+
+	/* ------------// our events section CSS //--------------*/
+	.Our-events-section .our-events-content .our-events-main p {
+		padding-bottom: 18px;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-wrap {
+		max-width: 525px;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-products {
+		margin-left: 75px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-p {
+		padding-left: 75px;
+		padding-bottom: 40px;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-wrap .our-events-grid {
+		gap: 20px;
+	}
+
+	/* ------------// events section CSS //--------------*/
+	.events-section .events-title h2.title {
+		max-width: 50%;
+	}
+
+	.events-section .events-title {
+		padding-bottom: 35px;
+		gap: 20px;
+	}
+
+	.events-section .events-title p {
+		max-width: 50%;
+	}
+
+	/* ------------// testimonials section CSS //--------------*/
+	.testimonials-section {
+		padding-bottom: 80px;
+	}
+
+	/* ------------// footer section CSS //--------------*/
+	.footer .footer-wrapper {
+		padding-bottom: 50px;
+	}
+
+	.footer .footer-wrapper h3 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	.footer .footer-wrapper .widget3 li a {
+		font-size: var(--font-size-b3);
+	}
+
+	.footer .footer-wrapper .widget4 form input[type=submit] {
+		font-size: var(--font-size-b3);
+		padding: 0 15px;
+	}
+
+	.footer .footer-wrapper .widget4 form input[type=email] {
+		padding: 8px 10px;
+		font-size: var(--font-size-b3);
+	}
+
+	.footer .footer-wrapper .widget4 li a {
+		width: 40px;
+		height: 40px;
+		font-size: var(--font-size-b3);
+	}
+
+	/* ------------// Back button CSS //--------------*/
+	.back-button {
+		margin-bottom: 12px;
+	}
+
+	/* ------------// pricing section style CSS //--------------*/
+	.pricing-section .pricing-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/* ------------// Photography section style CSS //--------------*/
+	.Photography-section .style-3-title,
+	.events-detail-section .style-3-title,
+	.team-details-section {
+		margin-bottom: 60px;
+	}
+
+	.modal-content {
+		max-width: 300px;
+	}
+
+	.Photography-section button.close {
+		max-width: 20px;
+		top: 40px;
+	}
+
+	.Photography-section .modal_des .icon a {
+		width: 40px;
+		height: 40px;
+	}
+
+	.Photography-section .modal_des .icon a img {
+		max-width: 14px;
+	}
+
+	/* ------------// wc events section style CSS //--------------*/
+	.wc-events-section {
+		margin-bottom: 60px;
+	}
+
+	.wc-events-section .row .col-12:nth-child(even) {
+		padding-left: 10px;
+	}
+
+	.wc-events-section .row .col-12:nth-child(odd) {
+		padding-right: 10px;
+	}
+
+	.wc-events-section .our-events-product {
+		padding-bottom: 30px;
+	}
+
+	.wc-events-section .our-events-grid .events-title {
+		font-size: var(--font-size-b3);
+		padding: 10px 20px;
+		line-height: 20px;
+	}
+
+	.wc-events-section .our-events-grid {
+		margin: 50px auto 0;
+	}
+
+	/* ------------// events detail section style CSS //--------------*/
+	.events-detail-section {
+		margin-bottom: 60px;
+	}
+
+	.events-detail-section .events-wrap {
+		padding: 25px 20px;
+		margin: 35px 0;
+	}
+
+	.events-wrap .count-box {
+		margin-bottom: 30px;
+	}
+
+	.events-wrap-description {
+		margin-bottom: 50px;
+	}
+
+	.events-wrap-description h3 {
+		font-size: 26px;
+		padding-bottom: 20px;
+	}
+
+	.events-wrap-description p {
+		margin-bottom: 15px;
+	}
+
+	.events-detail-section .our-events-product .events-title {
+		font-size: var(--font-size-b2);
+	}
+
+	/* ------------// blog grid section style CSS //--------------*/
+	.blog-standard-single .blog-box .blog-img::before {
+		padding-top: 100%;
+	}
+
+	.blog-slider .blog-box .blog-content p {
+		font-size: var(--font-size-b2);
+		line-height: 26px;
+	}
+
+	.blog-standard-single .raid_main .modal-img {
+		padding-bottom: 15px !important;
+	}
+
+	.blog-post,
+	.tags-wrapper {
+		padding: 26px 22px;
+	}
+
+	.wc-blog-section .style-3-title {
+		margin-bottom: 50px;
+	}
+
+	.wc-blog-section .wc-blog-content {
+		margin: 0 15px auto;
+		padding: 25px 15px;
+		bottom: -110px;
+		max-width: 100%;
+	}
+
+	.wc-blog-section .wc-blog-wrapper .wc-blog-image {
+		max-width: 100%;
+	}
+
+	.about-img-wrapper .bottom-img-border {
+		z-index: -1;
+	}
+
+	.wc-blog-section .wc-blog-wrapper {
+		margin-bottom: 150px;
+	}
+
+	/* ------------// team details section style CSS //--------------*/
+	.team-details-section .style-3-title {
+		padding-bottom: 50px;
+	}
+
+	.team-details-section .team-author-details {
+		padding: 30px 25px;
+	}
+
+	.team-details-section .info-content {
+		margin-bottom: 25px;
+	}
+
+	.team-details-section .info-details {
+		margin-top: 22px;
+	}
+
+	.team-details-section .info-details .icon {
+		height: 40px;
+		font-size: 14px;
+		width: 100%;
+		max-width: 40px;
+	}
+
+	.team-details-section .info-details p {
+		font-size: var(--font-size-b3);
+	}
+
+	.team-details-section .info-experince h2 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.team-details-section .info-experince p {
+		margin-bottom: 15px;
+	}
+
+	.team-details-section .info-experince h3 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.info-experince-img img {
+		width: 100%;
+	}
+
+	/* ------------// counts section style CSS //--------------*/
+	.counts .count-box p {
+		font-size: 20px;
+		padding: 15px 0;
+	}
+
+	.about-title .style-3-title {
+		margin-left: 0;
+	}
+
+	/* ------------// testimonial section style 2 CSS //--------------*/
+	.testimonial-section-style-2 {
+		padding: 60px 0;
+	}
+
+	.testimonial-section-style-2 .content-wrapper {
+		padding-left: 50px;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content {
+		margin-left: 0;
+	}
+
+	/* ------------// faq section style 2 CSS //--------------*/
+	.faq-section-style-2 .faq-content {
+		margin: 0 !important;
+	}
+
+	.blog-page-section .blog-wrap {
+		margin-bottom: 40px;
+	}
+
+	/* ------------// our services section CSS //--------------*/
+	.our-services-section .services-info a h3 {
+		font-size: var(--font-size-b2);
+	}
+
+	.our-services-section .services-info a img {
+		max-width: 20px;
+	}
+
+
+	/* ------------// choose section CSS //--------------*/
+	.choose-section {
+		margin-bottom: 100px;
+	}
+
+	/* ------------// heros section style 3 CSS //--------------*/
+	.heros-section .side-banner {
+		padding: 20px 0;
+	}
+
+	.heros-section .side-banner .column.top {
+		max-width: 125px;
+	}
+
+	.heros-section .side-banner .site-nav li {
+		margin-bottom: 22px;
+	}
+	.heros-section .side-banner .column.center ul.menu {
+    max-width: 60%;
+}
+/* ------------// start our services section //--------------*/
+.our-services-single .style-3-title {
+	    margin-bottom: 50px;
+}
+.team-section .main-team-box{
+	margin: 0;
+}
+}
+
+/* ------------// Tablet Screen //--------------*/
+@media only screen and (max-width: 1024px) {
+	p {
+		font-size: var(--font-size-b3);
+		line-height: 24px;
+	}
+
+	h2.title {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.btn {
+		padding: 10px 20px;
+		font-size: var(--font-size-b3);
+	}
+
+	.hero-section:after {
+		display: none;
+	}
+
+	/* ------------// latest blog section CSS //--------------*/
+	.blog-slider .blog-box .blog-content h3 {
+		font-size: 25px;
+		line-height: 13px;
+		padding-top: 16px;
+		padding-bottom: 10px;
+	}
+
+	.blog-slider .blog-box .blog-content .btn {
+		margin-top: 18px;
+	}
+
+	.latest-blog-section .slider-arrow .swiper-button-prev,
+	.latest-blog-section .slider-arrow .swiper-button-next {
+		width: 40px;
+		height: 40px;
+		border: 1px solid var(--color-black);
+	}
+
+	.latest-blog-section .slider-arrow svg {
+		font-size: var(--font-size-b3);
+	}
+
+	.blog-slider .date-project-btn {
+		top: 15px;
+		right: 15px;
+		padding: 10px;
+	}
+
+	.blog-slider .date-project-btn p.date {
+		font-size: 22px;
+	}
+
+	.blog-slider .date-project-btn p.day {
+		font-size: var(--font-size-b2);
+	}
+
+	/* ------------// testimomials section CSS //--------------*/
+	.testimonials-content .slider-arrow {
+		margin-top: 30px;
+	}
+
+	.testimonials-content .testimonials-content-wrapper sub {
+		font-size: var(--font-size-b3);
+	}
+
+	/* ------------// latest blog section CSS //--------------*/
+	.latest-blog-section {
+		position: relative;
+		padding: 120px 0;
+	}
+
+	.latest-blog-section:after,
+	.latest-blog-section:before {
+		background-size: 150px;
+	}
+
+	.Our-events-section .our-events-content .our-events-main {
+		padding-left: 0;
+	}
+
+	.Our-events-section .our-events-content .our-events-product {
+		margin-bottom: 35px;
+	}
+
+	/* ------------// video section CSS //--------------*/
+	.video-section {
+		padding: 80px 0;
+		background-size: 140px;
+	}
+
+	.video-section::before {
+		background-size: 100px;
+	}
+
+	.video-play a {
+		width: 55px;
+		height: 55px;
+	}
+
+	.video-play a svg {
+		font-size: 20px;
+	}
+
+	/* ------------// footer section CSS //--------------*/
+	.footer:before {
+		background-size: 100px;
+	}
+
+	/* ------------// three-layout start //--------------*/
+	/* ------------// footer three CSS //--------------*/
+	.footer-three h4.footer-title {
+		font-size: 22px;
+	}
+
+	.footer-widget-about .footer-logo {
+		max-width: 100px;
+	}
+
+	.footer-three .footer-widget-about p {
+		max-width: 100%;
+		padding: 15px 0;
+	}
+
+	.footer-three .contact-wrapper {
+		padding-left: 0;
+	}
+
+	.footer-three ul.header-social li a {
+		width: 40px;
+		height: 40px;
+		font-size: var(--font-size-b2);
+	}
+
+	.footer-three .contact-wrapper p {
+		max-width: 100%;
+	}
+
+	.footer-three .footer-top {
+		padding: 45px 0;
+	}
+
+	.footer-bottom {
+		padding: 20px 0;
+	}
+
+	/* ------------// contact page style CSS //--------------*/
+	.contact-section .content-wrapper {
+		margin: 40px auto 50px;
+	}
+
+	.contact-section .contact-form {
+		margin-left: 0;
+		padding-top: 20px;
+	}
+
+	.contact-section .contact-form h2 {
+		font-size: 30px;
+		padding-bottom: 30px;
+	}
+
+	.contact-section .contact-form form .form-group input,
+	.contact-section .contact-form form .form-group textarea {
+		font-size: var(--font-size-b2);
+	}
+
+	.contact-section .contact-information {
+		margin-top: 50px;
+	}
+
+	/* ------------// faq section CSS //--------------*/
+	.faq-section {
+		margin-bottom: 60px;
+	}
+
+	.faq-section .style-3-title p {
+		padding-top: 20px;
+		font-size: 20px;
+	}
+
+	.faq-section .wc-faq-accordian {
+		padding: 15px 0;
+	}
+
+	.wc-faq-accordian h4.wc-faq-accordian-title {
+		font-size: var(--font-size-b3);
+	}
+
+	.wc-faq-accordian h4.wc-faq-accordian-title:after {
+		top: 13px;
+		right: 3px;
+		width: 14px;
+	}
+
+	.wc-faq-accordian h4.wc-faq-accordian-title:before {
+		height: 14px;
+	}
+
+	.wc-faq-accordian .wc-faq-accordian-content p {
+		font-size: var(--font-size-b3);
+		padding-right: 0;
+	}
+
+	/* ------------// pricing section CSS //--------------*/
+	.pricing-section {
+		margin-bottom: 60px;
+	}
+
+
+	/* ------------// wc blog section CSS //--------------*/
+	.wc-blog-section {
+		margin-bottom: 60px;
+	}
+
+	.post-footer-tag .post-tag {
+		flex-wrap: wrap;
+		row-gap: 0px;
+	}
+
+	.related-blogs h2.title {
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+
+	.blog-grid-section {
+		margin-bottom: 50px;
+	}
+
+	.blog-box {
+		margin-bottom: 40px;
+	}
+
+	.post-footer-tag {
+		margin: 15px 0 50px;
+	}
+
+	.related-blogs .blog-box .blog-content h3 {
+		font-size: 26px;
+		line-height: 36px;
+		padding-top: 25px;
+		padding-bottom: 13px;
+	}
+
+	.related-blogs .blog-box .blog-content .btn {
+		margin-top: 15px;
+	}
+
+	.related-blogs .date-project-btn {
+		padding: 12px 13px;
+	}
+
+	.related-blogs .date-project-btn p.date,
+	.related-blogs .date-project-btn p.day {
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+
+	.related-blogs .date-project-btn p.day {
+		margin-bottom: 0;
+	}
+
+	.blog-recent-post {
+		grid-gap: 20px;
+	}
+
+	.blog-standard .blog-box .blog-img::before {
+		padding-top: 100%;
+	}
+
+	.blog-standard .blog-box {
+		margin-bottom: 35px;
+	}
+
+	.wc-blog-section .wc-blog-content h2 {
+		font-size: 24px;
+	}
+
+	/* ------------// team details section CSS //--------------*/
+	.team-details-section .wc-progress {
+		padding: 45px 0;
+	}
+
+	.team-details-section .info-progress {
+		padding-right: 0;
+		margin-bottom: 40px;
+	}
+
+	.skills-bar-container li .progressbar-title h3 {
+		font-size: 22px;
+	}
+
+	.skills-bar-container li .bar-container {
+		margin-top: 17px;
+	}
+
+	/* ------------// team section CSS //--------------*/
+	.team-section .main-team-box .team-content img {
+		margin-bottom: 10px;
+		max-width: 100px;
+	}
+
+	/* ------------// counts section style CSS //--------------*/
+	.counts {
+		padding-bottom: 70px;
+	}
+
+	.counts .count-box p {
+		font-size: var(--font-size-b2);
+		padding: 12px 0;
+		margin-top: 16px;
+	}
+
+	/* ------------// our wedding section style CSS //--------------*/
+	.our-wedding-section .load-more-btn {
+		margin-top: 65px;
+	}
+
+	/* ------------// choose section CSS //--------------*/
+	.choose-section .tabs .bottom-img {
+		max-width: 320px;
+		bottom: -125px;
+		right: -60px;
+	}
+
+	.choose-section .tabs .choose-tabs p {
+		padding-bottom: 30px;
+	}
+
+	/* ------------// wc error CSS //--------------*/
+	.wc-error .wc-error-content h2 {
+		font-size: 104px;
+		line-height: 104px;
+	}
+
+	.error-wrap {
+		max-width: 75px;
+	}
+
+	.testimonial-section-style-2 .testimonial-wrapper {
+		margin-left: 39px;
+	}
+
+	.heros-section .hero-main-wrapper {
+		margin-right: 15px;
+	}
+
+	.heros-section .hero-main-wrapper {
+		align-items: flex-start;
+	}
+
+}
+
+/* ------------// 991 Tablet Screen //--------------*/
+@media only screen and (max-width: 991px) {
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		width: 40px;
+		height: 40px;
+	}
+
+	.swiper-button-next svg,
+	.swiper-button-prev svg {
+		font-size: var(--font-size-b3) !important;
+	}
+
+	/* ------------// header CSS //--------------*/
+	body {
+    padding-top: 75px;
+}
+	.header ul.manu-bar {
+		display: none;
+	}
+
+	.header .mobile-menu-icon {
+		display: block;
+	}
+
+	.header .search-cart-bar li {
+		margin-left: 22px;
+	}
+
+	.header .search-cart-bar li:nth-child(2) {
+		display: none;
+	}
+
+	/* ------------// hero section CSS //--------------*/
+	.hero-section .hero-wrapper .hero-img .hero-sm {
+		max-width: 250px;
+	}
+
+	.hero-section .hero-wrapper .hero-content {
+		padding: 0;
+	}
+
+	/* ------------// wp about section style CSS  //--------------*/
+	.wp-about-section {
+		padding: 70px 0;
+	}
+
+	/* ------------// counts section style CSS //--------------*/
+	.counts .count-box h3 {
+		font-size: 45px;
+	}
+
+	/* ------------// latest blog section CSS //--------------*/
+	.latest-blog-section .title-wrapper p {
+		margin-top: 15px;
+		max-width: 100%;
+	}
+
+	.latest-blog-section .title-arrow-box {
+		align-items: center;
+		padding-bottom: 40px;
+		flex-direction: column;
+	}
+
+	/* ------------// events section CSS //--------------*/
+	.events-section .events-content .events-image {
+		gap: 90px;
+	}
+
+	.events-section .events-content .events-image .events-img.events-one {
+		padding: 25px 0 0 15px;
+	}
+
+	.events-section .events-content .events-image .events-img.events-three {
+		padding-left: 0;
+		padding-top: 60px;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-products {
+		margin-left: 67px;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-grid .events-title,
+	.Our-events-section .our-events-content .our-events-product .events-title {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-wrap {
+		max-width: 435px;
+	}
+
+	/* ------------// footer style 1 CSS //--------------*/
+	.footer .footer-wrapper .widget2 {
+		max-width: 100%;
+	}
+
+	.footer .footer-wrapper .widget2 {
+		padding-left: 30px;
+	}
+
+	/* ------------// wp about section CSS //--------------*/
+	.wp-about-section p {
+		padding-bottom: 30px;
+		font-size: 25px;
+		line-height: 40px;
+	}
+
+	.wp-about-section:before,
+	.wp-about-section:after,
+	.testimonials-section:before {
+		background-size: 130px;
+	}
+
+	.Our-events-section .our-events-content .our-events-main .btn {
+		margin-top: 0;
+	}
+
+	/* ------------//  Header style 2 CSS //--------------*/
+	header.header-type2 .search-cart-bar.menu-logo {
+		display: block;
+	}
+
+	.header-type2 .search-cart-bar a {
+		font-size: 0;
+	}
+
+	/* ------------//  header-type3 style CSS  //--------------*/
+	.header-type3 {
+		position: sticky;
+	}
+
+	.header-type3 .search-cart-bar a {
+		font-size: 0;
+	}
+
+	header.header-type3 .header-row {
+		padding: 12px 15px 12px;
+	}
+
+	.header .logo-content {
+		max-width: 100px;
+	}
+
+	header.header-type3 .header-row {
+		justify-content: space-between;
+		background: var(--color-primary);
+	}
+
+	.header-type3 .logo-content {
+		display: block;
+		max-width: 100px !important;
+	}
+
+	/* ------------//  testimonial section style CSS  //--------------*/
+	.testimonial-section {
+		margin: 12px 0 60px;
+	}
+
+	.testimonial-content {
+		padding: 25px;
+	}
+
+	.testimonial-content h4 {
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+
+	/* ------------//  blog detail right section style CSS  //--------------*/
+	.blog-detail-right {
+		max-width: 100%;
+		margin-top: 50px;
+	}
+
+	.blog-detail-right .blog-categories ul li::before {
+		left: 2px;
+	}
+
+	.blog-detail-right .blog-categories ul li {
+		padding-left: 24px;
+		font-size: var(--font-size-b2);
+	}
+.blog-slider.blog-grid {
+		padding: 0 0 10px;
+	}
+
+	.blog-slider.blog-grid .blog-box {
+		margin-bottom: 0;
+		   padding: 0 11px 31px;
+	}
+	
+
+	.blog-grid-section .style-3-title {
+		margin-bottom: 60px;
+	}
+
+	blockquote.wp-block-quote {
+		margin: 25px 0;
+		padding: 30px 20px 10px;
+	}
+
+	.events-detail-section .our-events-product .events-thumbnail.img-cover::before {
+		padding-top: 90%;
+	}
+
+	/* ------------//  about title style CSS  //--------------*/
+	.about-title {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.about-title .style-3-title {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	/* ------------//  team section style CSS  //--------------*/
+	.team-section.about-team-section .main-team-box {
+		padding: 45px 0 0;
+	}
+
+	/* ------------//  our latest news section style CSS  //--------------*/
+	.our-latest-news-section {
+		margin-bottom: 70px;
+	}
+
+	.our-latest-news-section .latest-news-slider .swiper {
+		padding: 50px 0 40px;
+	}
+
+	.our-latest-news-section .title-arrow-box .slider-arrow {
+		display: none;
+	}
+
+	.our-latest-news-section .latest-news-slider .slider-arrow {
+		display: flex;
+	}
+
+	.our-latest-news-section .title-arrow-box {
+		justify-content: center;
+		text-align: center;
+	}
+
+	/* ------------//  home hero section style CSS  //--------------*/
+	.home-hero-section .home-hero-content .main-title-content h1 {
+		font-size: 40px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+
+	.home-hero-section .home-hero-content .main-title-content p {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	/* ------------//  about section style CSS  //--------------*/
+	.about-section {
+		padding: 60px 0;
+	}
+
+	.about-content-wrapper {
+		margin-left: 40px;
+	}
+
+	.about-img-wrapper .bottom-img-border {
+		max-width: 240px;
+	}
+
+	/* ------------//  offer banner section style CSS  //--------------*/
+	.offer-banner-section .offer-banner-score {
+		margin-top: 45px;
+	}
+
+	.offer-banner-section .offer-banner-score p {
+		font-size: var(--font-size-b2);
+	}
+
+	.offer-banner-section .offer-banner-content p {
+		max-width: 100%;
+	}
+
+	.offer-banner-section .offer-banner-content h2 {
+		margin-bottom: 18px;
+		line-height: 33px;
+	}
+
+	/* ------------// faq section style-2 CSS  //--------------*/
+	.faq-section-style-2 .row {
+		align-items: center;
+	}
+
+	/* three layout start */
+	/* ------------// heros section CSS  //--------------*/
+	.heros-section,
+	.hero-main-content {
+		min-height: auto;
+	}
+
+	.heros-section .side-banner {
+		display: none;
+	}
+
+	.heros-section .hero-main-wrapper {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.style-three .hero-title {
+		margin-left: 30px;
+	}
+
+	.about-circle-text {
+		bottom: -140px;
+	}
+
+	.middle-row .first-row {
+		display: none;
+	}
+
+	.our-services-section .we-do-service {
+		margin-bottom: 20px;
+	}
+
+	/* ------------// footer style 2 section style CSS  //--------------*/
+	.footer-style-2 .footer-contact {
+		border-right: 0;
+	}
+
+	.footer-style-2 .footer-column ul li {
+		margin-right: 4px;
+	}
+
+	.footer-style-2 .footer-menu .menu li {
+		margin: 0 16px;
+	}
+
+	.wc-error .wc-error-content p {
+		max-width: 100%;
+	}
+
+	.term-condition-section .Terms-condition-content {
+		margin: 67px auto 78px;
+	}
+
+	.term-condition-section .Terms-condition-content .terms-title {
+		margin-bottom: 26px;
+	}
+
+	.term-condition-section .Terms-condition-content {
+		margin: 60px 0;
+	}
+
+	.faq-section-style-2 .style-2-title h2 {
+		margin-bottom: 15px;
+	}
+
+	.faq-section .faq-content {
+		margin: 45px auto;
+	}
+
+	.testimonial-section .main-testimonial-box {
+		margin-top: 92px;
+	}
+
+	.company-section .company-wrapper a img {
+		max-width: 100px;
+	}
+
+	.team-section .main-team-box {
+		padding: 73px 0 25px;
+	}
+
+	.team-section .main-team-box .team-content {
+		padding: 23px 15px 19px;
+		margin: 0 0 20px;
+	}
+
+	.team-details-section .team-details-wrapper {
+		margin-bottom: 25px;
+	}
+
+	.team-details-section .team-author-details h2 {
+		font-size: 30px;
+	}
+
+	.offer-banner-section {
+		padding: 400px 0 70px;
+	}
+
+	.footer-style-2 .footer-contact {
+		padding: 25px 42px;
+	}
+
+	.footer-style-2 .footer-menu .menu {
+		padding: 21px 0;
+		margin-top: 31px;
+	}
+
+	.footer-style-2 .footer-menu .menu li a {
+		font-size: 18px;
+	}
+
+	.heros-section .hero-main-wrapper {
+		margin-top: 83px;
+	}
+
+	.congratulations-section {
+		padding: 86px 0;
+	}
+
+	.congratulations-section .congratulations-content {
+		padding-left: 10px;
+		max-width: 400px;
+	}
+	.search-menu-bar{
+		justify-content: end;
+	}
+	.search-box .input-group{
+		padding: 10px;
+	}
+}
+
+/* ------------// Mobile Screen //--------------*/
+@media only screen and (max-width: 767px) {
+
+	/* ------------// header section style CSS //--------------*/
+	.header-row {
+		padding: 16px 15px;
+	}
+
+
+	/* ------------// hero section style CSS //--------------*/
+	.hero-section:before {
+		display: none;
+	}
+
+	.hero-section .hero-wrapper .hero-img .hero-main-img {
+		display: block;
+	}
+
+	.hero-section .hero-wrapper {
+		flex-direction: column;
+		gap: 150;
+	}
+
+	.hero-section .hero-wrapper .hero-content {
+		order: 2;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.hero-section .hero-wrapper .hero-img .hero-sm {
+		bottom: 0;
+		top: auto;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+
+	.hero-section .hero-wrapper .hero-content h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	/* ------------// latest blog section style CSS //--------------*/
+	.latest-blog-section {
+		padding: 120px 0;
+	}
+
+	.latest-blog-section:after {
+		background-size: 140px;
+	}
+
+	.latest-blog-section .slider-arrow {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.hero-circle-text {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		margin-top: 80px;
+	}
+
+	/* ------------// our events section style CSS //--------------*/
+	.Our-events-section .our-events-wrapper {
+		flex-direction: column;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-content p {
+		max-width: 100%;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	.Our-events-section .our-events-content .our-events-product .events-thumbnail img,
+	.Our-events-section .our-events-wrap .our-events-products .events-thumbnail img {
+		width: 100%;
+	}
+
+	.Our-events-section .our-events-content .our-events-product {
+		margin-bottom: 30px;
+	}
+
+	.Our-events-section .our-events-content .our-events-main .btn {
+		margin-top: 0;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-products,
+	.Our-events-section .our-events-wrap .our-events-p {
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-p p {
+		padding-bottom: 18px;
+		text-align: center;
+	}
+
+	.Our-events-section .our-events-content .our-events-main {
+		text-align: center;
+	}
+
+	.Our-events-section .our-events-wrap .our-events-products .events-title,
+	.Our-events-section .our-events-wrap .our-events-grid .events-title,
+	.Our-events-section .our-events-content .our-events-product .events-title {
+		margin: -20px auto 0;
+		font-size: var(--font-size-b3);
+		padding: 7px 28px;
+		line-height: 20px;
+	}
+
+	.Our-events-section .our-events-content h2 {
+		padding-bottom: 18px;
+		text-align: center;
+	}
+
+	.Our-events-section .our-events-wrap {
+		max-width: 100%;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-wrap {
+		max-width: 100%;
+	}
+
+	/* ------------// video section style CSS  //--------------*/
+	.video-section {
+		padding: 70px 0 55px;
+	}
+
+	.video-section .video-content h2 {
+		margin-bottom: 15px;
+	}
+
+	.video-section .video-content p {
+		max-width: 100%;
+	}
+
+	/* ------------// latest blog section style CSS //--------------*/
+	.latest-blog-section .title-arrow-box .title-wrapper {
+		text-align: center;
+		max-width: 100%;
+	}
+
+	/* ------------// testimonials section CSS //--------------*/
+	.testimonials-section {
+		padding: 80px 0;
+	}
+
+	.testimonials-section:before {
+		background-size: 100px;
+		bottom: 4%;
+	}
+
+	.testimonials-box {
+		gap: 45px;
+		flex-direction: column;
+	}
+
+	.testimonials-content {
+		max-width: 100%;
+		order: 2;
+	}
+
+	.testimonials-content .slider-arrow .swiper-button-prev,
+	.testimonials-content .slider-arrow .swiper-button-next {
+		width: 40px;
+		height: 40px;
+	}
+
+	.testimonials-content .slider-arrow svg {
+		font-size: var(--font-size-b2);
+	}
+
+	.testimonials-img {
+		max-width: 100%;
+	}
+
+	.testimonials-content .testimonials-content-wrapper {
+		text-align: center;
+	}
+
+	.testimonials-content .testimonials-content-wrapper p {
+		font-size: var(--font-size-b2);
+		padding-bottom: 28px;
+		text-align: center;
+	}
+
+	.testimonials-content .slider-arrow {
+		justify-content: center;
+	}
+
+	/* ------------// events section CSS //--------------*/
+	.events-section .events-title {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	.events-section .events-title h2.title,
+	.events-section .events-title p {
+		max-width: 100%;
+	}
+
+	/* ------------// wp about section style CSS  //--------------*/
+	.wp-about-section:before {
+		top: -6%;
+	}
+
+	.wp-about-section:after {
+		bottom: 5%;
+	}
+
+	.wp-about-content .wp-about-content-images-show p span.images-hover-3 img {
+		max-width: 110px;
+	}
+
+	/* ------------// footer section style CSS //--------------*/
+	.footer {
+		padding-top: 20px;
+	}
+
+	.footer:before {
+		background-size: 80px;
+	}
+
+	.footer .footer-wrapper .widget1,
+	.footer .footer-wrapper .widget2,
+	.footer .footer-wrapper .widget3 {
+		margin-bottom: 30px;
+	}
+
+	.footer .footer-wrapper .widget2 {
+		padding-left: 0;
+	}
+
+	.footer .wc-copyright {
+		padding: 20px 0;
+	}
+
+	.footer .wc-copyright .content,
+	.wc-copyright .content .contact-widgets {
+		text-align: center;
+	}
+
+	.wc-copyright .content .contact-widgets {
+		padding-top: 10px;
+	}
+
+	.footer .widget4 {
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer .footer-wrapper .widget4 form {
+		margin: 30px 0;
+	}
+
+	.footer .footer-wrapper .widget4 form input[type=email] {
+		width: 100%;
+	}
+
+	/* ------------// Header style 2 CSS //--------------*/
+	header.header-type2 .search-cart-bar.menu-logo li.mobile-menu-icon a:hover {
+		border: 1px solid var(--color-primary);
+	}
+
+	/* ------------// Header style 3 CSS //--------------*/
+	.back-button a {
+		font-size: var(--font-size-b3);
+	}
+
+	header.header-type3 .search-cart-bar li a img {
+		max-width: 22px;
+	}
+
+	.header-type3 .search-cart-bar li a:hover img {
+		filter: invert(97%) sepia(3%) saturate(0%) hue-rotate(222deg) brightness(102%) contrast(105%);
+	}
+
+	.header-type3 .search-cart-bar li.mobile-menu-icon a:hover {
+		border: 1px solid var(--color-white);
+	}
+
+	/* ------------// heros three section CSS //--------------*/
+	.heros-section .hero-main-wrapper {
+		flex-flow: column-reverse;
+		align-items: center;
+		margin: 60px 15px;
+		padding-bottom: 0;
+	}
+
+	.style-three .hero-title {
+		margin: 0;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.heros-section .hero-title h2.title {
+		margin-bottom: 20px;
+	}
+
+	.heros-section .hero-title p {
+		margin-bottom: 15px;
+		font-size: var(--font-size-b3);
+	}
+
+	.heros-section .hero-title .btn {
+		margin-top: 10px;
+	}
+
+	.heros-section .hero-title .text-circle-image {
+		display: none;
+	}
+
+	.heros-section .mobile-about {
+		display: block;
+		position: relative;
+	}
+
+	.heros-section .mobile-about:before {
+		content: '';
+		position: absolute;
+		background-image: url(../images/three-right.svg);
+		background-repeat: no-repeat;
+		background-position: left top;
+		bottom: 20px;
+		left: -65px;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background-size: 140px;
+	}
+
+	.heros-section .hero-main-wrapper:before {
+		display: none;
+	}
+
+	.about-circle-text {
+		max-width: inherit;
+		position: relative;
+		bottom: 0;
+		margin: 48px 0 41px;
+	}
+
+	.about-circle-text::before {
+		width: 80px;
+		height: 40px;
+	}
+
+	.about-circle-text h2 {
+		font-size: var(--font-size-b3);
+	}
+
+	/* ------------// pricing section style CSS //--------------*/
+	.pricing-section .pricing-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.pricing-section .price-card-bottom {
+		height: auto;
+	}
+
+	.pricing-section .price-card-bottom ul {
+		margin-bottom: 20px;
+	}
+
+	/* ------------// team details section style CSS //--------------*/
+	.team-details-section .team-details-wrapper .col-12.col-md-6 {
+		width: 100%;
+	}
+	.team-section.about-team-section{
+		    margin-bottom: 35px;
+	}
+
+	/* ------------// about wrapper section style CSS //--------------*/
+	.about-wrapper {
+		flex-direction: column;
+	}
+
+	.about-wrapper .about-left-images {
+		margin-right: 20px;
+	}
+
+	.main-about-content-box {
+		margin-top: 30px;
+	}
+
+	.main-about-content-box h2.title {
+		text-align: center;
+	}
+
+	.about-rigth-images {
+		max-width: 100%;
+		margin-top: 30px;
+	}
+
+	/* ------------// counts  section style CSS //--------------*/
+	.counts .count-box h3 {
+		font-size: 28px;
+	}
+
+	.counts .mt-5 {
+		margin-top: 20px !important;
+	}
+
+	/* ------------// instagram section style CSS //--------------*/
+	.instagram-section .testimonial-box .icon p {
+		font-size: 0;
+	}
+
+	/* ------------// about section style CSS //--------------*/
+	.about-section::before {
+		top: 3%;
+		background-size: 120px;
+	}
+
+	.about-content-wrapper {
+		margin-left: 0;
+		max-width: 100%;
+		margin-top: 35px;
+		text-align: center;
+	}
+
+	.about-img-wrapper .top-img {
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.about-img-wrapper .bottom-img-border {
+		max-width: 100%;
+		position: relative;
+		bottom: 0;
+		right: 0;
+	}
+
+	.about-content-wrapper p {
+		margin-bottom: 15px;
+	}
+
+	.video-section::before {
+		background-size: 80px;
+		top: -30%;
+	}
+
+	.wp-about-section:before,
+	.wp-about-section:after,
+	.video-section,
+	.latest-blog-section:before,
+	.latest-blog-section:after,
+	.testimonials-section:before,
+	.hero-section:after {
+		background-size: 80px;
+	}
+
+	/* ------------// offer banner section style CSS //--------------*/
+	.offer-banner-section .offer-banner-content {
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.offer-banner-section .offer-banner-score {
+		justify-content: center;
+		gap: 25px;
+	}
+
+	/* ------------// our wedding section style CSS //--------------*/
+	.our-wedding-section {
+		margin: 60px 0;
+	}
+
+	.style-two-title p {
+		max-width: 100%;
+	}
+
+	.our-wedding-section .style-two-title {
+		margin-bottom: 45px;
+	}
+
+	.our-wedding-section .our-product-box {
+		max-width: 100%;
+	}
+
+	.our-product-img {
+		margin: 55px 20px;
+	}
+
+	.our-wedding-section .load-more-btn {
+		margin-top: 40px;
+	}
+
+	/* ------------// testimonial section style 2 section CSS //--------------*/
+	.testimonial-section-style-2::before {
+		display: none;
+	}
+
+	.testimonial-section-style-2 .testimonial-wrapper {
+		flex-direction: column;
+		margin-left: 0;
+		gap: 40px;
+	}
+
+	.testimonial-section-style-2 .testimonial-wrapper .image-wrapper {
+		width: 100%;
+	}
+
+	.testimonial-section-style-2 .content-wrapper {
+		padding-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.testimonial-section-style-2 .content-wrapper h2.title {
+		font-size: 35px;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content {
+		margin-top: 25px;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content p {
+		margin-bottom: 28px;
+	}
+
+	.testimonial-section-style-2 .testimonial-wrapper .mySwiper2 .slider-arrow,
+	.testimonial-section-style-2 .testimonial-wrapper .mySwiper2 .slider-arrow {
+		justify-content: center;
+		width: 100%;
+	}
+
+	.testimonial-section-style-2 .content-wrapper .testimonial-content {
+		padding-bottom: 80px;
+	}
+
+	/* ------------// wc error style section CSS //--------------*/
+	.wc-error {
+		padding: 80px 0;
+	}
+
+	.wc-error-image,
+	.error-wrap.error-two,
+	.error-wrap.error-four {
+		display: none;
+	}
+
+	.error-wrap.error-five {
+		right: 0;
+		bottom: 0;
+	}
+
+	.error-wrap.error-three {
+		position: relative;
+		left: 22%;
+		bottom: -25px;
+	}
+
+	.wc-error .wc-error-content h2 {
+		font-size: 100px;
+		line-height: 110px;
+	}
+
+	.wc-error .wc-error-content h3 {
+		font-size: 20px;
+		line-height: 16px;
+		margin-bottom: 18px;
+	}
+
+	.wc-error .wc-error-content p {
+		max-width: 100%;
+		margin: auto auto 30px;
+	}
+
+	/* ------------// faq section style 2 CSS //--------------*/
+
+	.faq-section-style-2 {
+		margin: 60px 0;
+	}
+
+	.faq-section-style-2 .style-2-title {
+		text-align: center;
+	}
+
+
+	.faq-section-style-2 .faq-content {
+		margin: 0 !important;
+	}
+
+	.faq-section-style-2 .load-more-btn {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	/* ------------// blog page section style CSS //--------------*/
+	.blog-page-section .blog-wrap.middle-row div:nth-child(2) {
+		order: 3;
+	}
+
+	.blog-page-section .blog-image-box {
+		margin-bottom: 34px;
+	}
+
+	/* ------------// wp about wedding conten section style CSS //--------------*/
+	.wp-about-wedding-content {
+		max-width: 100%;
+		padding-left: 0;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.wp-about-wedding-section:before {
+		top: 56%;
+	}
+
+	/* ------------// our services section style CSS //--------------*/
+	.our-services-section {
+		margin: 60px 0;
+	}
+
+	.our-services-section .style-three-title p {
+		max-width: 100%;
+	}
+
+	.style-three-title {
+		margin-bottom: 40px;
+	}
+
+	/* ------------// congratulations section style CSS //--------------*/
+	.congratulations-section {
+		padding: 60px 0;
+	}
+
+	.congratulations-section .congratulations-sm {
+		display: block;
+	}
+
+	.congratulations-section .congratulations-content {
+		padding-left: 0;
+		margin-bottom: 45px;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.congratulations-section .congratulations-content h2.title {
+		font-size: 35px;
+	}
+
+	.congratulations-section:before {
+		display: none;
+	}
+
+	.congratulations-section .congratulations-sm::before {
+		padding-top: 55%;
+	}
+
+	.team-section.style-3 {
+		margin: 60px 0;
+	}
+
+	/* ------------// choose section style CSS //--------------*/
+	.choose-section {
+		margin-bottom: 60px;
+	}
+
+	.choose-section .tabs .tab-body,
+	.choose-section .tabs .choose-tabs {
+		width: 100%;
+	}
+
+	.choose-section .tabs {
+		flex-flow: column-reverse;
+		gap: 45px;
+	}
+
+	.choose-section .tabs .choose-tabs {
+		padding-left: 0;
+	}
+
+	.choose-section .site-wrapper h2.title {
+		margin-bottom: 18px;
+		text-align: center;
+	}
+
+	.choose-section .tabs .choose-tabs>ul li {
+		width: 100%;
+		margin: auto;
+	}
+
+	.choose-section .tabs .choose-tabs>ul li a {
+		padding: 12px 0;
+		font-size: var(--font-size-b2);
+		margin-bottom: 15px;
+	}
+
+	.choose-section .tabs .choose-tabs p {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.choose-section .tabs .bottom-img {
+		max-width: 100%;
+		bottom: 0;
+		right: 0;
+		position: relative;
+		margin-top: 15px;
+	}
+
+	/* ------------// counts section style CSS //--------------*/
+	.counts .mt-5 {
+		margin-top: 0 !important;
+	}
+
+	form#newsletter {
+		background: #F6F6F6;
+		max-width: 795px;
+		margin: 20px auto;
+		position: relative;
+		height: 520px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.counts .count-box {
+		margin-bottom: 30px;
+	}
+
+	/* ------------// services section style CSS //--------------*/
+	.services-section .title-arrow-box .title-wrapper p {
+		max-width: 100%;
+	}
+
+	.services-section .title-arrow-box {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	/* ------------// wc blog section style CSS //--------------*/
+	.wc-blog-section .title-arrow-box .slider-arrow {
+		display: none;
+	}
+
+	.wc-blog-section .services-slider .slider-arrow {
+		display: flex;
+	}
+
+	.blog-page-section:after {
+		top: 2%;
+	}
+
+	.blog-page-section .blog-image-box a {
+		margin: auto;
+	}
+
+	.blog-page-section .blog-image-box a:after {
+		background-size: 35px;
+	}
+
+	.blog-content-wrapper .blog-content h2 {
+		font-size: 26px;
+		padding-bottom: 12px;
+	}
+
+	.blog-content-wrapper .blog-content .blog-date p {
+		font-size: var(--font-size-b3);
+		padding-bottom: 12px;
+	}
+
+	.blog-content-wrapper .blog-content p {
+		font-size: var(--font-size-b3);
+	}
+
+	/* ------------// pricing section style CSS //--------------*/
+	.pricing-section .pricing-wrapper {
+		margin: 50px auto 45px;
+	}
+
+	/* ------------// contact page style CSS //--------------*/
+	.contact-section .contact-form,
+	.contact-section .contact-image img {
+		max-width: 100%;
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.testimonial-section .main-testimonial-box {
+		margin-top: 50px;
+	}
+
+	/* ------------// footer style 2 section CSS //--------------*/
+	.footer-style-2 .site-brand img {
+		max-width: 100px;
+	}
+
+	.footer-style-2 .footer-menu .menu li a {
+		font-size: var(--font-size-b3);
+	}
+
+	/* ------------// footer style 3 section CSS //--------------*/
+	.footer-three .footer-widget-about,
+	.footer-three .quick-wrapper,
+	.footer-three .contact-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.footer-bottom p,
+	.footer-bottom p a,
+	.footer-three .contact-wrapper p {
+		font-size: var(--font-size-b3);
+	}
+
+	.footer-bottom .wc-copyright,
+	.footer-bottom .copyright-menu {
+		text-align: center;
+	}
+
+	.company-section .company-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 48px;
+	}
+
+	.company-section .company-wrapper a:first-child,
+	.company-section .company-wrapper a:last-child {
+		text-align: center;
+	}
+
+	.team-section .main-team-box {
+		padding: 50px 0 16px;
+	}
+
+	.team-section {
+		margin-bottom: 60px;
+	}
+
+	.contact-section .contact_wrap {
+		margin-bottom: 15px;
+	}
+
+	.contact-section .contact-information-box {
+		max-width: 100%;
+		padding: 20px 20px;
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		text-align: left;
+	}
+
+	.contact-section .contact-information-box h2 {
+		padding: 0px 0 10px;
+	}
+
+	.contact-section .contact-information-box .icon img {
+		max-width: 30px;
+	}
+
+	.offer-banner-section {
+		background-image: url(../images/benner-2.png) !important;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: top center;
+	}
+
+	.offer-banner-section:before {
+		background: linear-gradient(12.46deg, rgba(0, 0, 0, 0.7) 0.78%, rgba(0, 0, 0, 0.7) 24.34%, rgba(0, 0, 0, 0.7) 48.91%, rgba(0, 0, 0, 0.2) 67.96%, rgba(0, 0, 0, 0) 97.04%);
+	}
+
+	.congratulations-section .congratulations-content h2.title {
+		font-size: 23px;
+		padding-bottom: 10px;
+	}
+	.search-box .input-group input{
+		    font-size: 14px;
+		        padding: 0 10px;
+	}
+}
+
+/* ------------// Mobile Screen //--------------*/
+@media only screen and (max-width: 575px) {
+
+	/* ------------// side bar content //--------------*/
+	.side-bar-content {
+		padding: 40px 20px 20px;
+	}
+
+	.side-bar-text-content ul li {
+		font-size: var(--font-size-b2);
+		line-height: 35px;
+	}
+
+	.side-menu li.bw_drop_down_wrap svg {
+		font-size: 14px;
+	}
+
+	.side-bar-content .logo-content {
+		padding-bottom: 15px;
+	}
+
+	/* ------------// header style CSS //--------------*/
+	.header .logo-content {
+		max-width: 70px;
+	}
+
+	.header .search-cart-bar li {
+		margin-left: 15px;
+	}
+
+	/* ------------// wp about section style CSS //--------------*/
+	.wp-about-section p {
+		font-size: 22px;
+		line-height: 36px;
+	}
+
+	.wp-about-images img {
+		max-width: 200px;
+	}
+
+	/* ------------// events section style CSS //--------------*/
+	.events-section .events-content .events-image {
+		gap: 15px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.events-section .events-content .events-image .events-img.events-one,
+	.events-section .events-content .events-image .events-img.events-two,
+	.events-section .events-content .events-image .events-img.events-three {
+		padding: 0;
+		width: 100%;
+	}
+
+	.events-section .events-content .events-image .events-img.events-one img,
+	.events-section .events-content .events-image .events-img.events-two img,
+	.events-section .events-content .events-image .events-img.events-three img {
+		width: 100%;
+	}
+
+	.Our-events-section .our-events-wrapper .our-events-wrap .our-events-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.Our-events-section .our-events-grid .events-thumbnail img {
+		width: 100%;
+	}
+
+	/* ------------// latest blog section style CSS //--------------*/
+	.latest-blog-section {
+		padding: 45px 0;
+	}
+
+	.latest-blog-section:before {
+		top: -5px;
+	}
+
+	.blog-grid-section .style-3-title {
+		margin-bottom: 25px;
+	}
+
+	.testimonials-content {
+		padding: 15px 0 0 0;
+		background-size: 55px;
+	}
+
+	/* ------------// footer section style CSS //--------------*/
+	.footer .footer-wrapper .widget1 {
+		text-align: center;
+	}
+
+	.footer .footer-wrapper {
+		padding-bottom: 40px;
+	}
+
+	.footer .footer-wrapper .widget1 img {
+		padding-bottom: 15px;
+	}
+
+	.footer .footer-wrapper p,
+	.footer .footer-wrapper p a {
+		font-size: var(--font-size-b3);
+	}
+
+	/* ------------// home hero section style 2 CSS //--------------*/
+	.home-hero-section .home-hero-content .main-title-content h1 {
+		font-size: 35px;
+	}
+
+	/* ------------// pricing section style CSS //--------------*/
+	.pricing-section .pricing-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.pricing-section .pricing-wrapper .price-card {
+		padding: 20px;
+	}
+
+	.pricing-section .pricing-wrapper .price-card h2 {
+		font-size: 30px;
+	}
+
+	.pricing-section .pricing-wrapper .price-card h3 {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+
+	.wc-blog-section .wc-blog-content h2 {
+		max-width: 100%;
+	}
+
+	/* ------------// events details wrap section style CSS //--------------*/
+	.events-wrap .count-box {
+		margin-bottom: 15px;
+	}
+
+	.events-wrap-description {
+		margin-bottom: 40px;
+	}
+
+	/* ------------// offer banner section style CSS //--------------*/
+	.offer-banner-section .offer-banner-score h3 {
+		font-size: 30px;
+	}
+
+	/* ------------// Wc error section CSS //--------------*/
+	.error-wrap {
+		max-width: 45px;
+	}
+
+	.events-wrap-description h3 {
+		font-size: 20px;
+	}
+
+	.events-wrap-description ul {
+		margin: 20px 0 20px;
+	}
+
+	/* ------------// footer style 2 section CSS //--------------*/
+	.footer-style-2 .footer-contact {
+		padding: 0;
+		border: 0;
+	}
+
+	.footer-style-2 .footer-column.footer-menu,
+	.footer-style-2 .footer-column.footer-email {
+		max-width: 100%;
+	}
+.footer-style-2 .footer-column {
+		margin-bottom: 45px;
+	}
+	.footer-style-2 .footer-column h2 {
+		font-size: 24px;
+	}
+	.footer-style-2 .footer-menu .menu {
+		margin-top: 0;
+	}
+
+	.footer-style-2 .footer-menu .menu li {
+		margin: 0 10px;
+	}
+
+	.footer-style-2 .footer-contact p {
+		margin-bottom: 10px;
+	}
+
+	form.footer-form input[type=submit] {
+		font-size: var(--font-size-b3);
+	}
+
+	.style-two-title {
+		margin-bottom: 40px;
+	}
+
+	/* ------------// heros three section CSS //--------------*/
+	.heros-section .mobile-about:before {
+		left: -25px;
+		    background-size: 110px;
+	}
+	.header-type3 .logo-content {
+    max-width: 80px !important;
+}
+
+	/* ------------// footer style 3 section CSS //--------------*/
+	.footer-three .footer-widget-about {
+		text-align: center;
+	}
+
+	.footer-widget-about .footer-logo {
+		margin: auto;
+	}
+
+	.footer-three ul.header-social {
+		justify-content: center;
+	}
+
+	.footer-three .quick-wrapper ul li a {
+		font-size: var(--font-size-b3);
+	}
+
+	.term-condition-section .Terms-condition-content {
+		margin: 40px 0;
+	}
+
+	.post-footer-tag {
+		gap: 10px;
+	}
+
+	.offer-banner-section {
+		padding: 250px 0 40px;
+	}
+
+	.wp-about-wedding-section:before {
+		top: 35%;
+	}
+	.search-box{
+		    width: 95%;
+	}
+	.search-box .input-group img.object-cover.search_img{
+		width: 20%;
+		height: 70%;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+
+	/* ------------// pricing section style CSS //--------------*/
+	.pricing-section .pricing-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+/* ------------// End media-css //--------------*/

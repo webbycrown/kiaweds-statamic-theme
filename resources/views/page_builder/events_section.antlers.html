@@ -1,0 +1,62 @@
+
+    <!-- Start wc events section -->
+    <section class="wc-events-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="style-3-title">
+                        <h2 class="title">{{ title }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="our-events-grid">
+                <!-- row -->
+                <div class="row">
+                {{ if collections == "our_events" }}
+                {{ collection:our_events as="our_events" paginate="{paginate}" limit="{limit}" }}
+
+                {{ /if }}
+                    <div class="row grid">
+                        {{ our_events }}
+                    <!-- column -->
+                        <div class="col-12 col-md-6 grid-item">
+                            <div class="our-events-product">
+                                <div class="events-thumbnail img-cover">
+                                    <a href="/events/{{slug}}">{{ image }}<img src="{{ url }}" alt="events img" class="object-cover">{{ /image }}</a>
+                                    {{ if video_url }}
+                                    <div class="video-play">
+                                        <a class="popup-vimeo" href='{{ theme:asset }}{{ video_url }}'><i class="fa-solid fa-play"></i></a>
+                                    </div>
+                                    {{ /if }}
+                                </div>
+                                <h3 class="events-title">
+                                    <a href="/events/{{slug}}">{{ title }}</a>
+                                </h3>
+                            </div>
+                        </div>
+                    {{ /our_events }}
+                    </div>
+                    
+                    {{ paginate }}
+                    <input type="hidden" class="lastPage" value="{{ total_pages }}">
+                    {{ if next_page }}
+                    <div class="load-more-btn load-more-wrap">
+                        <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                            Load More
+                            <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                        </a>
+                    </div>
+                    {{ /if }}
+                    {{ /paginate }}
+                   
+                {{ if collections == "our_events" }}
+                {{ /collection:our_events }}
+                {{ /if }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact section -->

@@ -1,0 +1,58 @@
+ <!-- start our services section -->
+    <section class="our-services-section our-services-single">
+        <!-- container -->
+        <div class="container">
+             <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="style-3-title">
+                        <h2 class="title">{{ title }}</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                {{ if collections == "our_services" }}
+
+                {{ collection:our_services as="our_services" paginate="{paginate}" limit="{limit}" }}
+
+                {{ /if }}
+                 <div class="row grid">
+                    {{ our_services }}
+                    <!-- column -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-4 grid-item">
+                        <div class="we-do-service">
+                            <div class="services-img img-cover">
+                                <a href="/services/{{ slug }}">{{ image }}<img src="{{ url }}" alt="services" class="object-cover">{{ /image }}</a>
+                            </div>
+                            <div class="services-info">
+                                <a href="/services/{{ slug }}">
+                                    {{ service_icon }}<img src="{{ url }}" alt="icon" class="object-cover">{{ /service_icon }}
+                                    <h3>{{ title }}</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /our_services }}
+                </div>
+                {{ paginate }}
+                <input type="hidden" class="lastPage" value="{{ total_pages }}">
+                {{ if next_page }}
+                <div class="load-more-btn load-more-wrap">
+                    <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
+                        Load More
+                        <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                    </a>
+                </div>
+                {{ /if }}
+                {{ /paginate }}
+                   
+                {{ if collections == "our_services" }}
+                {{ /collection:our_services }}
+                {{ /if }}
+           
+            </div>
+        </div>
+    </section>
+    <!-- End our servicess section -->

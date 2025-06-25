@@ -1,0 +1,31 @@
+title: 'Reveal About Section'
+fields:
+  -
+    handle: hover_images
+    field:
+      max_files: 3
+      min_files: 1
+      container: assets
+      type: assets
+      display: 'Hover Images'
+  -
+    handle: description
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: Description
+      sets:
+        images:
+          display: Images
+          sets:
+            images:
+              display: Images
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    min_files: 1
+                    container: assets
+                    type: assets
+                    display: Image

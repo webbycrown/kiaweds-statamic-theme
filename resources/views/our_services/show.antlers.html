@@ -1,0 +1,145 @@
+    <!-- Start back button -->
+    <div class="back-button">
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12 p-0">
+                    <a href="/blog-detail-with-sidebar"><img src="{{ theme:asset }}assets/images/back.svg" alt="back-btn" class="object-cover">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close back button -->
+
+    <!-- Start latest blog section -->
+    <section class="blog-grid-section blog-detail-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- Blog grid title -->
+                    <div class="style-3-title">
+                        <h2 class="title">{{ title }}</h2>
+                    </div>
+                    <!-- Project slider -->
+                    <div class="blog-slider blog-standard-single">
+                        <!-- blog-box -->
+                        <div class="blog-box">
+                            <div class="blog-img img-cover">
+                                <a href="javascript:;">{{ image }}<img src="{{ url }}" alt="services-img" class="object-cover">{{ /image }}</a>
+                            </div>
+                            
+                            <div class="blog-content">
+                                {{ description }}
+
+                                {{ if  type ==  'heading' }}
+                                <h3>{{ text }}</h3>
+                                {{ /if }}
+
+                                {{ if type == "text" }}
+                                <p>{{ text }}</p>
+                                {{ /if }} 
+
+                                {{ if type == "blockquote" }}
+                                <blockquote class="wp-block-quote">{{ blockquote }}</blockquote>
+                                {{ /if }}
+
+                                {{ lists }}
+                                <ul>
+                                    <li><i class="fa fa-check"></i>
+                                        <p>{{ point }}</p>
+                                    </li>
+                                </ul>
+                                {{ /lists }}
+
+
+                                {{ if type == "gallery_images" }}
+
+                                <div class="row mt-md-3 mb-md-5">
+                                    {{ gallery_images }}
+                                    {{ if index == 0 }}
+                                    <!-- First two images in one column -->
+                                    <div class="col-12 col-md-6">
+                                        <div class="raid_main">
+                                            {{ /if }}
+
+                                            {{ if index < 2 }}
+                                            <div class="modal-img">
+                                                <a href="javascript:;"><img src="{{ url }}" alt="modal-img" class="object-cover"></a>
+                                            </div>
+                                            {{ /if }}
+
+                                            {{ if index == 1 }}
+                                        </div> <!-- .raid_main -->
+                                    </div> <!-- .col -->
+                                    {{ /if }}
+
+                                    {{ if index == 2 }}
+                                    <!-- Third image in second column -->
+                                    <div class="col-12 col-md-6">
+                                        <div class="modal-img">
+                                            <a href="javascript:;"><img src="{{ url }}" alt="modal-img" class="object-cover"></a>
+                                        </div>
+                                    </div>
+                                    {{ /if }}
+                                    {{ /gallery_images }}
+                                </div>
+                                {{ /if }}
+
+
+                                {{ /description }}
+
+                                
+                                <!-- post footer tag-->
+                                <div class="post-footer-tag">
+                                    <!-- post footer tag -->
+                                    <div class="post-tag">
+                                        {{ event }}
+                                        <a href="/events/{{slug}}">{{ title }}</a>
+                                        {{ /event }}
+                                    </div>
+                                    <!-- post footer social -->
+                                    <div class="post-social">
+                                         <ul>
+                                            {{ socials }}
+                                            {{ if name == 'facebook' }}<li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
+                                            {{ if name == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
+                                            {{ if name == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
+                                            {{ if name == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
+                                            {{ /socials }}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Related Blogs -->
+                    <div class="related-blogs our-services-section">
+                        <h2 class="title">Related Services</h2>
+                        <div class="row">
+                        {{ related_event limit="4" }}
+                        <!-- column --> 
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-4">
+                            <div class="we-do-service">
+                                <div class="services-img img-cover">
+                                    <a href="/services/{{ slug }}">{{ image }}<img src="{{ url }}" alt="services" class="object-cover">{{ /image }}</a>
+                                </div>
+                                <div class="services-info">
+                                    <a href="/services/{{ slug }}">
+                                        {{ service_icon }}<img src="{{ url }}" alt="icon" class="object-cover">{{ /service_icon }}
+                                        <h3>{{ title }}</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {{ /related_event }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End latest blog section -->

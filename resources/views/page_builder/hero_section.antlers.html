@@ -1,0 +1,29 @@
+ {{ if is_homepage }}
+ <section class="hero-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="hero-wrapper">
+                        <!-- hero content -->
+                        <div class="hero-content">
+                           {{ description }}
+                            <a href="/" class="btn btn-primary">Explore Wedding</a>
+                        </div>
+                        <!-- hero img -->
+                        <div class="hero-img">
+                            <div class="hero-main-img">
+                               {{ image1 }} <img src="{{ url }}" alt="hero-main-img" class="object-cover">{{ /image1 }}
+                            </div>
+                            <div class="hero-sm img-cover">
+                                {{ image2 }}<img src="{{ url }}" alt="hero-sm-img" class="object-cover">{{ /image2 }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ /if }}

@@ -1,0 +1,51 @@
+title: 'Hero Section'
+fields:
+  -
+    handle: description
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: Description
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - h1
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - small
+        - superscript
+        - subscript
+        - code
+        - codeblock
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+  -
+    handle: image_1
+    field:
+      max_files: 1
+      min_files: 1
+      container: assets
+      type: assets
+      display: 'Image 1'
+  -
+    handle: image_2
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image 2'

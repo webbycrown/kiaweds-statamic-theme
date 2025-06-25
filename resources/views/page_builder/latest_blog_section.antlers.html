@@ -1,0 +1,62 @@
+{{ if is_homepage }}
+
+<!-- Start latest blog section -->
+<section class="latest-blog-section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<!-- column -->
+			<div class="col-12">
+				<!-- title wrapper -->
+				<div class="title-arrow-box">
+					<div class="title-wrapper">
+						<h2 class="title">{{ section_title }}</h2>
+						<p>{{ description }}</p>
+					</div>
+					<div class="slider-arrow">
+						<div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+						<div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+					</div>
+				</div>
+				<!-- Project slider -->
+				<div class="blog-slider">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+
+							{{ if collections == "blog" }}
+							{{ collection:blog as="blog" paginate="{paginate}" limit="{limit}" }}
+
+							{{ /if }}
+							{{ blog }}
+							<!-- swiper slide -->
+							<div class="swiper-slide">
+								<div class="blog-box">
+									<div class="blog-img img-cover">
+										< <a href="/blog/{{slug}}"> {{ image }}<img src="{{ url }}" alt="blog-img" class="object-cover">{{ /image }}</a>
+										<div class="date-project-btn">
+											<p class="date">{{ updated_at format="d" }}</p>
+											<p class="day">{{ updated_at format="F" }}</p>
+										</div>
+									</div>
+									<div class="blog-content">
+										<h3><a href="/blog/{{slug}}"> {{ title }}</a></h3>
+										<p>{{ short_description }}</p>
+										<a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+									</div>
+								</div>
+							</div>
+							{{ /blog }}
+							{{ if collections == "blog" }}
+							{{ /collection:blog }}
+							{{ /if }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End latest blog section -->
+
+{{ /if }}

@@ -1,0 +1,7 @@
+title: 'Back Button Section'
+fields:
+  -
+    handle: url
+    field:
+      type: text
+      display: url
