@@ -1536,7 +1536,7 @@ Start Responsive CSS
 		padding: 15px 0;
 	}
 
-	.post-footer-tag .post-tag a {
+	.post-footer-tag .post-tag a, .post-category-tag a  {
 		padding: 10px 19px;
 		font-size: 16px;
 	}
@@ -1756,6 +1756,9 @@ Start Responsive CSS
 
 	.our-services-section .load-more-btn {
 		margin-top: 48px;
+	}
+	.we-do-service .services-info a {
+	    min-height: 80px;
 	}
 
 	/* ------------// team section style 3 CSS //--------------*/
@@ -4005,6 +4008,9 @@ Start Responsive CSS
 		width: 20%;
 		height: 70%;
 	}
+	.we-do-service .services-info a {
+        min-height: auto;
+    }
 }
 
 @media only screen and (max-width: 420px) {

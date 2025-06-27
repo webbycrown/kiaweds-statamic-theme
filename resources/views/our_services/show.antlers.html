@@ -5,7 +5,7 @@
             <div class="row">
                 <!-- column -->
                 <div class="col-12 p-0">
-                    <a href="/blog-detail-with-sidebar"><img src="{{ theme:asset }}assets/images/back.svg" alt="back-btn" class="object-cover">Back</a>
+                    <a href="/"><img src="{{ theme:asset }}assets/images/back.svg" alt="back-btn" class="object-cover">Back</a>
                 </div>
             </div>
         </div>
@@ -31,6 +31,15 @@
                             <div class="blog-img img-cover">
                                 <a href="javascript:;">{{ image }}<img src="{{ url }}" alt="services-img" class="object-cover">{{ /image }}</a>
                             </div>
+
+                            <div class="post-footer-tag">
+                                <!-- post footer tag -->
+                                <div class="post-tag">
+                                    {{ category }}
+                                    <a href="/services/category/{{slug}}">{{ title }}</a>
+                                    {{ /category }}
+                                </div>
+                            </div>
                             
                             <div class="blog-content">
                                 {{ description }}
@@ -47,13 +56,13 @@
                                 <blockquote class="wp-block-quote">{{ blockquote }}</blockquote>
                                 {{ /if }}
 
-                                {{ lists }}
                                 <ul>
+                                {{ lists }}
                                     <li><i class="fa fa-check"></i>
                                         <p>{{ point }}</p>
                                     </li>
-                                </ul>
                                 {{ /lists }}
+                                </ul>
 
 
                                 {{ if type == "gallery_images" }}
@@ -97,17 +106,17 @@
                                 <div class="post-footer-tag">
                                     <!-- post footer tag -->
                                     <div class="post-tag">
-                                        {{ event }}
-                                        <a href="/events/{{slug}}">{{ title }}</a>
-                                        {{ /event }}
+                                         {{ tag }}
+                                        <a href="/services?tag={{slug}}">{{ title }}</a>
+                                        {{ /tag }}
                                     </div>
                                     <!-- post footer social -->
                                     <div class="post-social">
                                          <ul>
                                             {{ socials }}
-                                            {{ if name == 'facebook' }}<li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
+                                            {{ if name == 'facebook' }}<li><a href="{{ url }}sharer/sharer.php?u={{config:app.url}}/services/{{ slug }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
                                             {{ if name == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
-                                            {{ if name == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
+                                            {{ if name == 'twitter' }}<li><a href="{{ url }}?url={{config:app.url}}/blog/{{ slug }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
                                             {{ if name == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
                                             {{ /socials }}
                                         </ul>

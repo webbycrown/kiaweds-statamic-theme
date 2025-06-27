@@ -19,11 +19,11 @@ socials:
   -
     id: mc4fmtrz
     name: twitter
-    url: 'https://x.com/'
+    url: 'https://twitter.com/intent/tweet'
 related_blog:
   - ef2a3cf1-16d8-4d13-9e17-79d1c805d0aa
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745823
+updated_at: 1750939010
 seo_title: 'This Influencer Recreated 3 Celebrity Bridal Looks Bang On!'
 seo_description: 'This Influencer Recreated 3 Celebrity Bridal Looks Bang On!'
 seo_image: 'images/Kia Weds OG Image.png'
@@ -33,14 +33,14 @@ description:
     content:
       -
         type: text
-        text: 'Ever dreamed of walking down the aisle channeling your favorite Bollywood diva? This influencer didn’t just dream — she delivered! With stunning precision and a keen eye for detail, she recreated three iconic celebrity bridal looks that had us all doing a double take.'
+        text: 'Ever dreamed of walking down the aisle channeling your favorite Bollywood diva? This influencer didn’t just dream she delivered! With stunning precision and a keen eye for detail, she recreated three iconic celebrity bridal looks that had us all doing a double take.'
   -
     type: set
     attrs:
       id: mc4gdkur
       values:
         type: blockquote
-        blockquote: '"It wasn’t about imitation — it was about inspiration. Each look was a tribute to the grace, confidence, and individuality that define modern brides."'
+        blockquote: '"It wasn’t about imitation it was about inspiration. Each look was a tribute to the grace, confidence, and individuality that define modern brides."'
   -
     type: paragraph
     content:
@@ -62,7 +62,7 @@ description:
     content:
       -
         type: text
-        text: 'Each recreated look wasn’t just about the attire — it captured the essence of the bride behind the original moment. Here’s what stood out:'
+        text: 'Each recreated look wasn’t just about the attire it captured the essence of the bride behind the original moment. Here’s what stood out:'
   -
     type: set
     attrs:
@@ -75,10 +75,10 @@ description:
             point: 'Recreated Deepika Padukone’s regal red Sabyasachi ensemble to perfection.'
           -
             id: mc4gfcbv
-            point: 'Brought Anushka Sharma’s soft pastel elegance back to life — complete with minimal makeup and floral jewelry.'
+            point: 'Brought Anushka Sharma’s soft pastel elegance back to life complete with minimal makeup and floral jewelry.'
           -
             id: mc4gfhkb
-            point: 'Captured the bold spirit of Priyanka Chopra’s crimson wedding look — from statement necklace to sheer veil.'
+            point: 'Captured the bold spirit of Priyanka Chopra’s crimson wedding look from statement necklace to sheer veil.'
           -
             id: mc4gfp37
             point: 'Matched backdrop settings and poses for an authentic side-by-side comparison.'
@@ -90,10 +90,14 @@ description:
     content:
       -
         type: text
-        text: "This is more than a trend — it’s a movement of brides choosing to honor styles they admire while making them uniquely their own. Whether you're a fan of classic elegance or contemporary flair, one thing’s for sure — this influencer nailed it, and inspired a generation of brides in the process."
-short_description: 'From timeless glam to contemporary chic, see how this talented influencer flawlessly recreated iconic celebrity bridal looks — and how you can get the style too.'
+        text: "This is more than a trend it’s a movement of brides choosing to honor styles they admire while making them uniquely their own. Whether you're a fan of classic elegance or contemporary flair, one thing’s for sure this influencer nailed it, and inspired a generation of brides in the process."
+short_description: 'From timeless glam to contemporary chic, see how this talented influencer flawlessly recreated iconic celebrity bridal looks and how you can get the style too.'
 category:
   - photoshoot
   - reception
   - wedding
+tag:
+  - engagement
+  - photoshoot
+  - pre-wedding
 ---

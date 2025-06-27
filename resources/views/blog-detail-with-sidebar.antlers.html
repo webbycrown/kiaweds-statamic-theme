@@ -42,6 +42,16 @@
                                     <p class="day">{{ updated_at format="F" }}</p>
                                 </div>
                             </div>
+
+                            <div class="post-footer-tag post-category-footer">
+                                <!-- post footer tag -->
+                                <div class="post-category-tag">
+                                    {{ category }}
+                                    <a href="/blog/category/{{slug}}">{{ title }}</a>
+                                    {{ /category }}
+                                </div>
+                            </div>
+
                             <!-- blog-content -->
                             <div class="blog-content">
                                 <h3><a href="/blog/{{ slug }}">{{ title }}</a></h3>
@@ -60,13 +70,13 @@
                                 <blockquote class="wp-block-quote">{{ blockquote }}</blockquote>
                                 {{ /if }}
 
-                                {{ lists }}
                                 <ul>
+                                {{ lists }}
                                     <li><i class="fa fa-check"></i>
                                         <p>{{ point }}</p>
                                     </li>
-                                </ul>
                                 {{ /lists }}
+                                </ul>
 
 
                                 {{ if type == "gallery_images" }}
@@ -108,19 +118,19 @@
                                 <div class="post-footer-tag">
                                     <!-- post footer tag -->
                                     <div class="post-tag">
-                                        {{ category }}
-                                        <a href="/photography">{{ title }}</a>
-                                        {{ /category }}
+                                         {{ tag }}
+                                        <a href="/blog?tag={{slug}}">{{ title }}</a>
+                                        {{ /tag }}
                                     </div>
                                     <!-- post footer social -->
                                     <div class="post-social">
                                         <ul>
-                                            {{ socials }}
-                                            {{ if name == 'facebook' }}<li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
-                                            {{ if name == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
-                                            {{ if name == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
-                                            {{ if name == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
-                                            {{ /socials }}
+                                           {{ socials }}
+                                         {{ if name == 'facebook' }}<li><a href="{{ url }}sharer/sharer.php?u={{ current_url }}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
+                                         {{ if name == 'youtube' }}<li><a href="{{ url }}" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
+                                         {{ if name == 'twitter' }}<li><a href="{{ url }}?url={{ current_url }}" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
+                                         {{ if name == 'instagram' }}<li><a href="{{ url }}" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
+                                         {{ /socials }}
                                         </ul>
                                     </div>
                                 </div>

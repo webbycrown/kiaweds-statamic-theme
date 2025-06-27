@@ -5,7 +5,7 @@ title: 'Wedding Planner Website Templates'
 template: home
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750852179
+updated_at: 1750919666
 seo_title: 'Wedding Planner Website Templates'
 seo_description: 'Wedding Planner Website Templates'
 seo_image: 'images/Kia Weds OG Image.png'
@@ -29,7 +29,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We specialize in crafting unforgettable wedding experiences that reflect your unique style and love story. From intimate gatherings to grand celebrations, our expert planning ensures every detail is flawless — from the first impression to the final farewell.'
+            text: 'We specialize in crafting unforgettable wedding experiences that reflect your unique style and love story. From intimate gatherings to grand celebrations, our expert planning ensures every detail is flawless  from the first impression to the final farewell.'
       -
         type: paragraph
         attrs:
@@ -93,7 +93,7 @@ page_builder:
         content:
           -
             type: text
-            text: ' — bold, modern, and full of personality.'
+            text: ' bold, modern, and full of personality.'
     type: reveal_about_section
     enabled: true
   -
@@ -125,13 +125,13 @@ page_builder:
 
       With a passion for creating bespoke experiences, we tailor each event to reflect your unique style, ensuring a truly personal celebration.
     description2: |-
-      Our approach combines vision with expertise—turning ideas into breathtaking realities. We design, manage, and deliver each event with heart and precision.
+      Our approach combines vision with expertise turning ideas into breathtaking realities. We design, manage, and deliver each event with heart and precision.
       Whether it's an intimate gathering or a grand celebration, our team transforms spaces and moments into lasting impressions.
     collections: our_events
   -
     id: mc8y2nnb
     section_title: 'Latest Blog & News'
-    description: 'Stay updated with our latest stories, expert tips, and inspiring event highlights. We share insights that matter most to your big day — from planning guides to real wedding inspiration.'
+    description: 'Stay updated with our latest stories, expert tips, and inspiring event highlights. We share insights that matter most to your big day from planning guides to real wedding inspiration.'
     collections: blog
     limit: 5
     type: latest_blog_section

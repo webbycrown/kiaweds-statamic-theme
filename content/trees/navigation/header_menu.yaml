@@ -12,6 +12,14 @@ tree:
     title: 'Our Services'
     url: /services
   -
+    id: ff426315-7905-412d-b5da-0b42f8b769f7
+    title: 'Our Events'
+    url: /events
+  -
+    id: 78fd0251-cdfd-41ae-9d16-7a8daa58c60c
+    title: Photography
+    url: /photography
+  -
     id: b5efb9da-9ca7-478c-94bf-6ada7c9e4291
     title: Blog
     url: /blog
@@ -53,14 +61,6 @@ tree:
         id: c568a6d4-6162-41e8-a045-dcf869111bfb
         title: 'Our Services'
         url: /services
-      -
-        id: ff426315-7905-412d-b5da-0b42f8b769f7
-        title: 'Our Events'
-        url: /events
-      -
-        id: 78fd0251-cdfd-41ae-9d16-7a8daa58c60c
-        title: Photography
-        url: /photography
       -
         id: e8370c57-31d7-4b98-a496-4376edd44f25
         title: Testimonial

@@ -2,8 +2,8 @@
 id: ca8d0d6f-2ca3-448a-a213-d1587a1177aa
 blueprint: our_service
 title: 'Photo &Video Graphy'
-image: images/services-3.png
-service_icon: images/s-icon-3.svg
+image: 'images/Photo & Video Graphy.jpg'
+service_icon: 'images/Photo &Video graphy.svg'
 event:
   - 763a69b8-1a89-4d6c-ad46-d119e990d27b
   - ae910f28-f630-421a-b22e-fdce58a35505
@@ -14,7 +14,7 @@ seo_title: 'Photo &Video graphy'
 seo_description: 'Photo &Video graphy'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750766649
+updated_at: 1751004439
 description:
   -
     type: heading
@@ -29,14 +29,14 @@ description:
     content:
       -
         type: text
-        text: 'Your special day deserves to be remembered in every detail — from the joyful tears to the spontaneous laughter. Our professional photography and videography services ensure that every magical moment is captured with clarity, creativity, and care.'
+        text: 'Your special day deserves to be remembered in every detail from the joyful tears to the spontaneous laughter. Our professional photography and videography services ensure that every magical moment is captured with clarity, creativity, and care.'
   -
     type: set
     attrs:
       id: mc4bsd21
       values:
         type: blockquote
-        blockquote: '"We don''t just take pictures — we tell your story through the lens, preserving emotions that words can''t express."'
+        blockquote: '"We don''t just take pictures we tell your story through the lens, preserving emotions that words can''t express."'
   -
     type: paragraph
     content:
@@ -58,7 +58,7 @@ description:
     content:
       -
         type: text
-        text: 'We offer both photography and videography packages tailored to your needs — including pre-wedding shoots, wedding ceremonies, receptions, and highlight reels with professional editing and audio.'
+        text: 'We offer both photography and videography packages tailored to your needs including pre-wedding shoots, wedding ceremonies, receptions, and highlight reels with professional editing and audio.'
   -
     type: paragraph
   -
@@ -88,7 +88,7 @@ description:
     content:
       -
         type: text
-        text: 'Let us help you turn fleeting moments into timeless treasures. Whether it’s a lavish celebration or an intimate gathering, our lens is focused on one thing — capturing your story, beautifully.'
+        text: 'Let us help you turn fleeting moments into timeless treasures. Whether it’s a lavish celebration or an intimate gathering, our lens is focused on one thing capturing your story, beautifully.'
 socials:
   -
     id: mc4d4fcd
@@ -106,4 +106,12 @@ socials:
     id: mc4d4oms
     name: twitter
     url: 'https://x.com/'
+category:
+  - engagement
+  - pre-wedding
+  - videography
+tag:
+  - reception
+  - photoshoot
+  - groom
 ---

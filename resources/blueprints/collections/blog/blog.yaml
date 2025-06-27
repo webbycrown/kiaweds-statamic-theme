@@ -70,6 +70,14 @@ tabs:
                                   type: text
                                   display: Point
           -
+            handle: tag
+            field:
+              mode: select
+              taxonomies:
+                - tag_blog
+              type: terms
+              display: Tag
+          -
             handle: category
             field:
               mode: select

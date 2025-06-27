@@ -73,6 +73,10 @@ $(document).ready(function () {
     $(".search-cart-bar .search-btn a").click(function () {
         // $('body').addClass("bg-1");
         $(".search-box").addClass("open");
+
+        setTimeout(function () {
+            $("#site-search-input").focus();
+        }, 200);
     });
 
     $(".search-box .close-search-log").click(function () {
@@ -529,6 +533,14 @@ $(document).ready(function () {
       pageNum = parseInt(urlParams.get('page')) || 1;
     }
 
+
+    const appEnv = document.querySelector('meta[name="app-env"]')?.getAttribute('content');
+      if (appEnv === 'production') {
+        if (nextPageUrl && nextPageUrl.startsWith("http:")) {
+          nextPageUrl = nextPageUrl.replace(/^http:/, "https:");
+        }
+      }
+
     $button.find('img').removeClass('d-none');
 
     if (!nextPageUrl) {
@@ -593,6 +605,13 @@ $(document).ready(function () {
         return;
     }
 
+    const appEnv = document.querySelector('meta[name="app-env"]')?.getAttribute('content');
+    if (appEnv === 'production') {
+        if (nextPageUrl && nextPageUrl.startsWith("http:")) {
+            nextPageUrl = nextPageUrl.replace(/^http:/, "https:");
+        }
+    }
+
     $button.prop('disabled', true).addClass('loading');
 
     $.ajax({
@@ -645,7 +664,7 @@ $(document).ready(function () {
 $(document).on('keyup','#blog-search-input', function () {
     const query = $(this).val();
     if( currentPage == 'blog-detail-with-sidebar' ){
-        window.location.href = blogPageRedirect+'?search='+query;
+        window.location.href = blogPageRedirect+'?s='+query;
     }
 
       $.ajax({
@@ -718,14 +737,15 @@ $(document).on('keyup','#blog-search-input', function () {
 
     if(currentPage == 'blog'){
         const params = new URLSearchParams(window.location.search);
-        const searchValue = params.get('search');
+        const searchValue = params.get('s');
+        const tag = params.get('tag');
 
-        if( searchValue != 'null' && searchValue != null ) {
+        if( (searchValue != 'null' && searchValue != null) || ( tag != 'null' && tag != null ) ) {
 
             $.ajax({
-                url: searchUrl,
+                url: blogSearchUrl,
                 type: 'GET',
-                data: { q: searchValue },
+                  data: { q: searchValue , tag:tag },
                 success: function (data) {
                     let html = '';
 
@@ -752,6 +772,99 @@ $(document).on('keyup','#blog-search-input', function () {
 
                     $('.blog_search').html(html);
                     $('.wc-blog-section').find('.load-more-btn').remove();
+                }
+            });
+        }
+
+    }
+
+
+    if(currentPage == 'services'){
+        const params = new URLSearchParams(window.location.search);
+        const searchValue = params.get('s');
+        const tag = params.get('tag');
+
+        if( (searchValue != 'null' && searchValue != null) || ( tag != 'null' && tag != null ) ) {
+
+            $.ajax({
+                url: servicesSearchUrl,
+                type: 'GET',
+                  data: { q: searchValue , tag:tag },
+                success: function (data) {
+                    let html = '';
+
+                    if (data.length === 0) {
+                        html = '<div class="services_search"><p class="text-center fw-bold fs-5">Oops! No blogs here right now.</p></div>';
+                    } else {
+                        data.forEach(function (item) {
+
+                            html += `
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-4 grid-item">
+                                <div class="we-do-service">
+                                <div class="services-img img-cover">
+                                <a href="/services/${item.slug}">${item.image ? `<img src="${item.image}" alt="service-img" class="object-cover">` : ''}</a>
+                                </div>
+                                <div class="services-info">
+                                <a href="/services/${item.slug}">
+                                ${item.service_icon ? `<img src="${item.service_icon}" alt="icon" class="object-cover">` : ''}
+
+                                <h3>${ item.title }</h3>
+                                </a>
+                                </div>
+                                </div>
+                                </div>`;
+                        });
+                    }
+
+                    $('.services_search').html(html);
+                    $('.our-services-section').find('.load-more-btn').remove();
+                }
+            });
+        }
+
+    } 
+
+    if(currentPage == 'events'){
+        const params = new URLSearchParams(window.location.search);
+        const searchValue = params.get('s');
+        const tag = params.get('tag');
+
+        if( (searchValue != 'null' && searchValue != null) || ( tag != 'null' && tag != null ) ) {
+
+            $.ajax({
+                url: eventsSearchUrl,
+                type: 'GET',
+                  data: { q: searchValue , tag:tag },
+                success: function (data) {
+                    let html = '';
+
+                    if (data.length === 0) {
+                        html = '<div class="events_search"><p class="text-center fw-bold fs-5">Oops! No blogs here right now.</p></div>';
+                    } else {
+                        data.forEach(function (item) {
+
+                            html += `
+                            <div class="col-12 col-md-6 grid-item">
+                            <div class="our-events-product">
+                            <div class="events-thumbnail img-cover">
+                            <a href="/events/${item.slug}">${item.image ? `<img src="${item.image}" alt="events-img" class="object-cover">` : ''}</a>
+                            ${ item.video_url ?
+                            `<div class="video-play">
+                            <a class="popup-vimeo" href='${item.video_url}'><i class="fa-solid fa-play"></i></a>
+                            </div>`
+                            : ''
+                            }
+                            </div>
+                            <h3 class="events-title">
+                            <a href="/events/${item.slug}">${item.title}</a>
+                            </h3>
+                            </div>
+                            </div>`;
+                        });
+                    }
+
+                    $('.events_search').html(html);
+                    $('.our-services-section').find('.load-more-btn').remove();
                 }
             });
         }
@@ -804,6 +917,7 @@ $(document).on('keyup','#blog-search-input', function () {
     const $resultBox = $('#combined-search-results');
     const $loader = $('#search-loader');
     const $svg = $('#search-loader svg');
+    const $viewAllBtns = $('.toggle-view-btn');
     let angle = 0;
     let rotateInterval;
 
@@ -825,7 +939,7 @@ $(document).on('keyup','#blog-search-input', function () {
             e.preventDefault();
             const query = $.trim($input.val());
             if (query.length > 0) {
-                window.location.href = `/blog?search=${encodeURIComponent(query)}`;
+                window.location.href = `/blog?s=${encodeURIComponent(query)}`;
             }
         }
     });
@@ -839,9 +953,15 @@ $(document).on('keyup','#blog-search-input', function () {
             $resultBox.html('').removeClass('show');
             $loader.addClass('d-none');
             $resultBox.addClass('d-none');
+            $viewAllBtns.each(function () {
+                const type = $(this).data('type');
+                $(this).attr('href', `/${type}?s=`);
+            });
             $('.search-menu-bar').css('overflow', 'visible');
             return;
         }
+
+       
 
         $loader.removeClass('d-none');
 
@@ -853,6 +973,16 @@ $(document).on('keyup','#blog-search-input', function () {
                 success: function (html) {
                     $resultBox.removeClass('d-none');
                     $resultBox.html(html).addClass('show');
+
+
+                     $('.toggle-view-btn').each(function () {
+                    const type = $(this).data('type');
+                    if (type) {
+                        $(this).attr('href', `/${type}?s=${encodeURIComponent(query)}`);
+                        $(this).attr('data-query', query);
+                    }
+                });
+
                 },
                 error: function () {
                     $resultBox.html('<p class="text-red-600">Error loading results.</p>').addClass('show');
@@ -875,69 +1005,69 @@ $(document).on('keyup','#blog-search-input', function () {
     });
 
 
-    $(document).on('click', '.toggle-view-btn', function () {
-        const $btn = $(this);
-        const type = $btn.data('type');
-        const query = $btn.data('query');
+    // $(document).on('click', '.toggle-view-btn', function () {
+    //     const $btn = $(this);
+    //     const type = $btn.data('type');
+    //     const query = $btn.data('query');
 
-    // Match the list container by type
-        const $list = $(`#${type}-list`);
+    // // Match the list container by type
+    //     const $list = $(`#${type}-list`);
 
-    // Handle collapse (show less)
-        if ($btn.data('expanded')) {
-            const cached = $btn.data('initial-items');
-            if (Array.isArray(cached)) {
-                const html = cached.slice(0, 5).map(item => `
-                <li>
-                    <div class="img-cover">${item.image.url ? `<img src="${item.image.url}" alt="logo">` : ''}</div>
-                    <a href="${item.url}">${item.title}</a>
-                </li>
-                `).join('');
-                $list.html(html);
-            }
+    // // Handle collapse (show less)
+    //     if ($btn.data('expanded')) {
+    //         const cached = $btn.data('initial-items');
+    //         if (Array.isArray(cached)) {
+    //             const html = cached.slice(0, 5).map(item => `
+    //             <li>
+    //                 <div class="img-cover">${item.image.url ? `<img src="${item.image.url}" alt="logo">` : ''}</div>
+    //                 <a href="${item.url}">${item.title}</a>
+    //             </li>
+    //             `).join('');
+    //             $list.html(html);
+    //         }
 
-        // Update button text
-            const label = type === 'blog' ? 'Blog' : (type === 'our_events' ? 'Event' : 'Services');
-            $btn.text(`View All`);
-            $btn.data('expanded', false);
-            return;
-        }
+    //     // Update button text
+    //         const label = type === 'blog' ? 'Blog' : (type === 'our_events' ? 'Event' : 'Services');
+    //         $btn.text(`View All`);
+    //         $btn.data('expanded', false);
+    //         return;
+    //     }
 
-    // Expanded: load all
-        $.ajax({
-            url: '/ajax-search-careers-insights',
-            method: 'GET',
-            data: {
-                q: query,
-                type: type,
-                full: 1
-            },
-            success: function (data) {
-                const items = data[type];
-                if (!Array.isArray(items) || items.length === 0) {
-                    $list.html('<li>No results found.</li>');
-                    return;
-                }
+    // // Expanded: load all
+    //     $.ajax({
+    //         url: '/ajax-search-careers-insights',
+    //         method: 'GET',
+    //         data: {
+    //             q: query,
+    //             type: type,
+    //             full: 1
+    //         },
+    //         success: function (data) {
+    //             const items = data[type];
+    //             if (!Array.isArray(items) || items.length === 0) {
+    //                 $list.html('<li>No results found.</li>');
+    //                 return;
+    //             }
 
-            // Cache original items
-                $btn.data('initial-items', items);
+    //         // Cache original items
+    //             $btn.data('initial-items', items);
 
-            // Generate full HTML
-                const html = items.map(item => `
-                <li>
-                    <div class="img-cover">${item.image.url ? `<img src="${item.image.url}" alt="logo">` : ''}</div>
-                    <a href="${item.url}">${item.title}</a>
-                </li>
-                `).join('');
-                $list.html(html);
-                const label = type === 'blog' ? 'Blog' : (type === 'our_events' ? 'Event' : 'Services');
-                $btn.text(`Show Less`);
-                $btn.data('expanded', true);
-            },
-            error: function () {
-                $list.html('<li class="text-danger">Something went wrong. Try again.</li>');
-            }
-        });
-    });
+    //         // Generate full HTML
+    //             const html = items.map(item => `
+    //             <li>
+    //                 <div class="img-cover">${item.image.url ? `<img src="${item.image.url}" alt="logo">` : ''}</div>
+    //                 <a href="${item.url}">${item.title}</a>
+    //             </li>
+    //             `).join('');
+    //             $list.html(html);
+    //             const label = type === 'blog' ? 'Blog' : (type === 'our_events' ? 'Event' : 'Services');
+    //             $btn.text(`Show Less`);
+    //             $btn.data('expanded', true);
+    //         },
+    //         error: function () {
+    //             $list.html('<li class="text-danger">Something went wrong. Try again.</li>');
+    //         }
+    //     });
+    // });
 
 });

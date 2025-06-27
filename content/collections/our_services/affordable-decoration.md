@@ -2,8 +2,8 @@
 id: 518b4284-5234-481f-8ac7-78d377fc5861
 blueprint: our_service
 title: 'Affordable Decoration'
-image: images/services-4.png
-service_icon: images/s-icon-4.svg
+image: 'images/Affordable Decoration.jpg'
+service_icon: 'images/Affordable Decoration.svg'
 event:
   - 8ffcaca3-e1cc-4eae-95da-e23c9dd55ee1
   - 763a69b8-1a89-4d6c-ad46-d119e990d27b
@@ -16,7 +16,7 @@ seo_title: 'Affordable Decoration'
 seo_description: 'Affordable Decoration'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745977
+updated_at: 1751004348
 description:
   -
     type: heading
@@ -31,7 +31,7 @@ description:
     content:
       -
         type: text
-        text: 'Transform your venue into a stunning celebration space — beautifully decorated to match your vision and budget. Our affordable decoration services combine creativity, elegance, and smart planning to deliver a premium experience at a reasonable price.'
+        text: 'Transform your venue into a stunning celebration space beautifully decorated to match your vision and budget. Our affordable decoration services combine creativity, elegance, and smart planning to deliver a premium experience at a reasonable price.'
   -
     type: set
     attrs:
@@ -44,7 +44,7 @@ description:
     content:
       -
         type: text
-        text: "Whether you're planning a wedding, birthday, corporate event, or intimate gathering, we provide thoughtfully curated décor that enhances your event without unnecessary cost. From themed table setups and floral arrangements to ambient lighting and stage design — we’ve got it all covered."
+        text: "Whether you're planning a wedding, birthday, corporate event, or intimate gathering, we provide thoughtfully curated decor that enhances your event without unnecessary cost. From themed table setups and floral arrangements to ambient lighting and stage design we’ve got it all covered."
   -
     type: set
     attrs:
@@ -61,8 +61,6 @@ description:
       -
         type: text
         text: 'Our expert decorators focus on detail, ensuring every element complements your overall theme while staying within your budget. We offer flexible packages to suit different event sizes, styles, and preferences.'
-  -
-    type: paragraph
   -
     type: set
     attrs:
@@ -90,7 +88,7 @@ description:
     content:
       -
         type: text
-        text: 'We believe in making your celebration magical — not stressful. Let our team of creative decorators bring your event to life with unique, stylish, and affordable décor solutions tailored just for you.'
+        text: 'We believe in making your celebration magical not stressful. Let our team of creative decorators bring your event to life with unique, stylish, and affordable decor solutions tailored just for you.'
 socials:
   -
     id: mc4d1ub9
@@ -108,4 +106,12 @@ socials:
     id: mc4d22th
     name: twitter
     url: 'https://x.com/'
+category:
+  - anniversary
+  - photoshoot
+  - pre-wedding
+tag:
+  - pre-wedding
+  - wedding
+  - reception
 ---

@@ -23,14 +23,14 @@ personal_experience:
     content:
       -
         type: text
-        text: 'Throughout my career, I’ve encountered numerous experiences—each contributing to my depth of knowledge and adaptability. Whether navigating high-pressure environments or curating unforgettable guest experiences, I have remained committed to innovation, detail, and quality.'
+        text: 'Throughout my career, I’ve encountered numerous experiences each contributing to my depth of knowledge and adaptability. Whether navigating high-pressure environments or curating unforgettable guest experiences, I have remained committed to innovation, detail, and quality.'
   -
     type: set
     attrs:
       id: mc8l5frc
       values:
         type: highlighted_quote
-        quote: "“Excellence is not a skill—it's an attitude, and I bring that mindset to everything I do.”"
+        quote: "“Excellence is not a skill it's an attitude, and I bring that mindset to everything I do.”"
   -
     type: paragraph
 closing_paragraph: 'True professionalism is revealed not in moments of comfort, but in how we handle challenges with integrity and resilience. While it’s easy to be tempted by fleeting success or short-term gratification, lasting impact is built through dedication, responsibility, and a commitment to values that stand the test of time. Those who persevere through adversity with purpose are the ones who shape meaningful change.'
@@ -55,7 +55,7 @@ skills:
     enabled: true
 experience_image: images/experince-img.png
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750746289
+updated_at: 1750920017
 seo_title: 'Ivana Tinkle'
 seo_description: 'Ivana Tinkle'
 seo_image: 'images/Kia Weds OG Image.png'

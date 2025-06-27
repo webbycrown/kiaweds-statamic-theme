@@ -33,7 +33,7 @@ personal_experience:
         quote: '“If you’re telling a story through a lens, make sure it’s one worth remembering.”'
   -
     type: paragraph
-closing_paragraph: 'True artistry lies in the ability to see beauty where others may not. While fleeting trends come and go, Brian’s work stands the test of time—anchored in emotion, clarity, and purpose. His journey reminds us that passion, paired with perseverance, can turn a simple click into a powerful legacy.'
+closing_paragraph: 'True artistry lies in the ability to see beauty where others may not. While fleeting trends come and go, Brian’s work stands the test of time anchored in emotion, clarity, and purpose. His journey reminds us that passion, paired with perseverance, can turn a simple click into a powerful legacy.'
 skills:
   -
     id: mc8lfggi
@@ -55,7 +55,7 @@ skills:
     enabled: true
 experience_image: images/team-two.png
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750746266
+updated_at: 1750919959
 seo_title: 'Brian Baker'
 seo_description: 'Brian Baker'
 seo_image: 'images/Kia Weds OG Image.png'

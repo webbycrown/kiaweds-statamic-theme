@@ -12,7 +12,7 @@ seo_title: 'Wedding Reception'
 seo_description: 'Wedding Reception'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745919
+updated_at: 1750920277
 location: 'LaneBrooklyn NY, USA'
 description:
   -
@@ -28,7 +28,7 @@ description:
     content:
       -
         type: text
-        text: "Your reception is more than just a party—it's a reflection of your love story. From stylish décor to seamless coordination, we help you craft an event that feels personal and polished. Our team takes care of every detail so you can focus on making memories with family and friends."
+        text: "Your reception is more than just a party it's a reflection of your love story. From stylish décor to seamless coordination, we help you craft an event that feels personal and polished. Our team takes care of every detail so you can focus on making memories with family and friends."
   -
     type: paragraph
     content:

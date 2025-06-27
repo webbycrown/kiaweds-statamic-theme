@@ -13,7 +13,7 @@ seo_title: Engagement
 seo_description: Engagement
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745932
+updated_at: 1750920347
 description:
   -
     type: heading
@@ -34,7 +34,7 @@ description:
     content:
       -
         type: text
-        text: 'From elegant décor and personalized styling to seamless coordination, every detail is curated with care. We help create an ambiance full of romance, joy, and celebration—so you can focus on creating memories with your loved ones.'
+        text: 'From elegant décor and personalized styling to seamless coordination, every detail is curated with care. We help create an ambiance full of romance, joy, and celebration so you can focus on creating memories with your loved ones.'
   -
     type: paragraph
     content:
@@ -70,6 +70,6 @@ description:
     content:
       -
         type: text
-        text: 'Celebrate your engagement in style—where love, elegance, and joyful moments come together in perfect harmony. Let’s make your "yes" moment truly unforgettable.'
+        text: 'Celebrate your engagement in style where love, elegance, and joyful moments come together in perfect harmony. Let’s make your "yes" moment truly unforgettable.'
 location: 'LaneBrooklyn NY, USA'
 ---

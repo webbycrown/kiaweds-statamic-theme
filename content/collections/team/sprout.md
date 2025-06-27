@@ -5,7 +5,7 @@ title: Sprout
 position: Photographer
 image:
   - images/team-six.png
-short_bio: 'Sprout captures more than just images—he captures emotion, energy, and essence. With a creative eye and a deep love for storytelling through visuals, he brings moments to life through his lens.'
+short_bio: 'Sprout captures more than just images he captures emotion, energy, and essence. With a creative eye and a deep love for storytelling through visuals, he brings moments to life through his lens.'
 phone_numbers:
   1: '+23 2698 364511'
 email: contact@Ivanatinkle.com
@@ -16,7 +16,7 @@ personal_experience:
     content:
       -
         type: text
-        text: "From behind the camera, Sprout has chronicled countless stories—whether it's a fleeting expression at a wedding, the perfect light during golden hour, or a carefully composed product shoot. His career is built on the ability to see the extraordinary in the everyday."
+        text: "From behind the camera, Sprout has chronicled countless stories whether it's a fleeting expression at a wedding, the perfect light during golden hour, or a carefully composed product shoot. His career is built on the ability to see the extraordinary in the everyday."
   -
     type: paragraph
     content:
@@ -28,7 +28,7 @@ personal_experience:
     content:
       -
         type: text
-        text: 'Sprout’s portfolio speaks volumes: vibrant, dynamic, and authentic. It’s not just about taking photos—it’s about preserving memory, emotion, and identity through visual language.'
+        text: 'Sprout’s portfolio speaks volumes: vibrant, dynamic, and authentic. It’s not just about taking photos it’s about preserving memory, emotion, and identity through visual language.'
   -
     type: set
     attrs:
@@ -38,7 +38,7 @@ personal_experience:
         quote: '“If you’re going to capture a moment, make sure it lasts forever.”'
   -
     type: paragraph
-closing_paragraph: 'Sprout doesn’t just take photographs—he creates experiences that live beyond the shutter click. His work evokes, moves, and stays with you. Driven by curiosity and grounded in professionalism, he’s not only a photographer, but a visual narrator committed to excellence.'
+closing_paragraph: 'Sprout doesn’t just take photographs he creates experiences that live beyond the shutter click. His work evokes, moves, and stays with you. Driven by curiosity and grounded in professionalism, he’s not only a photographer, but a visual narrator committed to excellence.'
 skills:
   -
     id: mc8lykxf
@@ -60,7 +60,7 @@ skills:
     enabled: true
 experience_image: images/team-six.png
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750746333
+updated_at: 1750920107
 seo_title: Sprout
 seo_description: Sprout
 seo_image: 'images/Kia Weds OG Image.png'

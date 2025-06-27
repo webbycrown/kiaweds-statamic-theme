@@ -12,7 +12,7 @@ seo_title: 'Wedding Decorating'
 seo_description: 'Wedding Decorating'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745952
+updated_at: 1750920302
 location: 'LaneBrooklyn NY, USA'
 description:
   -
@@ -34,7 +34,7 @@ description:
     content:
       -
         type: text
-        text: "Whether you're dreaming of a classic, modern, rustic, or whimsical theme, our decorators craft stunning visuals using high-quality materials, creative concepts, and seamless coordination. We handle everything—from ceremony arches and aisle runners to centerpieces and backdrops—with flair and precision."
+        text: "Whether you're dreaming of a classic, modern, rustic, or whimsical theme, our decorators craft stunning visuals using high-quality materials, creative concepts, and seamless coordination. We handle everything from ceremony arches and aisle runners to centerpieces and backdrops with flair and precision."
   -
     type: paragraph
     content:
@@ -70,5 +70,5 @@ description:
     content:
       -
         type: text
-        text: 'Make your special day even more magical with our expert decorating team. We bring creativity, elegance, and attention to detail—turning ordinary spaces into extraordinary wedding venues.'
+        text: 'Make your special day even more magical with our expert decorating team. We bring creativity, elegance, and attention to detail turning ordinary spaces into extraordinary wedding venues.'
 ---

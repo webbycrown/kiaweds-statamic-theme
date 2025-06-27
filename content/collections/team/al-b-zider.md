@@ -5,7 +5,7 @@ title: 'Al B. Zider'
 position: Videographer
 image:
   - images/team-seven.png
-short_bio: 'Al B. Zider turns motion into emotion. With an instinct for framing stories and a passion for immersive visuals, he captures not just video—but visceral experience. His lens is where creativity and clarity meet.'
+short_bio: 'Al B. Zider turns motion into emotion. With an instinct for framing stories and a passion for immersive visuals, he captures not just video but visceral experience. His lens is where creativity and clarity meet.'
 phone_numbers:
   1: '+23 2698 364511'
 email: contact@Ivanatinkle.com
@@ -16,7 +16,7 @@ personal_experience:
     content:
       -
         type: text
-        text: 'From commercial shoots to creative documentaries, Al has spent years crafting compelling video content that speaks beyond the screen. His expertise lies in understanding rhythm, tone, and atmosphere—elements that transform simple footage into cinematic stories.'
+        text: 'From commercial shoots to creative documentaries, Al has spent years crafting compelling video content that speaks beyond the screen. His expertise lies in understanding rhythm, tone, and atmosphere elements that transform simple footage into cinematic stories.'
   -
     type: paragraph
     content:
@@ -28,7 +28,7 @@ personal_experience:
     content:
       -
         type: text
-        text: 'His video narratives are more than visuals—they’re experiences that resonate and endure.'
+        text: 'His video narratives are more than visuals they’re experiences that resonate and endure.'
   -
     type: set
     attrs:
@@ -38,7 +38,7 @@ personal_experience:
         quote: '“If you’re going to use a passage of Lorem Ipsum, make sure it isn’t hiding anything embarrassing in the middle.”'
   -
     type: paragraph
-closing_paragraph: 'Al B. Zider creates more than content—he creates connection. Guided by purpose and polished by practice, he balances technical mastery with human storytelling. He doesn’t just capture the moment—he builds a moving story that stays with you long after the screen fades to black.'
+closing_paragraph: 'Al B. Zider creates more than content he creates connection. Guided by purpose and polished by practice, he balances technical mastery with human storytelling. He doesn’t just capture the moment he builds a moving story that stays with you long after the screen fades to black.'
 skills:
   -
     id: mc8m2317
@@ -60,7 +60,7 @@ skills:
     enabled: true
 experience_image: images/team-seven.png
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750746261
+updated_at: 1750919911
 seo_title: 'Al B. Zider'
 seo_description: 'Al B. Zider'
 seo_image: 'images/Kia Weds OG Image.png'

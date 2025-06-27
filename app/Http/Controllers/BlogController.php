@@ -11,16 +11,23 @@ use Illuminate\Support\Facades\Validator;
 
 class BlogController extends Controller
 {
-   public function search(Request $request)
-   {   
+    public function search(Request $request){   
         // Get the search keyword from the request
-    $query = $request->get('q');
+        $query = $request->get('q');
+        $tag = $request->get('tag');
 
-        // Query blog entries from the 'blog' collection matching the title
-    $entries = Entry::query()
-    ->where('collection', 'blog')
-    ->where(fn($q) => $q->where('title', 'like', "%$query%")
-            ->orWhere('slug', 'like', "%$query%"))
+                    // Query blog entries from the 'blog' collection matching the title
+        $entries = Entry::query()
+        ->where('collection', 'blog')
+        ->when(!empty($tag), function ($q) use ($tag) {
+                        $q->where('tag', 'like', "%$tag%"); // or ->whereJsonContains('tags', $tag)
+                    })
+        ->when($query, function ($q) use ($query) {
+            $q->where(function ($subQuery) use ($query) {
+                $subQuery->where('title', 'like', "%{$query}%")
+                ->orWhere('slug', 'like', "%{$query}%");
+            });
+        })
             ->orderBy('updated_at', 'desc') // Sort results by last updated
             ->get()
             ->map(function ($entry) {
@@ -97,5 +104,86 @@ class BlogController extends Controller
             'our_services' => $our_services,
             'query' => $query,
         ]);
+    }
+
+     public function servicesSearch(Request $request){   
+        // Get the search keyword from the request
+        $query = $request->get('q');
+        $tag = $request->get('tag');
+
+                    // Query blog entries from the 'blog' collection matching the title
+        $entries = Entry::query()
+        ->where('collection', 'our_services')
+        ->when(!empty($tag), function ($q) use ($tag) {
+                        $q->where('tag', 'like', "%$tag%"); // or ->whereJsonContains('tags', $tag)
+                    })
+        ->when($query, function ($q) use ($query) {
+            $q->where(function ($subQuery) use ($query) {
+                $subQuery->where('title', 'like', "%{$query}%")
+                ->orWhere('slug', 'like', "%{$query}%");
+            });
+        })
+            ->orderBy('updated_at', 'desc') // Sort results by last updated
+            ->get()
+            ->map(function ($entry) {
+                $image = $entry->get('image'); // Get image field (can be array of asset IDs)
+                $service_icon = $entry->get('service_icon'); // Get image field (can be array of asset IDs)
+                return [
+                    'title' => $entry->get('title'),
+                    'slug' => $entry->slug(),
+                    'url' => $entry->url(),
+                    // Convert asset paths to public URLs
+                    'image' =>  collect($image)->map(function ($asset) {
+                        return url('assets/'.$asset);
+                    })->toArray(), 
+                    'service_icon' =>  collect($service_icon)->map(function ($asset) {
+                        return url('assets/'.$asset);
+                    })->toArray(),
+                    // Format the updated date
+
+                    'updated_at' => Carbon::createFromTimestamp($entry->get('updated_at'))->format('F j, Y'),
+                ];
+            });
+
+        return response()->json($entries);  // Return as JSON response
+    }
+
+    public function eventsSearch(Request $request){   
+        // Get the search keyword from the request
+        $query = $request->get('q');
+        $tag = $request->get('tag');
+
+                    // Query blog entries from the 'blog' collection matching the title
+        $entries = Entry::query()
+        ->where('collection', 'our_events')
+        ->when(!empty($tag), function ($q) use ($tag) {
+                        $q->where('tag', 'like', "%$tag%"); // or ->whereJsonContains('tags', $tag)
+                    })
+        ->when($query, function ($q) use ($query) {
+            $q->where(function ($subQuery) use ($query) {
+                $subQuery->where('title', 'like', "%{$query}%")
+                ->orWhere('slug', 'like', "%{$query}%");
+            });
+        })
+            ->orderBy('updated_at', 'desc') // Sort results by last updated
+            ->get()
+            ->map(function ($entry) {
+                $image = $entry->get('image'); // Get image field (can be array of asset IDs)
+                return [
+                    'title' => $entry->get('title'),
+                    'video_url' => $entry->get('video_url Url'),
+                    'slug' => $entry->slug(),
+                    'url' => $entry->url(),
+                    // Convert asset paths to public URLs
+                    'image' =>  collect($image)->map(function ($asset) {
+                        return url('assets/'.$asset);
+                    })->toArray(),
+                    // Format the updated date
+
+                    'updated_at' => Carbon::createFromTimestamp($entry->get('updated_at'))->format('F j, Y'),
+                ];
+            });
+
+        return response()->json($entries);  // Return as JSON response
     }
 }

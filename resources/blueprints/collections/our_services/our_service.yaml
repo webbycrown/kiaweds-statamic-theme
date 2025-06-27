@@ -106,6 +106,22 @@ tabs:
                   field:
                     type: text
                     display: Url
+          -
+            handle: category
+            field:
+              mode: select
+              taxonomies:
+                - blog_category
+              type: terms
+              display: Category
+          -
+            handle: tag
+            field:
+              mode: select
+              taxonomies:
+                - tag_blog
+              type: terms
+              display: Tag
   sidebar:
     display: Sidebar
     sections:

@@ -5,7 +5,7 @@ title: 'Russell Sprout'
 position: 'Event Planner'
 image:
   - images/team-four.png
-short_bio: 'Russell Sprout brings visions to life with precision, creativity, and unmatched energy. With a flair for organizing seamless, memorable events, he turns every occasion—big or small—into an unforgettable experience for guests and clients alike.'
+short_bio: 'Russell Sprout brings visions to life with precision, creativity, and unmatched energy. With a flair for organizing seamless, memorable events, he turns every occasion big or small into an unforgettable experience for guests and clients alike.'
 phone_numbers:
   1: '+23 2698 364511'
 email: contact@Ivanatinkle.com
@@ -22,7 +22,7 @@ personal_experience:
     content:
       -
         type: text
-        text: 'Known for his meticulous attention to detail, he ensures that every aspect—from venue to lighting to guest flow—is executed flawlessly. He works closely with clients to understand their goals and infuses each event with meaning, emotion, and innovation.'
+        text: 'Known for his meticulous attention to detail, he ensures that every aspect from venue to lighting to guest flow is executed flawlessly. He works closely with clients to understand their goals and infuses each event with meaning, emotion, and innovation.'
   -
     type: paragraph
     content:
@@ -38,7 +38,7 @@ personal_experience:
         quote: "“If you're going to craft a memory, make sure it’s the kind they’ll talk about for years.”"
   -
     type: paragraph
-closing_paragraph: 'In an industry where timing, aesthetics, and communication matter most, Russell stands out by mastering them all. His events don’t just impress—they inspire. With Russell Sprout at the helm, every celebration becomes a reflection of excellence, vision, and joy.'
+closing_paragraph: 'In an industry where timing, aesthetics, and communication matter most, Russell stands out by mastering them all. His events don’t just impress they inspire. With Russell Sprout at the helm, every celebration becomes a reflection of excellence, vision, and joy.'
 skills:
   -
     id: mc8ln2i9
@@ -60,7 +60,7 @@ skills:
     enabled: true
 experience_image: images/team-four.png
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750746328
+updated_at: 1750920088
 seo_title: 'Russell Sprout'
 seo_description: 'Russell Sprout'
 seo_image: 'images/Kia Weds OG Image.png'

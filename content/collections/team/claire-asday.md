@@ -22,7 +22,7 @@ personal_experience:
     content:
       -
         type: text
-        text: 'Driven by both artistic expression and technical excellence, Claire brings precision and emotion to every production. Her work is not just about video — it’s about translating ideas into powerful moving images that resonate.'
+        text: 'Driven by both artistic expression and technical excellence, Claire brings precision and emotion to every production. Her work is not just about video it’s about translating ideas into powerful moving images that resonate.'
   -
     type: paragraph
     content:
@@ -38,13 +38,13 @@ personal_experience:
         quote: '“When sharing written content, always ensure it’s been carefully reviewed to avoid including anything inappropriate or out of context.”'
   -
     type: paragraph
-closing_paragraph: "Claire's approach is defined by integrity, dedication, and a belief in the power of visual media to drive meaningful impact. While challenges are inevitable, she embraces them with professionalism and creative resilience. For Claire, videography isn’t just a craft — it’s a commitment to telling stories that matter, with clarity and heart."
+closing_paragraph: "Claire's approach is defined by integrity, dedication, and a belief in the power of visual media to drive meaningful impact. While challenges are inevitable, she embraces them with professionalism and creative resilience. For Claire, videography isn’t just a craft it’s a commitment to telling stories that matter, with clarity and heart."
 experience_image: images/team15.png
 seo_title: 'Claire Asday'
 seo_description: 'Claire Asday'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750746282
+updated_at: 1750920000
 skills:
   -
     id: mc8p896l

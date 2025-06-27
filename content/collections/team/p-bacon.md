@@ -16,7 +16,7 @@ personal_experience:
     content:
       -
         type: text
-        text: 'With years of experience in top-tier kitchens, P. Bacon has honed his skills in both classic and contemporary cuisine. His journey is marked by a dedication to quality, consistency, and innovation—always pushing boundaries to deliver unforgettable dining experiences.'
+        text: 'With years of experience in top-tier kitchens, P. Bacon has honed his skills in both classic and contemporary cuisine. His journey is marked by a dedication to quality, consistency, and innovation always pushing boundaries to deliver unforgettable dining experiences.'
   -
     type: paragraph
     content:
@@ -38,7 +38,7 @@ personal_experience:
         quote: "“If you're going to serve a plate, make sure it tells a story.”"
   -
     type: paragraph
-closing_paragraph: 'In the fast-paced world of hospitality, P. Bacon remains a calm force of excellence. He understands that a great meal is more than just food—it’s a crafted experience. With him at the helm, guests don’t just dine; they savor moments worth remembering.'
+closing_paragraph: 'In the fast-paced world of hospitality, P. Bacon remains a calm force of excellence. He understands that a great meal is more than just food it’s a crafted experience. With him at the helm, guests don’t just dine; they savor moments worth remembering.'
 skills:
   -
     id: mc8lvmho
@@ -60,7 +60,7 @@ skills:
     enabled: true
 experience_image: images/team-five.png
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750746312
+updated_at: 1750920042
 seo_title: 'P. Bacon'
 seo_description: 'P. Bacon'
 seo_image: 'images/Kia Weds OG Image.png'

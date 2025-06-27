@@ -20,13 +20,13 @@ description:
     content:
       -
         type: text
-        text: "Your wedding is more than just a day — it's the beginning of your forever. We are dedicated to turning your dream wedding into a reality, combining thoughtful planning with stunning design and seamless execution. Whether you envision an intimate ceremony or a grand celebration, we tailor every detail to reflect your love story."
+        text: "Your wedding is more than just a day it's the beginning of your forever. We are dedicated to turning your dream wedding into a reality, combining thoughtful planning with stunning design and seamless execution. Whether you envision an intimate ceremony or a grand celebration, we tailor every detail to reflect your love story."
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'From floral arrangements and venue décor to music, photography, and catering, our team brings passion and professionalism to every step of the journey. We handle the logistics so you can focus on moments that matter — the vows, the first dance, the laughter, and the joy.'
+        text: 'From floral arrangements and venue decor to music, photography, and catering, our team brings passion and professionalism to every step of the journey. We handle the logistics so you can focus on moments that matter the vows, the first dance, the laughter, and the joy.'
   -
     type: paragraph
     content:
@@ -70,5 +70,5 @@ seo_title: Wedding
 seo_description: Wedding
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745946
+updated_at: 1750920325
 ---
