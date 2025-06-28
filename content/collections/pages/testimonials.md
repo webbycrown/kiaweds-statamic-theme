@@ -8,13 +8,14 @@ seo_title: Testimonials
 seo_description: Testimonials
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745648
+updated_at: 1751106228
 page_builder:
   -
     id: mc8wnfou
     url: /photography
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc8wqlgd
     section_title: Testimonials

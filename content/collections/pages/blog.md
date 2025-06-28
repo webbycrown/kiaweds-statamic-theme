@@ -7,7 +7,7 @@ seo_title: Blog
 seo_description: Blog
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750938849
+updated_at: 1751106201
 template: blog
 page_builder:
   -
@@ -15,6 +15,7 @@ page_builder:
     url: /
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc4h0vep
     title: 'Latest Blog'

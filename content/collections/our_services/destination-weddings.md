@@ -8,19 +8,23 @@ socials:
   -
     id: mcebv1dw
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mcebv3li
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mcebv63q
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mcebv8mu
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - anniversary
   - photoshoot
@@ -33,7 +37,7 @@ seo_title: 'Destination Weddings'
 seo_description: 'Destination Weddings'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004411
+updated_at: 1751109973
 description:
   -
     type: heading

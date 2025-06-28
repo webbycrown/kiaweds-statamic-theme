@@ -10,6 +10,7 @@ page_builder:
     url: /photography
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc8t1ua0
     section_title: 'Our professional Team'
@@ -22,5 +23,5 @@ seo_title: Team
 seo_description: Team
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750768124
+updated_at: 1751106247
 ---

@@ -97,15 +97,46 @@ tabs:
                 - required
               fields:
                 -
-                  handle: name
-                  field:
-                    type: text
-                    display: Name
-                -
                   handle: url
                   field:
                     type: text
                     display: Url
+                -
+                  handle: icon
+                  field:
+                    options:
+                      -
+                        key: facebook-f
+                        value: Facebook
+                      -
+                        key: youtube
+                        value: Youtube
+                      -
+                        key: twitter
+                        value: Twitter
+                      -
+                        key: instagram
+                        value: Instagram
+                      -
+                        key: linkedin-in
+                        value: Linkedin
+                      -
+                        key: github
+                        value: Github
+                      -
+                        key: whatsapp
+                        value: Whatsapp
+                      -
+                        key: pinterest-p
+                        value: Pinterest
+                      -
+                        key: telegram-plane
+                        value: Telegram
+                      -
+                        key: reddit-alien
+                        value: 'Reddit Alien'
+                    type: select
+                    display: Icon
           -
             handle: category
             field:

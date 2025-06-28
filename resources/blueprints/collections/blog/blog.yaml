@@ -92,15 +92,46 @@ tabs:
               display: Socials
               fields:
                 -
-                  handle: name
-                  field:
-                    type: text
-                    display: Name
-                -
                   handle: url
                   field:
                     type: text
                     display: Url
+                -
+                  handle: icon
+                  field:
+                    options:
+                      -
+                        key: facebook-f
+                        value: Facebook
+                      -
+                        key: youtube
+                        value: Youtube
+                      -
+                        key: twitter
+                        value: Twitter
+                      -
+                        key: instagram
+                        value: Instagram
+                      -
+                        key: linkedin-in
+                        value: Linkedin
+                      -
+                        key: github
+                        value: Github
+                      -
+                        key: whatsapp
+                        value: Whatsapp
+                      -
+                        key: pinterest-p
+                        value: Pinterest
+                      -
+                        key: telegram-plane
+                        value: Telegram
+                      -
+                        key: reddit-alien
+                        value: 'Reddit alien'
+                    type: select
+                    display: Icon
           -
             handle: related_blog
             field:
@@ -109,6 +140,19 @@ tabs:
                 - blog
               type: entries
               display: 'Related Blog'
+          -
+            handle: read_more_button
+            field:
+              type: toggle
+              display: 'Read More Button'
+          -
+            handle: read_more_button_text
+            field:
+              type: text
+              display: 'Read More Button Text'
+              if:
+                read_more_button: 'equals true'
+              default: 'Read More'
   sidebar:
     display: Sidebar
     sections:

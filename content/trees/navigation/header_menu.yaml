@@ -1,9 +1,5 @@
 tree:
   -
-    id: 52b88a1b-563e-4aab-82df-f76dbde96fc5
-    title: Home
-    url: /
-  -
     id: a2ed0e03-60cb-40bf-8fc6-7e0062936150
     title: 'About Us'
     url: /about-us

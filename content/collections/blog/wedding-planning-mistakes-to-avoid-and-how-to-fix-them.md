@@ -11,19 +11,23 @@ socials:
   -
     id: mc4ftign
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4ftkpy
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4ftmym
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4ftpsv
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 related_blog:
   - 07545e2d-8639-4673-93c5-913a2371e863
   - ef2a3cf1-16d8-4d13-9e17-79d1c805d0aa
@@ -31,7 +35,7 @@ seo_title: 'Wedding Planning Mistakes to Avoid (and How to Fix Them)'
 seo_description: 'Wedding Planning Mistakes to Avoid (and How to Fix Them)'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750939012
+updated_at: 1751109540
 description:
   -
     type: paragraph
@@ -105,4 +109,6 @@ category:
   - photoshoot
   - reception
   - videography
+read_more_button: true
+read_more_button_text: 'Read More'
 ---

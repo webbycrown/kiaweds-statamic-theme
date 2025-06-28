@@ -42,7 +42,10 @@
 									<div class="blog-content">
 										<h3><a href="/blog/{{slug}}"> {{ title }}</a></h3>
 										<p>{{ short_description }}</p>
-										<a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+										{{ if read_more_button == true }}
+										
+										<a href="/blog/{{slug}}" class="btn btn-primary">{{ read_more_button_text }}</a>
+										{{ /if }}
 									</div>
 								</div>
 							</div>

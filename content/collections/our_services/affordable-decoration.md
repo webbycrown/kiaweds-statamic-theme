@@ -16,7 +16,7 @@ seo_title: 'Affordable Decoration'
 seo_description: 'Affordable Decoration'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004348
+updated_at: 1751109903
 description:
   -
     type: heading
@@ -93,19 +93,23 @@ socials:
   -
     id: mc4d1ub9
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4d20ot
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4d1y3q
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4d22th
     name: twitter
-    url: 'https://x.com/'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - anniversary
   - photoshoot

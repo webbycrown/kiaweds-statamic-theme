@@ -41,6 +41,17 @@ At KiaWeds Statamic, we offer a beautiful and functional wedding planner website
   - Setting
   - Footer
 
+## Category Support
+
+- Easily assign multiple categories to entries using an intuitive tag-like interface
+- Supports multiple categories like:
+- Small Business
+- Blog
+- Photography
+- Landing Page
+- Portfolio
+- Enhances organization and filtering of content across pages like blog, events, services, photography.
+
 ## Installation
 
 Follow the [Starter Kit installation instructions](https://statamic.dev/starter-kits/installing-a-starter-kit) to get started with kiaWeds.

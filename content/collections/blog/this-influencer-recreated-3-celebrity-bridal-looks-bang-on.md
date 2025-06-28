@@ -7,23 +7,27 @@ socials:
   -
     id: mc4fmkm8
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4fmmyv
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4fmqzb
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4fmtrz
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 related_blog:
   - ef2a3cf1-16d8-4d13-9e17-79d1c805d0aa
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750939010
+updated_at: 1751109516
 seo_title: 'This Influencer Recreated 3 Celebrity Bridal Looks Bang On!'
 seo_description: 'This Influencer Recreated 3 Celebrity Bridal Looks Bang On!'
 seo_image: 'images/Kia Weds OG Image.png'
@@ -100,4 +104,6 @@ tag:
   - engagement
   - photoshoot
   - pre-wedding
+read_more_button: true
+read_more_button_text: 'Read More'
 ---

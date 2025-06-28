@@ -13,7 +13,7 @@ seo_title: 'Bridal makeup'
 seo_description: 'Bridal makeup'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004384
+updated_at: 1751109923
 description:
   -
     type: heading
@@ -90,19 +90,23 @@ socials:
   -
     id: mc4d3y25
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4d40g4
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4d43vj
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4d464d
     name: twitter
-    url: 'https://x.com/'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - photoshoot
   - engagement

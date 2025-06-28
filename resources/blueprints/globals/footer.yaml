@@ -60,10 +60,41 @@ tabs:
                     type: text
                     display: Url
                 -
-                  handle: name
+                  handle: icon
                   field:
-                    type: text
-                    display: Name
+                    options:
+                      -
+                        key: facebook-f
+                        value: Facebook
+                      -
+                        key: youtube
+                        value: Youtube
+                      -
+                        key: twitter
+                        value: Twitter
+                      -
+                        key: instagram
+                        value: Instagram
+                      -
+                        key: linkedin-in
+                        value: Linkedin
+                      -
+                        key: github
+                        value: Github
+                      -
+                        key: whatsapp
+                        value: Whatsapp
+                      -
+                        key: pinterest-p
+                        value: Pinterest
+                      -
+                        key: telegram-plane
+                        value: Telegram
+                      -
+                        key: reddit-alien
+                        value: 'Reddit Alien'
+                    type: select
+                    display: Icon
           -
             handle: copyright
             field:
@@ -71,3 +102,24 @@ tabs:
               display: Copyright
               validate:
                 - required
+          -
+            handle: site_settings
+            field:
+              type: grid
+              display: 'Site Settings'
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+          -
+            handle: subscribe_title
+            field:
+              type: text
+              display: 'Subscribe Title'

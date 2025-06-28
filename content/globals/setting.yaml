@@ -7,3 +7,8 @@ data:
   favicon: images/favicon.svg
   phone_number: '+23 2698 364511'
   loader: images/loader.svg
+  header_button:
+    -
+      id: mcg39g1x
+      label: 'Booking Now'
+      url: /contact-us

@@ -31,7 +31,11 @@
         </ul>
         </div>
         <div class="sidebar-btn">
-            <a class="btn btn-primary" href="/contact-us">Booking Now</a>
+                {{ setting:header_button }}
+                {{ if label }}
+            <a class="btn btn-primary" href="{{ if url }} {{ url }} {{ /if }}">{{ label }}</a>
+                {{ /if }}
+                {{ /setting:header_button }}
         </div>
     </div>
     <!-- End-sidebar -->

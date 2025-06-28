@@ -23,3 +23,16 @@ fields:
       default: '0'
       type: integer
       display: Limit
+  -
+    handle: read_more_button
+    field:
+      type: toggle
+      display: 'Read More Button'
+  -
+    handle: read_more_button_text
+    field:
+      default: 'Read More'
+      type: text
+      display: 'Read More Button Text'
+      if:
+        read_more_button: 'equals true'

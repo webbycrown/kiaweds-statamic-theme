@@ -8,18 +8,22 @@ socials:
     id: mc4fvoun
     name: facebook
     url: 'https://www.facebook.com/'
+    icon: facebook-f
   -
     id: mc4fvrxa
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4fvubd
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4fvwly
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 related_blog:
   - ef2a3cf1-16d8-4d13-9e17-79d1c805d0aa
   - ed0c5a30-6628-4ec4-8be4-014bb56b52bd
@@ -27,7 +31,7 @@ seo_title: 'Why You Should Hire a Wedding Planner (Even If You’re Naturally Or
 seo_description: 'Why You Should Hire a Wedding Planner (Even If You’re Naturally Organized'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750939020
+updated_at: 1751109569
 description:
   -
     type: paragraph
@@ -101,4 +105,6 @@ tag:
   - bride
   - groom
   - pre-wedding
+read_more_button: true
+read_more_button_text: 'Read More'
 ---

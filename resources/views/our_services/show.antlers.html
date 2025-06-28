@@ -114,10 +114,11 @@
                                     <div class="post-social">
                                          <ul>
                                             {{ socials }}
-                                            {{ if name == 'facebook' }}<li><a href="{{ url }}sharer/sharer.php?u={{config:app.url}}/services/{{ slug }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
-                                            {{ if name == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
-                                            {{ if name == 'twitter' }}<li><a href="{{ url }}?url={{config:app.url}}/blog/{{ slug }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
-                                            {{ if name == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
+                                            <li><a href="{{ url }}{{config:app.url}}services/{{ slug }}" target="_blank">
+                                                {{ icon }}<i class="fa-brands fa-{{ key }}"></i>
+                                                {{ /icon }}
+                                            </a></li>
+
                                             {{ /socials }}
                                         </ul>
                                     </div>

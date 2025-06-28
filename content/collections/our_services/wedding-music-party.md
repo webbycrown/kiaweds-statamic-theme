@@ -87,26 +87,30 @@ seo_title: 'Wedding Music Party'
 seo_description: 'Wedding Music Party'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004449
+updated_at: 1751109880
 related_event:
   - 0285ee85-2393-4e62-8617-28c81aa1b161
 socials:
   -
     id: mc4d4xo7
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4d50v1
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4d53tx
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4d56c4
     name: twitter
-    url: 'https://x.com/'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - engagement
   - photoshoot

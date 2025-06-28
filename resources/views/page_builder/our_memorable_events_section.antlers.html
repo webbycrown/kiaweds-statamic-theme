@@ -37,7 +37,13 @@
 
                                 {{ /if }}
                                 <p>{{ description1 }}</p>
-                                <a href="/events" class="btn btn-primary">View All Events</a>
+
+                                {{ btn }}
+                                {{ if label }}
+                                
+                                <a href="{{ if url }} {{ url }}{{ /if }}" class="btn btn-primary">{{ label }}</a>
+                                {{ /if }}
+                                {{ /btn }}
                             </div>
                         </div>
                         <!-- Our events wrap -->

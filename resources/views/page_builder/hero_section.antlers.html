@@ -9,8 +9,12 @@
                     <div class="hero-wrapper">
                         <!-- hero content -->
                         <div class="hero-content">
-                           {{ description }}
-                            <a href="/" class="btn btn-primary">Explore Wedding</a>
+                         {{ description }}
+                         {{ btn }}
+                         {{ if label }}
+                         <a href="{{ if url }} {{ url }}{{ /if }}" class="btn btn-primary">{{ label }} </a>
+                         {{ /if }}
+                         {{ /btn }}
                         </div>
                         <!-- hero img -->
                         <div class="hero-img">

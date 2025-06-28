@@ -7,7 +7,7 @@ seo_title: 'About Us'
 seo_description: 'About Us'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750824718
+updated_at: 1751105543
 template: about-us
 page_builder:
   -
@@ -71,6 +71,11 @@ page_builder:
             text: ' — bold, modern, and full of personality.'
     type: reveal_about_section
     enabled: true
+    btn:
+      -
+        id: mcg2zbfg
+        label: 'About Us'
+        url: /about-us
   -
     id: mc4o1a2s
     projects_count: 100
@@ -87,6 +92,11 @@ page_builder:
     enabled: true
     paginate: 'false'
     limit: 4
+    btn:
+      -
+        id: mcg30tyy
+        label: 'All Team Member'
+        url: /team
   -
     id: mc8pklas
     comment:

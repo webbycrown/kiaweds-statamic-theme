@@ -55,3 +55,25 @@ tabs:
               container: assets
               type: assets
               display: Loader
+          -
+            handle: header_button
+            field:
+              type: grid
+              display: 'Header Button'
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+          -
+            handle: load_more_text
+            field:
+              default: 'Load More'
+              type: text
+              display: 'Load More Button Text'

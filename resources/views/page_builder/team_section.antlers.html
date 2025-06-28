@@ -11,7 +11,13 @@
                         <div class="style-3-title">
                             <h2 class="title">{{ section_title }}</h2>
                         </div>
-                        <a href="/team" class="btn btn-primary">All Team Member</a>
+                        
+                         {{ btn }}
+                                {{ if label }}
+                                
+                                <a href="{{ if url }} {{ url }}{{ /if }}" class="btn btn-primary">{{ label }}</a>
+                                {{ /if }}
+                                {{ /btn }}
                     </div>
                 </div>
             </div>
@@ -91,12 +97,14 @@
             {{ paginate }}
             <input type="hidden" class="lastPage" value="{{ total_pages }}">
             {{ if next_page }}
+            {{ if setting:load_more_text }}
             <div class="load-more-btn load-more-wrap">
                 <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
-                    Load More
-                    <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
+                    {{ setting:load_more_text }}
+                    <img src="{{ theme:asset src='assets/images/load-more.svg'}}" alt="load-more" class="object-cover d-none">
                 </a>
             </div>
+            {{ /if }}
             {{ /if }}
             {{ /paginate }}
 

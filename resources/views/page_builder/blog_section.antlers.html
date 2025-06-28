@@ -40,12 +40,14 @@
             {{ paginate }}
             <input type="hidden" class="lastPage" value="{{ total_pages }}">
             {{ if next_page }}
+            {{ if setting:load_more_text }}
             <div class="load-more-btn load-more-wrap">
                 <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
-                    Load More
+                     {{ setting:load_more_text }}
                     <img src="{{ theme:asset src='assets/images/load-more.svg'}}" alt="load-more" class="object-cover d-none">
                 </a>
             </div>
+            {{ /if }}
             {{ /if }}
             {{ /paginate }}
 
@@ -98,7 +100,10 @@
                             <div class="blog-content">
                                 <h3><a href="/blog/{{slug}}"> {{ title }}</a></h3>
                                 <p>{{ short_description }}</p>
-                                <a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+                                {{ if read_more_button == true }}
+
+                                <a href="/blog/{{slug}}" class="btn btn-primary">{{ read_more_button_text }}</a>
+                                {{ /if }}
                             </div>
                         </div>
                     </div>
@@ -108,12 +113,14 @@
                 {{ paginate }}
                 <input type="hidden" class="lastPage" value="{{ total_pages }}">
                 {{ if next_page }}
+                {{ if setting:load_more_text }}
                 <div class="load-more-btn load-more-wrap">
                     <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
-                        Load More
-                        <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
-                    </a>
-                </div>
+                       {{ setting:load_more_text }}
+                       <img src="{{ theme:asset src='assets/images/load-more.svg'}}" alt="load-more" class="object-cover d-none">
+                   </a>
+               </div>
+               {{ /if }}
                 {{ /if }}
                 {{ /paginate }}
 
@@ -167,7 +174,10 @@
                                 <h3><a href="/blog/{{slug}}"> {{ title }}</a>
                                 </h3>
                                 <p>{{ short_description }}</p>
-                                <a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+                                {{ if read_more_button == true }}
+
+                                <a href="/blog/{{slug}}" class="btn btn-primary">{{ read_more_button_text }}</a>
+                                {{ /if }}
                             </div>
                         </div>
 
@@ -180,12 +190,14 @@
                 {{ paginate }}
                 <input type="hidden" class="lastPage" value="{{ total_pages }}">
                 {{ if next_page }}
+                {{ if setting:load_more_text }}
                 <div class="load-more-btn load-more-wrap">
                     <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
-                        Load More
-                        <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
-                    </a>
-                </div>
+                       {{ setting:load_more_text }}
+                       <img src="{{ theme:asset src='assets/images/load-more.svg'}}" alt="load-more" class="object-cover d-none">
+                   </a>
+               </div>
+               {{ /if }}
                 {{ /if }}
                 {{ /paginate }}
 
@@ -226,9 +238,9 @@
                     <div class="blog-slider blog-grid">
                         <div class="row">
                             {{ if collections == "blog" }}
-                {{ collection:blog as="blog" paginate="{paginate}" limit="{limit}" }}
+                            {{ collection:blog as="blog" paginate="{paginate}" limit="{limit}" }}
 
-                {{ /if }}
+                            {{ /if }}
                 <div class="row grid" id="blog_search_div">
                     {{ blog }}
                         <!-- column -->
@@ -245,7 +257,9 @@
                                 <h3><a href="/blog/{{slug}}"> {{ title }}</a>
                                 </h3>
                                 <p>{{ short_description }}</p>
-                                <a href="/blog/{{slug}}" class="btn btn-primary">Read More</a>
+                                {{ if read_more_button == true }}
+                                <a href="/blog/{{slug}}" class="btn btn-primary">{{ read_more_button_text }}</a>
+                                {{ /if }}
                             </div>
                         </div>
                     </div>
@@ -255,12 +269,14 @@
                 {{ paginate }}
                 <input type="hidden" class="lastPage" value="{{ total_pages }}">
                 {{ if next_page }}
+                {{ if setting:load_more_text }}
                 <div class="load-more-btn load-more-wrap">
                     <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
-                        Load More
-                        <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
-                    </a>
-                </div>
+                       {{ setting:load_more_text }}
+                       <img src="{{ theme:asset src='assets/images/load-more.svg'}}" alt="load-more" class="object-cover d-none">
+                   </a>
+               </div>
+               {{ /if }}
                 {{ /if }}
                 {{ /paginate }}
 

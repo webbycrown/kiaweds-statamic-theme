@@ -7,24 +7,28 @@ socials:
   -
     id: mc4fp6iu
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4fp960
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4fpbmo
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4fpe3y
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 related_blog:
   - b9241dd6-874d-4042-8c33-52692973f771
   - ef2a3cf1-16d8-4d13-9e17-79d1c805d0aa
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750939017
+updated_at: 1751109596
 seo_title: 'A Complete Guide to Choosing the Perfect Wedding Venue'
 seo_description: 'A Complete Guide to Choosing the Perfect Wedding Venue'
 seo_image: 'images/Kia Weds OG Image.png'
@@ -101,4 +105,6 @@ tag:
   - engagement
   - photoshoot
   - dinner
+read_more_button: true
+read_more_button_text: 'Read More'
 ---

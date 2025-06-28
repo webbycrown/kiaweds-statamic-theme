@@ -8,19 +8,23 @@ socials:
   -
     id: mcebtiy8
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mcebtnbc
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mcebtpog
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mcebts8f
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - engagement
   - photoshoot
@@ -33,7 +37,7 @@ seo_title: Entertainment
 seo_description: Entertainment
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004420
+updated_at: 1751109989
 description:
   -
     type: heading

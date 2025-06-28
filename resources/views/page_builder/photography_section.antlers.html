@@ -53,12 +53,14 @@
             {{ paginate }}
              <input type="hidden" class="lastPage" value="{{ total_pages }}">
              {{ if next_page }}
-            <div class="load-more-btn load-more-wrap">
+             {{ if setting:load_more_text }}
+             <div class="load-more-btn load-more-wrap">
                 <a href="{{ next_page }}" class="btn btn-primary ajax-load-more-grid">
-                    Load More
-                    <img src="{{ theme:asset }}assets/images/load-more.svg" alt="load-more" class="object-cover d-none">
-                </a>
-            </div>
+                   {{ setting:load_more_text }}
+                   <img src="{{ theme:asset src='assets/images/load-more.svg'}}" alt="load-more" class="object-cover d-none">
+               </a>
+           </div>
+           {{ /if }}
             {{ /if }}
             {{ /paginate }}
             {{ /collection:photography }}

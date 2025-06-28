@@ -35,16 +35,30 @@ data:
       id: mc06pay0
       url: 'https://www.facebook.com/'
       name: facebook
+      icon: facebook-f
     -
       id: mc06pnxs
       url: 'https://www.twitter.com/'
       name: twitter
+      icon: twitter
     -
       id: mc06ptdc
       url: 'https://www.youtube.com/'
       name: youtube
+      icon: youtube
     -
       id: mc06pi0v
       url: 'https://www.instagram.com/'
       name: instagram
+      icon: instagram
   copyright: '© Copyright <a href="/">Kiaweds</a> 2025. All Rights Reserved.'
+  site_settings:
+    -
+      id: mcg6m4zb
+      label: 'Privacy Policy'
+      url: /privacy-police
+    -
+      id: mcg6mjgh
+      label: 'Terms & Condition'
+      url: /terms-condition
+  subscribe_title: 'Subscribe to our newsletter'

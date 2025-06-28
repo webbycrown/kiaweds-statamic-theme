@@ -4,7 +4,7 @@ blueprint: page
 title: Photography
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750768269
+updated_at: 1751106176
 template: photography
 page_builder:
   -
@@ -12,6 +12,7 @@ page_builder:
     url: /events
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc1r9800
     collections: photography

@@ -7,7 +7,7 @@ seo_title: 'Blog Grid'
 seo_description: 'Blog Grid'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750759121
+updated_at: 1751108044
 template: blog-grid
 page_builder:
   -
@@ -15,6 +15,7 @@ page_builder:
     url: /blog
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc4holvu
     section_title: 'Blog Grid'
@@ -23,4 +24,6 @@ page_builder:
     enabled: true
     paginate: 'true'
     limit: 4
+    read_more_button: true
+    read_more_button_text: 'Read More'
 ---

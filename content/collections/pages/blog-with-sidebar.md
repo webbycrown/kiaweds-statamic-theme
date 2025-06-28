@@ -10,6 +10,7 @@ page_builder:
     url: /blog-grid
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc4j7jf9
     section_title: 'Blog With Sidebar'
@@ -18,9 +19,11 @@ page_builder:
     enabled: true
     paginate: 'true'
     limit: 4
+    read_more_button: true
+    read_more_button_text: 'Read More'
 seo_title: 'Blog With Sidebar'
 seo_description: 'Blog With Sidebar'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750767721
+updated_at: 1751108062
 ---

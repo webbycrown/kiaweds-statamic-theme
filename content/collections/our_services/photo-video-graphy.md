@@ -14,7 +14,7 @@ seo_title: 'Photo &Video graphy'
 seo_description: 'Photo &Video graphy'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004439
+updated_at: 1751110006
 description:
   -
     type: heading
@@ -93,19 +93,23 @@ socials:
   -
     id: mc4d4fcd
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4d4i6s
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4d4m0t
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4d4oms
     name: twitter
-    url: 'https://x.com/'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - engagement
   - pre-wedding

@@ -7,21 +7,25 @@ socials:
   -
     id: mc4fkn8x
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mc4fkplk
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mc4fks7k
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mc4fkunr
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750939015
+updated_at: 1751109577
 seo_title: 'A Whimsical Udaipur Wedding Dripping In Haute Couture & Heart!'
 seo_description: 'A Whimsical Udaipur Wedding Dripping In Haute Couture & Heart!'
 seo_image: 'images/Kia Weds OG Image.png'
@@ -101,4 +105,6 @@ tag:
   - groom
   - bride
   - reception
+read_more_button: true
+read_more_button_text: 'Read More'
 ---

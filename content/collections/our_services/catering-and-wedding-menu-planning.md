@@ -8,19 +8,23 @@ socials:
   -
     id: mcebwug5
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mcebwx2s
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mcebwz0c
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mcebx0vw
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - engagement
   - photoshoot
@@ -33,7 +37,7 @@ seo_title: 'Catering and Wedding Menu Planning'
 seo_description: 'Catering and Wedding Menu Planning'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004394
+updated_at: 1751109941
 description:
   -
     type: heading

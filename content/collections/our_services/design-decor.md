@@ -83,19 +83,23 @@ socials:
   -
     id: mcebmkcj
     name: facebook
-    url: 'https://www.facebook.com/'
+    url: 'https://www.facebook.com/sharer/sharer.php?u='
+    icon: facebook-f
   -
     id: mcebmncg
     name: instagram
     url: 'https://www.instagram.com/'
+    icon: instagram
   -
     id: mcebmq48
     name: youtube
     url: 'https://www.youtube.com/'
+    icon: youtube
   -
     id: mcebmss7
     name: twitter
-    url: 'https://twitter.com/intent/tweet'
+    url: 'https://twitter.com/intent/tweet?url='
+    icon: twitter
 category:
   - engagement
   - videography
@@ -108,5 +112,5 @@ seo_title: 'Design & Decor'
 seo_description: 'Design & Decor'
 seo_image: 'images/Kia Weds OG Image.png'
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1751004401
+updated_at: 1751109961
 ---

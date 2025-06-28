@@ -5,13 +5,14 @@ title: 'Contact us'
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 template: contact
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750745580
+updated_at: 1751106141
 page_builder:
   -
     id: mc0fzt4h
     url: /faq
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc0cu174
     section_title: 'Contact Us'

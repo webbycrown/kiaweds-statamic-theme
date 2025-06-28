@@ -5,7 +5,7 @@ title: 'Wedding Planner Website Templates'
 template: home
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750919666
+updated_at: 1751107892
 seo_title: 'Wedding Planner Website Templates'
 seo_description: 'Wedding Planner Website Templates'
 seo_image: 'images/Kia Weds OG Image.png'
@@ -42,6 +42,11 @@ page_builder:
     image_2: images/hero-two.jpg
     type: hero_section
     enabled: true
+    btn:
+      -
+        id: mcg2d8t4
+        label: 'Explore Wedding'
+        url: /
   -
     id: mc8xr2iw
     hover_images:
@@ -96,6 +101,11 @@ page_builder:
             text: ' bold, modern, and full of personality.'
     type: reveal_about_section
     enabled: true
+    btn:
+      -
+        id: mcg2elau
+        label: 'About Us'
+        url: /about-us
   -
     id: mc8z14e3
     circle_text: 'Wedding Wedding Wedding'
@@ -128,6 +138,11 @@ page_builder:
       Our approach combines vision with expertise turning ideas into breathtaking realities. We design, manage, and deliver each event with heart and precision.
       Whether it's an intimate gathering or a grand celebration, our team transforms spaces and moments into lasting impressions.
     collections: our_events
+    btn:
+      -
+        id: mcg2h9oz
+        label: 'View All Events'
+        url: /events
   -
     id: mc8y2nnb
     section_title: 'Latest Blog & News'
@@ -137,6 +152,8 @@ page_builder:
     type: latest_blog_section
     enabled: true
     paginate: 'true'
+    read_more_button: true
+    read_more_button_text: 'Read More'
   -
     id: mc8xuubr
     collections: team

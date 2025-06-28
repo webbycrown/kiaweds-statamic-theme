@@ -29,3 +29,19 @@ fields:
                     container: assets
                     type: assets
                     display: Image
+  -
+    handle: btn
+    field:
+      type: grid
+      display: Btn
+      fields:
+        -
+          handle: label
+          field:
+            type: text
+            display: Label
+        -
+          handle: url
+          field:
+            type: text
+            display: Url

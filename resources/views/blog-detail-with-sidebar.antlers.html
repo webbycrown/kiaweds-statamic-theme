@@ -125,12 +125,13 @@
                                     <!-- post footer social -->
                                     <div class="post-social">
                                         <ul>
-                                           {{ socials }}
-                                         {{ if name == 'facebook' }}<li><a href="{{ url }}sharer/sharer.php?u={{ current_url }}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
-                                         {{ if name == 'youtube' }}<li><a href="{{ url }}" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
-                                         {{ if name == 'twitter' }}<li><a href="{{ url }}?url={{ current_url }}" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
-                                         {{ if name == 'instagram' }}<li><a href="{{ url }}" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
-                                         {{ /socials }}
+                                            {{ socials }}
+                                            <li><a href="{{ url }}{{config:app.url}}blog/{{ slug }}" target="_blank">
+                                                {{ icon }}<i class="fa-brands fa-{{ key }}"></i>
+                                                {{ /icon }}
+                                            </a></li>
+
+                                            {{ /socials }}
                                         </ul>
                                     </div>
                                 </div>
@@ -158,7 +159,9 @@
                                     <div class="blog-content">
                                        <h3><a href="/blog/{{slug}}">{{ title }}</a>
                                         <p>{{ short_description }}</p>
-                                        <a href="/blog" class="btn btn-primary">Read More</a>
+                                        {{ if read_more_button == true }}
+                                        <a href="/blog/{{slug}}" class="btn btn-primary">{{ read_more_button_text }}</a>
+                                        {{ /if }}
                                     </div>
                                 </div>
                             </div>

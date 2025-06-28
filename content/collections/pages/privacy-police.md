@@ -5,13 +5,14 @@ title: 'Privacy Police'
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 template: privacy-police
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
-updated_at: 1750830740
+updated_at: 1751106166
 page_builder:
   -
     id: mc0ghshi
     url: /
     type: back_button_section
     enabled: true
+    label: Back
   -
     id: mc0gkgcn
     section_title: 'Privacy Policy'

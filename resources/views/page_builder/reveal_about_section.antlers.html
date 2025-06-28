@@ -45,10 +45,14 @@
                                                 {{ /image }}
                                                 {{ /if }}
                                                 {{ /description }}
-                                               
+                                                
                                             </div>
-                            <div class="reveal-btn"><a href="/about-us" class="btn btn-primary">About Us</a></div>
-                        </div>
+                                            {{ btn }}
+                                            {{ if label }}
+                                            <div class="reveal-btn"><a href="{{ if url }} {{ url }}{{ /if }}" class="btn btn-primary">{{ label }}</a></div>
+                                            {{ /if }}
+                                            {{ /btn }}
+                                        </div>
 
                     </div>
                 </div>
@@ -107,13 +111,17 @@
                         {{ /if }}
                         {{ /description }}
                     
+                    </div>
+
+                    {{ btn }}
+                    {{ if label }}
+                    <div class="reveal-btn"><a href="{{ if url }} {{ url }}{{ /if }}" class="btn btn-primary">{{ label }}</a></div>
+                    {{ /if }}
+                    {{ /btn }}
                 </div>
-                <div class="reveal-btn"><a href="/about-us" class="btn btn-primary">About Us</a></div>
             </div>
         </div>
     </div>
-</div>
-</div>
 </section>
 <!-- Close Wp about section -->
 {{ /if }}
