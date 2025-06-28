@@ -73,6 +73,10 @@ $(document).ready(function () {
     $(".search-cart-bar .search-btn a").click(function () {
         // $('body').addClass("bg-1");
         $(".search-box").addClass("open");
+        //$(".header-row").css("overflow", "hidden");
+
+
+        // $(".search-menu-bar").css("overflow", "hidden");
 
         setTimeout(function () {
             $("#site-search-input").focus();
@@ -82,6 +86,11 @@ $(document).ready(function () {
     $(".search-box .close-search-log").click(function () {
         $(".search-box").removeClass("open");
         // $('body').removeClass("bg-1");
+        // $(".search-menu-bar").css("overflow", "");
+    });
+
+    $(".search-menu-bar .manu-bar  .dropdown-hover").on("click mouseleave", function () {
+        $(".search-menu-bar").css("overflow", "");
     });
 
     // sub menu
@@ -437,78 +446,78 @@ $(document).ready(function () {
         });
     }(jQuery));
 
-    $(document).on('submit','.subscribed-form', function(e) {
-        e.preventDefault(); 
-        const $form = $(this);  
+    $(document).on('submit', '.subscribed-form', function (e) {
+        e.preventDefault();
+        const $form = $(this);
         var $message = $form.find('.form-message');
         const email = $form.find('#email').val();
 
         $.ajax({
-            url: newsLetterUrl,  
+            url: newsLetterUrl,
             method: 'get',
             data: {
-                email:email
+                email: email
             },
             dataType: 'json',
-            success: function(response) {
+            success: function (response) {
                 // You get a JSON response from Statamic
-               if(response.status  == true) {
-                  $message.text(response.message).css('color', '#C69247').fadeIn();
-                  setTimeout(() => {
-                    $form[0].reset();
-                    $message.html(''); 
-                }, 1500);
+                if (response.status == true) {
+                    $message.text(response.message).css('color', '#C69247').fadeIn();
+                    setTimeout(() => {
+                        $form[0].reset();
+                        $message.html('');
+                    }, 1500);
 
-              }else{
-                 $message.text(response.message).css('color', '#df5243').fadeIn();
+                } else {
+                    $message.text(response.message).css('color', '#df5243').fadeIn();
 
-              } 
+                }
             },
-            error: function(response) {
+            error: function (response) {
                 if (response.responseJSON.error) {
-                   $.each(response.responseJSON.error, function(field, message) {
-                      const $input = $form.find('[name="' + field + '"]');
-                      const $errorContainer = $form.find('[data-error-for="' + field + '"]');
+                    $.each(response.responseJSON.error, function (field, message) {
+                        const $input = $form.find('[name="' + field + '"]');
+                        const $errorContainer = $form.find('[data-error-for="' + field + '"]');
 
-                      $input.addClass('error');
-                      $errorContainer.html(Array.isArray(message) ? message.join('<br>') : message);
-                  });
-               }
+                        $input.addClass('error');
+                        $errorContainer.html(Array.isArray(message) ? message.join('<br>') : message);
+                    });
+                }
 
 
-           }
+            }
         });
     });
 
-    $(document).on('submit','#contact-form', function(e) {
-        e.preventDefault(); 
+    $(document).on('submit', '#contact-form', function (e) {
+        e.preventDefault();
 
         const $form = $(this);
         const $messages = $form.find('#form-response');
-        $messages.html(''); 
+        $messages.html('');
         const formData = new FormData(this);
 
         $.ajax({
-            url: $form.attr('action'),  
+            url: $form.attr('action'),
             method: 'POST',
             data: formData,
-            processData: false, 
-            contentType: false, 
-            success: function(response) {
+            processData: false,
+            contentType: false,
+            success: function (response) {
 
                 $('.field-error.text-danger').text('');
-                if(response.success) {
+                if (response.success) {
                     $messages.text("Thank you! We'll be in touch shortly.").css('color', '#C69247').fadeIn();
 
                     setTimeout(() => {
                         $form[0].reset();
-                        $messages.html(''); 
+                        $messages.html('');
                     }, 1500);
                 }
             },
-            error: function(response) {
+            error: function (response) {
                 if (response.responseJSON.error) {
-                    $.each(response.responseJSON.error, function(field, message) {
+                    $.each(response.responseJSON.error, function (field, message) {
                         const $input = $form.find('[name="' + field + '"]');
                         const $errorContainer = $form.find('[data-error-for="' + field + '"]');
 
@@ -521,186 +530,186 @@ $(document).ready(function () {
     });
 
 
-   $(document).on('click', '.ajax-load-more-grid', function (e) {
-    e.preventDefault();
+    $(document).on('click', '.ajax-load-more-grid', function (e) {
+        e.preventDefault();
 
-    const $button = $(this);
-    const nextPageUrl = $button.attr('href');
-    var lastPage = parseInt($('.lastPage').val());
-    var pageNum = 1;
-    if (nextPageUrl) {
-      var urlParams = new URLSearchParams(nextPageUrl.split('?')[1]);
-      pageNum = parseInt(urlParams.get('page')) || 1;
-    }
-
-
-    const appEnv = document.querySelector('meta[name="app-env"]')?.getAttribute('content');
-      if (appEnv === 'production') {
-        if (nextPageUrl && nextPageUrl.startsWith("http:")) {
-          nextPageUrl = nextPageUrl.replace(/^http:/, "https:");
+        const $button = $(this);
+        const nextPageUrl = $button.attr('href');
+        var lastPage = parseInt($('.lastPage').val());
+        var pageNum = 1;
+        if (nextPageUrl) {
+            var urlParams = new URLSearchParams(nextPageUrl.split('?')[1]);
+            pageNum = parseInt(urlParams.get('page')) || 1;
         }
-      }
 
-    $button.find('img').removeClass('d-none');
 
-    if (!nextPageUrl) {
+        const appEnv = document.querySelector('meta[name="app-env"]')?.getAttribute('content');
+        if (appEnv === 'production') {
+            if (nextPageUrl && nextPageUrl.startsWith("http:")) {
+                nextPageUrl = nextPageUrl.replace(/^http:/, "https:");
+            }
+        }
+
         $button.find('img').removeClass('d-none');
-        return;
 
-    }
-
-    $button.prop('disabled', true).addClass('loading');
-
-    $.ajax({
-        url: nextPageUrl,
-        type: 'GET',
-        dataType: 'html',
-        headers: {
-            'X-Requested-With': 'XMLHttpRequest'
-        },
-        success: function (response) {
-            const $response = $('<div>').html(response);
-            const $newItems = $response.find('.grid-item');
-            const $newLoadMore = $response.find('.load-more-wrap');
-
-            $button.find('img').addClass('d-none');
-            if ($newItems.length) {
-                $('.faq-content.grid').append($newItems);
-                   
-                if (typeof Isotope !== 'undefined') {
-                    $('.faq-content.grid').isotope('appended', $newItems);
-                }
-            }
-
-            if ($newLoadMore.length) {
-                $('.load-more-wrap').replaceWith($newLoadMore);
-            } else {
-                $('.load-more-wrap').remove();
-            }
-
-            if (pageNum == lastPage) {
-              $('.load-more-wrap').remove(); 
-          } 
-          renderStarRatings();
-        },
-        error: function (xhr, status, error) {
+        if (!nextPageUrl) {
             $button.find('img').removeClass('d-none');
-            console.error('Load more error:', error);
-        },
-        complete: function () {
-            $button.prop('disabled', false).removeClass('loading');
+            return;
+
         }
+
+        $button.prop('disabled', true).addClass('loading');
+
+        $.ajax({
+            url: nextPageUrl,
+            type: 'GET',
+            dataType: 'html',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            success: function (response) {
+                const $response = $('<div>').html(response);
+                const $newItems = $response.find('.grid-item');
+                const $newLoadMore = $response.find('.load-more-wrap');
+
+                $button.find('img').addClass('d-none');
+                if ($newItems.length) {
+                    $('.faq-content.grid').append($newItems);
+
+                    if (typeof Isotope !== 'undefined') {
+                        $('.faq-content.grid').isotope('appended', $newItems);
+                    }
+                }
+
+                if ($newLoadMore.length) {
+                    $('.load-more-wrap').replaceWith($newLoadMore);
+                } else {
+                    $('.load-more-wrap').remove();
+                }
+
+                if (pageNum == lastPage) {
+                    $('.load-more-wrap').remove();
+                }
+                renderStarRatings();
+            },
+            error: function (xhr, status, error) {
+                $button.find('img').removeClass('d-none');
+                console.error('Load more error:', error);
+            },
+            complete: function () {
+                $button.prop('disabled', false).removeClass('loading');
+            }
+        });
     });
-});
 
-   $(document).on('click', '.ajax-load-more-grid', function (e) {
-    e.preventDefault();
+    $(document).on('click', '.ajax-load-more-grid', function (e) {
+        e.preventDefault();
 
-    const $button = $(this);
-    const nextPageUrl = $button.attr('href');
-    $button.find('img').removeClass('d-none');
+        const $button = $(this);
+        const nextPageUrl = $button.attr('href');
+        $button.find('img').removeClass('d-none');
 
-    if (!nextPageUrl) {
-        $button.find('img').addClass('d-none');
-        return;
-    }
-
-    const appEnv = document.querySelector('meta[name="app-env"]')?.getAttribute('content');
-    if (appEnv === 'production') {
-        if (nextPageUrl && nextPageUrl.startsWith("http:")) {
-            nextPageUrl = nextPageUrl.replace(/^http:/, "https:");
-        }
-    }
-
-    $button.prop('disabled', true).addClass('loading');
-
-    $.ajax({
-        url: nextPageUrl,
-        type: 'GET',
-        dataType: 'html',
-        headers: {
-            'X-Requested-With': 'XMLHttpRequest'
-        },
-        success: function (response) {
-            const $response = $('<div>').html(response);
-            const $newItems = $response.find('.grid-item');
-            const $newModals = $response.find('.modal');
-            const $newLoadMore = $response.find('.load-more-wrap');
+        if (!nextPageUrl) {
             $button.find('img').addClass('d-none');
-            if ($newItems.length) {
-                $('.grid').append($newItems);
-                if (typeof Isotope !== 'undefined') {
-                    $('.grid').isotope('appended', $newItems);
-                }
-            }
-            if ($newItems.length) {
-                $('.grid').append($newItems);
-                if (typeof Isotope !== 'undefined') {
-                    $('.grid').isotope('appended', $newItems);
-                }
-            }
-
-            if ($newModals.length) {
-                $('.grid').append($newModals); 
-            }
-
-            if ($newLoadMore.length) {
-                $('.load-more-wrap').replaceWith($newLoadMore);
-            } else {
-                $('.load-more-wrap').remove();
-            }
-            renderStarRatings();
-        },
-        error: function (xhr, status, error) {
-            console.error('Load more error:', error);
-        },
-        complete: function () {
-            $button.prop('disabled', false).removeClass('loading');
+            return;
         }
+
+        const appEnv = document.querySelector('meta[name="app-env"]')?.getAttribute('content');
+        if (appEnv === 'production') {
+            if (nextPageUrl && nextPageUrl.startsWith("http:")) {
+                nextPageUrl = nextPageUrl.replace(/^http:/, "https:");
+            }
+        }
+
+        $button.prop('disabled', true).addClass('loading');
+
+        $.ajax({
+            url: nextPageUrl,
+            type: 'GET',
+            dataType: 'html',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            success: function (response) {
+                const $response = $('<div>').html(response);
+                const $newItems = $response.find('.grid-item');
+                const $newModals = $response.find('.modal');
+                const $newLoadMore = $response.find('.load-more-wrap');
+                $button.find('img').addClass('d-none');
+                if ($newItems.length) {
+                    $('.grid').append($newItems);
+                    if (typeof Isotope !== 'undefined') {
+                        $('.grid').isotope('appended', $newItems);
+                    }
+                }
+                if ($newItems.length) {
+                    $('.grid').append($newItems);
+                    if (typeof Isotope !== 'undefined') {
+                        $('.grid').isotope('appended', $newItems);
+                    }
+                }
+
+                if ($newModals.length) {
+                    $('.grid').append($newModals);
+                }
+
+                if ($newLoadMore.length) {
+                    $('.load-more-wrap').replaceWith($newLoadMore);
+                } else {
+                    $('.load-more-wrap').remove();
+                }
+                renderStarRatings();
+            },
+            error: function (xhr, status, error) {
+                console.error('Load more error:', error);
+            },
+            complete: function () {
+                $button.prop('disabled', false).removeClass('loading');
+            }
+        });
     });
-});
 
 
-$(document).on('keyup','#blog-search-input', function () {
-    const query = $(this).val();
-    if( currentPage == 'blog-detail-with-sidebar' ){
-        window.location.href = blogPageRedirect+'?s='+query;
-    }
+    $(document).on('keyup', '#blog-search-input', function () {
+        const query = $(this).val();
+        if (currentPage == 'blog-detail-with-sidebar') {
+            window.location.href = blogPageRedirect + '?s=' + query;
+        }
 
-      $.ajax({
-        url: searchUrl,
-        type: 'GET',
-        data: { q: query },
-        success: function (data) {
-          let html = '';
+        $.ajax({
+            url: searchUrl,
+            type: 'GET',
+            data: { q: query },
+            success: function (data) {
+                let html = '';
 
-          if (data.length === 0) {
-            html = '<div class="grid-item"><p class="text-center fw-bold fs-5">Oops! No blogs here right now.</p></div>';
-          } else {
-            data.forEach(function (item) {
-                var div ='';
+                if (data.length === 0) {
+                    html = '<div class="grid-item"><p class="text-center fw-bold fs-5">Oops! No blogs here right now.</p></div>';
+                } else {
+                    data.forEach(function (item) {
+                        var div = '';
 
-                if(currentPage == 'blog-with-sidebar'){
-                   div =  `<div class="col-12 col-sm-6 col-md-6 p-0 grid-item">
+                        if (currentPage == 'blog-with-sidebar') {
+                            div = `<div class="col-12 col-sm-6 col-md-6 p-0 grid-item">
                    <div class="blog-box">
                             <div class="blog-img img-cover">
                                 <a href="/blog/${item.slug}"> ${item.image ? `<img src="${item.image}" alt="blog-img" class="object-cover">` : ''}</a>
                                 <div class="date-project-btn">
-                                    <p class="date">${item.date }</p>
+                                    <p class="date">${item.date}</p>
                                     <p class="day">${item.day}</p>
                                 </div>
                             </div>
                             <div class="blog-content">
-                                <h3><a href="="/blog/${item.slug}"> ${item.title }</a></h3>
-                                <p>${ item.short_description }</p>
+                                <h3><a href="="/blog/${item.slug}"> ${item.title}</a></h3>
+                                <p>${item.short_description}</p>
                                 <a href="="/blog/${item.slug}" class="btn btn-primary">Read More</a>
                             </div>
                         </div>
                     </div>`;
-                }
+                        }
 
-                 if(currentPage == 'blog-standard'){
-                   div = `<div class="grid-item">
+                        if (currentPage == 'blog-standard') {
+                            div = `<div class="grid-item">
                     <!-- Blog Standard -->
                     <div class="blog-slider blog-standard">
                         <!-- blog-box -->
@@ -708,13 +717,13 @@ $(document).on('keyup','#blog-search-input', function () {
                             <div class="blog-img img-cover">
                                 <a href="/blog/${item.slug}"> ${item.image ? `<img src="${item.image}" alt="blog-img" class="object-cover">` : ''}</a>
                                 <div class="date-project-btn">
-                                    <p class="date">${item.date }</p>
+                                    <p class="date">${item.date}</p>
                                     <p class="day">${item.day}</p>
                                 </div>
                             </div>
                             <div class="blog-content">
-                                 <h3><a href="="/blog/${item.slug}"> ${item.title }</a></h3>
-                                <p>${ item.short_description }</p>
+                                 <h3><a href="="/blog/${item.slug}"> ${item.title}</a></h3>
+                                <p>${item.short_description}</p>
                                 <a href="="/blog/${item.slug}" class="btn btn-primary">Read More</a>
                             </div>
                         </div>
@@ -722,30 +731,30 @@ $(document).on('keyup','#blog-search-input', function () {
                     </div>
                     
                 </div>`;
+                        }
+
+                        html += `${div}`;
+                    });
                 }
 
-                html += `${div}`;
-            });
-          }
-
-          $('#blog_search_div').html(html);
-          $('.blog-grid-section').find('.load-more-btn').remove();
-        }
+                $('#blog_search_div').html(html);
+                $('.blog-grid-section').find('.load-more-btn').remove();
+            }
         });
-      });
+    });
 
 
-    if(currentPage == 'blog'){
+    if (currentPage == 'blog') {
         const params = new URLSearchParams(window.location.search);
         const searchValue = params.get('s');
         const tag = params.get('tag');
 
-        if( (searchValue != 'null' && searchValue != null) || ( tag != 'null' && tag != null ) ) {
+        if ((searchValue != 'null' && searchValue != null) || (tag != 'null' && tag != null)) {
 
             $.ajax({
                 url: blogSearchUrl,
                 type: 'GET',
-                  data: { q: searchValue , tag:tag },
+                data: { q: searchValue, tag: tag },
                 success: function (data) {
                     let html = '';
 
@@ -761,13 +770,13 @@ $(document).on('keyup','#blog-search-input', function () {
                                 <a href="/blog/${item.slug}"> ${item.image ? `<img src="${item.image}" alt="blog-img" class="object-cover">` : ''}</a>
                     </div>
                     <div class="wc-blog-content">
-                    <p>${ item.updated_at } </p>
-                    <h2><a href="/blog/${item.slug}"> ${ item.title }</a></h2>
-                    <P>${ item.short_description }</P>
+                    <p>${item.updated_at} </p>
+                    <h2><a href="/blog/${item.slug}"> ${item.title}</a></h2>
+                    <P>${item.short_description}</P>
                     </div>
                     </div>
                                 </div>`;
-                            });
+                        });
                     }
 
                     $('.blog_search').html(html);
@@ -779,17 +788,17 @@ $(document).on('keyup','#blog-search-input', function () {
     }
 
 
-    if(currentPage == 'services'){
+    if (currentPage == 'services') {
         const params = new URLSearchParams(window.location.search);
         const searchValue = params.get('s');
         const tag = params.get('tag');
 
-        if( (searchValue != 'null' && searchValue != null) || ( tag != 'null' && tag != null ) ) {
+        if ((searchValue != 'null' && searchValue != null) || (tag != 'null' && tag != null)) {
 
             $.ajax({
                 url: servicesSearchUrl,
                 type: 'GET',
-                  data: { q: searchValue , tag:tag },
+                data: { q: searchValue, tag: tag },
                 success: function (data) {
                     let html = '';
 
@@ -808,7 +817,7 @@ $(document).on('keyup','#blog-search-input', function () {
                                 <a href="/services/${item.slug}">
                                 ${item.service_icon ? `<img src="${item.service_icon}" alt="icon" class="object-cover">` : ''}
 
-                                <h3>${ item.title }</h3>
+                                <h3>${item.title}</h3>
                                 </a>
                                 </div>
                                 </div>
@@ -822,19 +831,19 @@ $(document).on('keyup','#blog-search-input', function () {
             });
         }
 
-    } 
+    }
 
-    if(currentPage == 'events'){
+    if (currentPage == 'events') {
         const params = new URLSearchParams(window.location.search);
         const searchValue = params.get('s');
         const tag = params.get('tag');
 
-        if( (searchValue != 'null' && searchValue != null) || ( tag != 'null' && tag != null ) ) {
+        if ((searchValue != 'null' && searchValue != null) || (tag != 'null' && tag != null)) {
 
             $.ajax({
                 url: eventsSearchUrl,
                 type: 'GET',
-                  data: { q: searchValue , tag:tag },
+                data: { q: searchValue, tag: tag },
                 success: function (data) {
                     let html = '';
 
@@ -848,12 +857,12 @@ $(document).on('keyup','#blog-search-input', function () {
                             <div class="our-events-product">
                             <div class="events-thumbnail img-cover">
                             <a href="/events/${item.slug}">${item.image ? `<img src="${item.image}" alt="events-img" class="object-cover">` : ''}</a>
-                            ${ item.video_url ?
-                            `<div class="video-play">
+                            ${item.video_url ?
+                                    `<div class="video-play">
                             <a class="popup-vimeo" href='${item.video_url}'><i class="fa-solid fa-play"></i></a>
                             </div>`
-                            : ''
-                            }
+                                    : ''
+                                }
                             </div>
                             <h3 class="events-title">
                             <a href="/events/${item.slug}">${item.title}</a>
@@ -925,7 +934,7 @@ $(document).on('keyup','#blog-search-input', function () {
         rotateInterval = setInterval(() => {
             angle = (angle + 6) % 360;
             $svg.css('transform', `rotate(${angle}deg)`);
-                    }, 16); // ~60fps
+        }, 16); // ~60fps
     }
 
     rotate();
@@ -961,27 +970,27 @@ $(document).on('keyup','#blog-search-input', function () {
             return;
         }
 
-       
+
 
         $loader.removeClass('d-none');
 
         timeout = setTimeout(() => {
             $('.search-menu-bar').css('overflow', 'visible');
             $.ajax({
-                url: headerSearch+`?q=${encodeURIComponent(query)}`,
+                url: headerSearch + `?q=${encodeURIComponent(query)}`,
                 method: 'GET',
                 success: function (html) {
                     $resultBox.removeClass('d-none');
                     $resultBox.html(html).addClass('show');
 
 
-                     $('.toggle-view-btn').each(function () {
-                    const type = $(this).data('type');
-                    if (type) {
-                        $(this).attr('href', `/${type}?s=${encodeURIComponent(query)}`);
-                        $(this).attr('data-query', query);
-                    }
-                });
+                    $('.toggle-view-btn').each(function () {
+                        const type = $(this).data('type');
+                        if (type) {
+                            $(this).attr('href', `/${type}?s=${encodeURIComponent(query)}`);
+                            $(this).attr('data-query', query);
+                        }
+                    });
 
                 },
                 error: function () {
@@ -1004,70 +1013,49 @@ $(document).on('keyup','#blog-search-input', function () {
         }
     });
 
+    const $dropdown = $('.header-dropdown');
+    const $menu = $('.header-dropdown-menu');
+    const $container = $('.search-menu-bar');
 
-    // $(document).on('click', '.toggle-view-btn', function () {
-    //     const $btn = $(this);
-    //     const type = $btn.data('type');
-    //     const query = $btn.data('query');
-
-    // // Match the list container by type
-    //     const $list = $(`#${type}-list`);
-
-    // // Handle collapse (show less)
-    //     if ($btn.data('expanded')) {
-    //         const cached = $btn.data('initial-items');
-    //         if (Array.isArray(cached)) {
-    //             const html = cached.slice(0, 5).map(item => `
-    //             <li>
-    //                 <div class="img-cover">${item.image.url ? `<img src="${item.image.url}" alt="logo">` : ''}</div>
-    //                 <a href="${item.url}">${item.title}</a>
-    //             </li>
-    //             `).join('');
-    //             $list.html(html);
+    // --- Hover functionality ---
+    // $dropdown.hover(
+    //     function () {
+    //         $menu.stop(true, true).slideDown(200);
+    //         $container.css('overflow', 'visible');
+    //     },
+    //     function () {
+    //         if (!$dropdown.hasClass('clicked')) {
+    //             $menu.stop(true, true).slideUp(200);
+    //             $container.css('overflow', '');
     //         }
-
-    //     // Update button text
-    //         const label = type === 'blog' ? 'Blog' : (type === 'our_events' ? 'Event' : 'Services');
-    //         $btn.text(`View All`);
-    //         $btn.data('expanded', false);
-    //         return;
     //     }
+    // );
 
-    // // Expanded: load all
-    //     $.ajax({
-    //         url: '/ajax-search-careers-insights',
-    //         method: 'GET',
-    //         data: {
-    //             q: query,
-    //             type: type,
-    //             full: 1
-    //         },
-    //         success: function (data) {
-    //             const items = data[type];
-    //             if (!Array.isArray(items) || items.length === 0) {
-    //                 $list.html('<li>No results found.</li>');
-    //                 return;
-    //             }
+    // --- Click functionality ---
+    // $dropdown.find('.dropdown-hover').on('click', function (e) {
+    //     e.preventDefault();
+    //     e.stopPropagation(); // Prevent triggering document click
 
-    //         // Cache original items
-    //             $btn.data('initial-items', items);
-
-    //         // Generate full HTML
-    //             const html = items.map(item => `
-    //             <li>
-    //                 <div class="img-cover">${item.image.url ? `<img src="${item.image.url}" alt="logo">` : ''}</div>
-    //                 <a href="${item.url}">${item.title}</a>
-    //             </li>
-    //             `).join('');
-    //             $list.html(html);
-    //             const label = type === 'blog' ? 'Blog' : (type === 'our_events' ? 'Event' : 'Services');
-    //             $btn.text(`Show Less`);
-    //             $btn.data('expanded', true);
-    //         },
-    //         error: function () {
-    //             $list.html('<li class="text-danger">Something went wrong. Try again.</li>');
-    //         }
-    //     });
+    //     // Toggle visibility
+    //     if ($menu.is(':visible')) {
+    //         $menu.slideUp(200);
+    //         $container.css('overflow', '');
+    //         $dropdown.removeClass('clicked');
+    //     } else {
+    //         $menu.slideDown(200);
+    //         $container.css('overflow', 'visible');
+    //         $dropdown.addClass('clicked');
+    //     }
     // });
+
+    // --- Close on outside click ---
+    // $(document).on('click', function (e) {
+    //     if (!$(e.target).closest('.header-dropdown').length) {
+    //         $menu.slideUp(200);
+    //         $container.css('overflow', '');
+    //         $dropdown.removeClass('clicked');
+    //     }
+    // });
+
 
 });

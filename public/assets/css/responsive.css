@@ -307,6 +307,12 @@ Version:1.0
 /*=====================================
 Start Responsive CSS
 =======================================*/
+@media only screen and (max-width: 1879px) {
+	.search-box.open{
+		width: calc(100% - 30px);
+		right: 15px;
+	}
+}
 @media only screen and (max-width: 1575px) {
 
 	/* ------------// header CSS //--------------*/
@@ -325,6 +331,9 @@ Start Responsive CSS
 	/* ------------// footer style 2 CSS //--------------*/
 	.footer-style-2 .footer-column.footer-menu {
 		max-width: 90%;
+	}
+	.search-box{
+		top: 10px;
 	}
 }
 
@@ -353,6 +362,12 @@ Start Responsive CSS
 	.slider-arrow svg {
 		font-size: 15px;
 	}
+	.header ul.manu-bar li{
+		margin-right: 25px;
+	}
+	.header .search-cart-bar li {
+    margin-left: 20px;
+}
 
 	/* ------------// hero section CSS //--------------*/
 	.hero-section:before {
@@ -381,7 +396,6 @@ Start Responsive CSS
 	.wp-about-section p {
 		font-size: 31px;
 		line-height: 45px;
-		padding-bottom: 41px;
 		max-width: 825px;
 	}
 
@@ -403,7 +417,7 @@ Start Responsive CSS
 
 	/* ------------// events section CSS //--------------*/
 	.events-section .events-title h2.title {
-		line-height: 60px;
+		line-height: 36px;
 	}
 
 	.hero-circle-text::before {
@@ -1195,6 +1209,12 @@ Start Responsive CSS
 	.header.header-type2 .header-row .logo-content {
 		max-width: 94px;
 	}
+	.header .search-cart-bar a.btn{
+		padding: 11px 20px;
+	}
+	.header ul.manu-bar li {
+    font-size: var(--font-size-b3);
+}
 
 	/* ------------// home hero section style CSS //--------------*/
 	.home-hero-section .home-hero-content .title-content {
@@ -2113,6 +2133,9 @@ Start Responsive CSS
 .team-section .main-team-box{
 	margin: 0;
 }
+.header ul.manu-bar li {
+        margin-right: 20px;
+    }
 }
 
 /* ------------// Tablet Screen //--------------*/
@@ -2466,6 +2489,14 @@ Start Responsive CSS
 	.heros-section .hero-main-wrapper {
 		align-items: flex-start;
 	}
+.search-box .input-group #search-loader {
+    margin-right: 8px;
+}
+
+.search-box .input-group #search-loader svg {
+    width: 16px;
+    height: 16px;
+}
 
 }
 
@@ -2502,6 +2533,10 @@ Start Responsive CSS
 	.header .search-cart-bar li:nth-child(2) {
 		display: none;
 	}
+	.search-menu-bar {
+        justify-content: end;
+        overflow: hidden;
+    }
 
 	/* ------------// hero section CSS //--------------*/
 	.hero-section .hero-wrapper .hero-img .hero-sm {
@@ -2573,7 +2608,6 @@ Start Responsive CSS
 
 	/* ------------// wp about section CSS //--------------*/
 	.wp-about-section p {
-		padding-bottom: 30px;
 		font-size: 25px;
 		line-height: 40px;
 	}
@@ -2884,12 +2918,27 @@ Start Responsive CSS
 		padding-left: 10px;
 		max-width: 400px;
 	}
-	.search-menu-bar{
-		justify-content: end;
+	.search-box .input-group button{
+		    margin-right: 0;
 	}
 	.search-box .input-group{
-		padding: 10px;
+		padding: 10px 20px;
 	}
+		.search-box{
+		    width: 100%;
+	}
+	.search-menu-bar{
+		width: 100%;
+	}
+.search-box{
+	position: fixed;
+	height: 60px; 
+}
+    .search-box.open{
+        width: 100%;
+        right: 0;
+        top: 0;
+    }
 }
 
 /* ------------// Mobile Screen //--------------*/
@@ -3764,6 +3813,19 @@ Start Responsive CSS
 		    font-size: 14px;
 		        padding: 0 10px;
 	}
+	div#combined-search-results {
+    padding: 15px 15px;
+}
+    div#combined-search-results ul a {
+        font-size: 16px;
+    }
+    #combined-search-results a.toggle-view-btn {
+    font-size: 13px;
+    line-height: 22px;
+}
+div#combined-search-results section{
+    margin-bottom: 20px;
+}
 }
 
 /* ------------// Mobile Screen //--------------*/
@@ -4001,16 +4063,20 @@ Start Responsive CSS
 	.wp-about-wedding-section:before {
 		top: 35%;
 	}
-	.search-box{
-		    width: 95%;
-	}
-	.search-box .input-group img.object-cover.search_img{
-		width: 20%;
-		height: 70%;
-	}
 	.we-do-service .services-info a {
         min-height: auto;
     }
+        div#combined-search-results ul a {
+        font-size: 15px;
+    }
+    div#combined-search-results ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+div#combined-search-results ul .img-cover {
+    width: 85px;
+    height: 60px;
+}
 }
 
 @media only screen and (max-width: 420px) {
