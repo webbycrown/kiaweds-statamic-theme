@@ -1,0 +1,45 @@
+title: 'Our Memorable Events Section'
+fields:
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: description1
+    field:
+      type: textarea
+      display: Description1
+  -
+    handle: description2
+    field:
+      type: textarea
+      display: Description2
+  -
+    handle: collections
+    field:
+      max_items: 1
+      mode: select
+      type: collections
+      display: Collections
+  -
+    handle: btn
+    field:
+      type: grid
+      display: Btn
+      fields:
+        -
+          handle: label
+          field:
+            type: text
+            display: Label
+        -
+          handle: url
+          field:
+            type: text
+            display: Url

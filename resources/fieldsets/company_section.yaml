@@ -1,0 +1,24 @@
+title: 'Company Section'
+fields:
+  -
+    handle: logos
+    field:
+      type: replicator
+      display: Logos
+      validate:
+        - required
+      sets:
+        images:
+          display: Images
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: image
+                  field:
+                    container: assets
+                    type: assets
+                    display: Image
+                    max_files: 1
+                    min_files: 1

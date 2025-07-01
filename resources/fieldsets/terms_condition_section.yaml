@@ -1,0 +1,59 @@
+title: 'Terms Condition Section'
+fields:
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - h1
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - small
+        - superscript
+        - subscript
+        - code
+        - codeblock
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: Description
+      sets:
+        lists:
+          display: Lists
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: lists
+                  field:
+                    type: grid
+                    display: Lists
+                    fields:
+                      -
+                        handle: point
+                        field:
+                          type: text
+                          display: Point

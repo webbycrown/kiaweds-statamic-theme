@@ -1,0 +1,60 @@
+title: Testimonial
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+              validate:
+                - required
+          -
+            handle: star
+            field:
+              type: integer
+              display: star
+              validate:
+                - required
+                - 'max:5'
+          -
+            handle: team
+            field:
+              mode: select
+              collections:
+                - team
+              type: entries
+              display: Team
+              max_items: 1
+              validate:
+                - required
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

@@ -1,0 +1,129 @@
+    <!-- Start back button -->
+    <div class="back-button">
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12 p-0">
+                    <a href="/team"><img src="{{ theme:asset }}assets/images/back.svg" alt="back-btn" class="object-cover">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close back button -->
+
+    <!-- Start team details section -->
+    <section class="team-details-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="style-3-title">
+                        <h2 class="title">{{ title }}</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row team-details-wrapper">
+                <!-- column -->
+                <div class="col-12 col-md-6 p-0">
+                    <div class="team-details-image">
+                        {{ image }}<img src="{{ url }}" alt="team-details" class="object-cover">{{ /image }}
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="col-12 col-md-6 p-0">
+                    <div class="team-author-details">
+                        <h2>{{ position }}</h2>
+                        <p>{{ short_bio }}</p>
+                        <div class="info-details">
+                            <div class="info-content">
+                                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                <p>
+                                    {{ phone_numbers }}
+                                    <a href="tel:{{ value }}">{{ value }}</a>
+                                    {{ /phone_numbers }}
+                                    </p>
+                            </div>
+                            <div class="info-content">
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <p><a href="mailto:{{ email }}">{{  email }}</a>
+                                </p>
+                            </div>
+                            <div class="info-content">
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <p>{{ address }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12 p-0">
+                    <div class="info-experince">
+                        <h2>Personal Experience </h2>
+                        {{ personal_experience }}
+
+                        {{ if  type ==  'heading' }}
+                        <h3>{{ text }}</h3>
+                        {{ /if }}
+
+                        {{ if type == "text" }}
+                        <p>{{ text }}</p>
+                        {{ /if }} 
+
+                        {{ if type == "highlighted_quote" }}
+                        <h3>{{ quote }}</h3>
+                        {{ /if }}
+                        {{ /personal_experience }}
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row wc-progress">
+                <!-- column -->
+                <div class="col-12 col-md-7">
+                    <div class="info-progress">
+                        <ul class="skills-bar-container">
+
+                            {{ skills }}
+                            <li>
+                                <div class="progressbar-title">
+                                    <h3>{{ lable }}</h3>
+                                    <span class="percent">{{ progress }}%</span>
+                                </div>
+                                <div class="bar-container">
+                                    <span 
+                                    class="progressbar" 
+                                    style="width: {{ progress }}%;"
+                                    ></span>
+                                </div>
+                            </li>
+                            {{ /skills }}
+                        </ul>
+                    </div>
+                </div>
+                <!-- column -->
+                <div class="col-12 col-md-5">
+                    <div class="info-experince-img">
+                        {{ experience_image }}<img src="{{ url }}" alt="info-experince" class="object-cover">{{ /experience_image }}
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <p>{{ closing_paragraph }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End team details section -->

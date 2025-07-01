@@ -1,0 +1,25 @@
+title: 'Service Section'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: collections
+    field:
+      max_items: 1
+      mode: select
+      type: collections
+      display: Collections
+      sortable: false
+  -
+    handle: paginate
+    field:
+      type: text
+      display: Paginate
+  -
+    handle: limit
+    field:
+      type: integer
+      display: Limit

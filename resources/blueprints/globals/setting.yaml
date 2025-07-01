@@ -1,0 +1,79 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: logo
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: Logo
+          -
+            handle: white_logo
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'White Logo'
+              validate:
+                - required
+          -
+            handle: colorfull_logo
+            field:
+              container: assets
+              type: assets
+              display: 'ColorFull Logo'
+              validate:
+                - required
+          -
+            handle: favicon
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: Favicon
+              validate:
+                - required
+          -
+            handle: phone_number
+            field:
+              type: text
+              display: 'Phone Number'
+              validate:
+                - required
+          -
+            handle: loader
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: Loader
+          -
+            handle: header_button
+            field:
+              type: grid
+              display: 'Header Button'
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+          -
+            handle: load_more_text
+            field:
+              default: 'Load More'
+              type: text
+              display: 'Load More Button Text'

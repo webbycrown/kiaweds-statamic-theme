@@ -1,0 +1,7 @@
+title: 'Our Events'
+template: our_events/show
+route: '/events/{slug}'
+revisions: false
+date_behavior:
+  past: public
+  future: private

@@ -1,0 +1,22 @@
+title: 'Counts Section'
+fields:
+  -
+    handle: projects_count
+    field:
+      type: integer
+      display: 'Projects Count'
+  -
+    handle: happy_client
+    field:
+      type: integer
+      display: 'Happy Client'
+  -
+    handle: total_awards
+    field:
+      type: integer
+      display: 'Total Awards'
+  -
+    handle: years_experience
+    field:
+      type: integer
+      display: 'Years Experience'

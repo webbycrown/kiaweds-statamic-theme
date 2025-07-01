@@ -1,0 +1,118 @@
+title: Team
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Name
+          -
+            handle: position
+            field:
+              type: text
+              display: Position
+          -
+            handle: image
+            field:
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: short_bio
+            field:
+              type: textarea
+              display: 'Short Bio'
+          -
+            handle: phone_numbers
+            field:
+              type: array
+              display: 'Phone Numbers'
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+          -
+            handle: address
+            field:
+              type: textarea
+              display: Address
+          -
+            handle: personal_experience
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Personal Experience'
+              sets:
+                highlighted_quote:
+                  display: 'Highlighted Quote'
+                  sets:
+                    highlighted_quote:
+                      display: 'Highlighted Quote'
+                      fields:
+                        -
+                          handle: quote
+                          field:
+                            type: textarea
+                            display: Quote
+          -
+            handle: closing_paragraph
+            field:
+              type: textarea
+              display: 'Closing Paragraph'
+          -
+            handle: skills
+            field:
+              type: replicator
+              display: Skills
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: lable
+                          field:
+                            type: text
+                            display: label
+                        -
+                          handle: progress
+                          field:
+                            type: integer
+                            display: Progress
+          -
+            handle: experience_image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Experience Image'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

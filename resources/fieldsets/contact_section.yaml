@@ -1,0 +1,44 @@
+title: 'Contact Section'
+fields:
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+  -
+    handle: form_title
+    field:
+      type: text
+      display: 'Form Title'
+  -
+    handle: map_embed
+    field:
+      type: textarea
+      display: 'Google Maps Embed Code'
+  -
+    handle: address
+    field:
+      type: textarea
+      display: Address
+  -
+    handle: phone_numbers
+    field:
+      type: array
+      display: 'Phone Numbers'
+  -
+    handle: email_addresses
+    field:
+      type: array
+      display: 'Email Addresses'

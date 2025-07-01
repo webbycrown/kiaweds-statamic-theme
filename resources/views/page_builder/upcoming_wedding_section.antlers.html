@@ -1,0 +1,55 @@
+    {{ if is_homepage }}
+ <!-- Start events section -->
+    <section class="events-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- events wrapper -->
+                    <div class="events-wrapper">
+                        <!-- events title -->
+                        <div class="events-title">
+                            <h2 class="title">{{ section_title }}</h2>
+                            <p>{{ description }}</p>
+                        </div>
+                        <!-- events content -->
+                        <div class="events-content">
+                            <div class="events-image">  
+                                {{ if collections == "our_events" }}
+                                {{ collection:our_events as="our_events" limit="{limit}" }}
+
+                                {{ /if }}
+                                {{ our_events }}
+                                <a href="events/{{slug}}" class="events-img events-{{ if index == 0 }}one{{ /if }}
+                                {{ if index == 1 }}two{{ /if }}
+                                {{ if index == 2 }}three{{ /if }}
+                                {{ if index == 3 }}four{{ /if }}">
+                                    {{ image }}<img src="{{ url }}" alt="events-img" class="object-cover">{{ /image }}
+                                </a>
+                                {{ /our_events }}
+                                {{ if collections == "our_events" }}
+                                {{ /collection:our_events }}
+                                {{ /if }}
+                            </div>
+                        </div>
+                       <div class="hero-circle-text">
+                <div class="circle-text">
+                    <p class="mb-0">{{ circle_text }}</p>
+                </div>
+            </div>
+            <script>
+                const text = document.querySelector('.hero-circle-text .circle-text p');
+                text.innerHTML = text.innerText.split("").map(
+                    (char, i) =>
+                    `<span style="transform:rotate(${i * 14.8}deg)">${char}</span>`
+                ).join("")
+            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close events section -->
+    {{ /if }}

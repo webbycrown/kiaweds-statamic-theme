@@ -1,0 +1,20 @@
+{{ if get:slug }}
+  {{ collection:blog  }}
+  {{ if slug == get:slug }}
+
+
+      {{ if segment_1 == 'blog-detail' }}
+        {{ partial:blog-detail slug="{slug}" }}
+      {{ elseif segment_1 == 'blog-single-two' }}
+        {{ partial:blog-detail-full slug="{slug}" }}
+      {{ /if }}
+
+    
+    {{ /if }}
+  {{ /collection:blog }}
+
+{{ else }}
+
+{{ partial:blog-detail slug="{segment_2}" }}
+
+{{ /if }}

@@ -1,0 +1,31 @@
+{{ if is_homepage }}
+
+  <!-- Start video section -->
+    <section class="video-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- video content -->
+                    <div class="video-content">
+                        <h2 class="title">{{ section_title }}</h2>
+                        <p>{{ description }}</p>
+                    </div>
+                    <!-- video img -->
+                    <div class="video-img">
+                        <div class="video-bg-img">
+                            {{ image }}<img src="{{ url }}" alt="video-img" class="object-cover">{{ /image }}
+                        </div>
+                        <!-- video play btn -->
+                        <div class="video-play">
+                            <a class="popup-youtube" href="{{ video_url }}"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End video section -->
+{{ /if }}

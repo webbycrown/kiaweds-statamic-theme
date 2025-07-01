@@ -1,0 +1,116 @@
+    <!-- Start back button -->
+    <div class="back-button">
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12 p-0">
+                    <a href="/events"><img src="{{ theme:asset }}assets/images/back.svg" alt="back-btn">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close back button -->
+
+    <!-- Start events details section -->
+    <section class="events-detail-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <!-- events detail title -->
+                    <div class="style-3-title">
+                        <h2 class="title">Events Detail</h2>
+                    </div>
+                    <!-- our-events-product -->
+                    <div class="our-events-product">
+                        <div class="events-thumbnail img-cover">
+                            <a href="javascript:;">{{ image }}<img src="{{ url }}" alt="events img">{{ /image }}</a>
+                        </div>
+                        <h3 class="events-title">
+                            <a href="javascript:;">{{ title }} </a>
+                        </h3>
+                    </div>
+
+                    <!-- events-wrap -->
+                    <div class="events-wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="count-box">
+                                    <h3>Date</h3>
+                                    <p>{{ updated_at format="j F Y" }}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="count-box">
+                                    <h3>Client</h3>
+                                    <p>{{ client_name }}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="count-box">
+                                    <h3>Website</h3>
+                                    <p>{{ website }}</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="count-box">
+                                    <h3>Location</h3>
+                                    <p>{{ location }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- events-wrap-description -->
+                    <div class="events-wrap-description">
+                        {{ description }}
+                        
+                        {{ if  type ==  'heading' }}
+                        <h3>{{ text }}</h3>
+                        {{ /if }}
+
+                        {{ if type == "text" }}
+                        <p>{{ text }}</p>
+                        {{ /if }}
+
+                        {{ lists }}
+                        <ul>
+                            <li><i class="fa fa-check"></i>
+                                <p>{{ point }}</p>
+                            </li>
+                        </ul>
+                        {{ /lists }}
+
+                        {{ /description }}
+                        
+                    </div>
+                    <div class="related-blogs">
+                        <h2 class="title">Related Events</h2>
+                        <div class="row">
+                            {{ related_event limit="2" }}
+                            <!-- column -->
+                            <div class="col-12 col-md-6">
+                                <!-- our-events-product -->
+                                <div class="our-events-product">
+                                    <div class="events-thumbnail img-cover">
+                                        <a href="/events/{{slug}}">{{ image }}<img src="{{ url }}" alt="events img">{{ /image }}</a>
+                                    </div>
+                                    <h3 class="events-title">
+                                        <a href="/events/{{slug}}">{{ title }}</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            {{ /related_event }}
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End latest blog section -->

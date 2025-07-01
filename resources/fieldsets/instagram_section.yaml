@@ -1,0 +1,30 @@
+title: 'Instagram Section'
+fields:
+  -
+    handle: instagram_url
+    field:
+      type: text
+      display: 'Follow On Url'
+  -
+    handle: follow_on_text
+    field:
+      default: Instagram
+      type: text
+      display: 'Follow On Text'
+  -
+    handle: collections_field
+    field:
+      mode: select
+      type: collections
+      display: Collections
+      sortable: false
+  -
+    handle: paginate
+    field:
+      type: text
+      display: Paginate
+  -
+    handle: limit
+    field:
+      type: integer
+      display: Limit

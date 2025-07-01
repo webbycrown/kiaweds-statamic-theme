@@ -1,0 +1,127 @@
+ <!-- Start Contact section -->
+    <section class="contact-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- column -->
+                <div class="col-12">
+                    <div class="style-3-title">
+                        <h2 class="title">{{ section_title }}</h2>
+                        <p>{{ description }}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper -->
+            <div class="content-wrapper">
+                <!-- row -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12 col-md-6">
+                        <div class="contact-image">
+                            {{ image }}<img src="{{ url }}" alt="contact-img">{{ /image }}
+                        </div>
+                    </div>
+                    <!-- column -->
+                    <div class="col-12 col-md-6">
+                        <div class="contact-form">
+                            <h2>{{ form_title }}</h2>
+
+                            {{ form:contact_form id="contact-form" enctype="multipart/form-data" ajax="true" }}
+                            {{ csrf }}
+
+
+                            {{ fields }}
+                            {{ if index == 0 || index == 2 }}
+                            <div class="form-group">
+
+                                {{ /if }}
+
+                                {{ if index == 1 || index == 3 }}
+                                <div class="form-group">
+                                    {{ /if }}
+
+
+                                    {{ if type == "textarea" }}
+                                    <textarea name="{{ handle }}" id="{{ handle }}" class="form-control" placeholder="{{ placeholder }}"></textarea>
+                                    {{ else }}
+                                    <input type="{{ type }}" name="{{ handle }}" id="{{ handle }}" class="form-control" placeholder="{{ placeholder }}">
+                                    {{ /if }}
+
+                                    <div class="field-error text-danger" data-error-for="{{ handle }}">{{ error }}</div>
+
+                                    {{ if index == 0 || index == 2 }}
+                                </div>
+                                {{ /if }}
+
+                                {{ if index == 1 || index == 3 }}
+
+                            </div>
+                            {{ /if }}
+                            {{ /fields }}
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                            <div id="form-response" class="mt-2"></div>
+                            
+                            {{ /form:contact_form }}
+
+                    </div>
+                    </div>
+                </div>
+
+                <div class="contact-information">
+                    <!-- row -->
+                    <div class="row">
+                        <!-- column -->
+                        <div class="col-12 col-sm-6 col-md-4 contact_wrap">
+                            <div class="contact-information-box">
+                                <div class="icon">
+                                    <img src="{{ theme:asset }}assets/images/address.svg" alt="address">
+                                </div>
+                                <div>
+                                    <h2>Address</h2>
+                                    <p>{{ address }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- column -->
+                        <div class="col-12 col-sm-6 col-md-4 contact_wrap">
+                            <div class="contact-information-box mx-auto">
+                                <div class="icon">
+                                    <img src="{{ theme:asset }}assets/images/phone.svg" alt="Phone">
+                                </div>
+                                <div>
+                                    <h2>Phone</h2>
+                                    <p>
+                                        {{ phone_numbers }}<a href="tel:{{ value }}">{{ value }}</a>{{ /phone_numbers }}
+                                </div>
+                            </div>
+                        </div>
+                        <!-- column -->
+                        <div class="col-12 col-sm-6 col-md-4 contact_wrap">
+                            <div class="contact-information-box ms-auto">
+                                <div class="icon">
+                                    <img src="{{ theme:asset }}assets/images/email.svg" alt="Email">
+                                </div>
+                                <div>
+                                    <h2>Email</h2>
+                                    <p>{{ email_addresses }}<a href="mailto:{{ value }}">{{ value }}</a>    
+                                        {{ /email_addresses }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact map -->
+        <div class="contact-map">
+            <iframe
+                src="{{ map_embed }}"
+                height="600" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- End Contact section -->

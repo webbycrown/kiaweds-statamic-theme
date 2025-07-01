@@ -1,0 +1,34 @@
+title: 'Upcoming Wedding Section'
+fields:
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: circle_text
+    field:
+      type: text
+      display: 'Circle Text'
+  -
+    handle: collections
+    field:
+      max_items: 1
+      mode: select
+      type: collections
+      display: Collections
+  -
+    handle: paginate
+    field:
+      type: text
+      display: Paginate
+  -
+    handle: limit
+    field:
+      type: integer
+      display: Limit
