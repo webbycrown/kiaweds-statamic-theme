@@ -2,6 +2,9 @@
 
 At KiaWeds Statamic, we offer a beautiful and functional wedding planner website built using Statamic CMS. Designed with elegance and ease in mind, KiaWeds makes it simple to showcase wedding-related services through a modern layout and intuitive content management.
 
+**Live demo:** https://kiaweds-statamic.webbydemo.in/  
+Control Panel: `/cp` — `admin@example.com` / `password`
+
 ## Pages of KiaWeds
 
 - Home Page
@@ -21,6 +24,16 @@ At KiaWeds Statamic, we offer a beautiful and functional wedding planner website
 - Terms & Condition Page
 - 404 Page
 - Contact Us Page
+
+## Collections
+
+- **Pages**: Site structure and static content.
+- **Blog**: Planning articles (grid, standard, sidebar, and detail variants).
+- **Our services**: Wedding service catalog and detail.
+- **Our events**: Event listing and detail.
+- **Photography**: Gallery of shoots.
+- **Team**: Planner profiles.
+- **Testimonials** and **FAQs**.
 
 ## Features of KiaWeds
 
