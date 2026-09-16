@@ -2,9 +2,6 @@
 
 At KiaWeds Statamic, we offer a beautiful and functional wedding planner website built using Statamic CMS. Designed with elegance and ease in mind, KiaWeds makes it simple to showcase wedding-related services through a modern layout and intuitive content management.
 
-**Live demo:** https://kiaweds-statamic.webbydemo.in/  
-Control Panel: `/cp` — `admin@example.com` / `password`
-
 ## Pages of KiaWeds
 
 - Home Page
@@ -87,3 +84,5 @@ statamic new my-site webbycrown/kiaweds-statamic-theme
 <div align="center">
   <strong>Made with ❤️ by <a href="https://www.webbycrown.com/custom-statamic-development-services-company/">WebbyCrown Solutions</a></strong>
 </div>
+
+See [THIRD_PARTY.md](THIRD_PARTY.md) for bundled front-end libraries, fonts, and sample imagery licences.

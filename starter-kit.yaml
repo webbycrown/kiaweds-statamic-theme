@@ -9,6 +9,6 @@ export_paths:
   - resources/fieldsets
   - public/assets
   - public/build
-  - storage/forms
   - package.json
   - README.md
+  - THIRD_PARTY.md
