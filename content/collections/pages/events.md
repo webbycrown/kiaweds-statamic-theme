@@ -5,7 +5,7 @@ title: 'Our Events'
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_at: 1751106182
-template: events
+template: page
 seo_title: 'Our Events'
 seo_description: 'Our Events'
 seo_image: 'images/Kia Weds OG Image.png'

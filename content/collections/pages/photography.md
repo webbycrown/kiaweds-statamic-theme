@@ -5,7 +5,7 @@ title: Photography
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_at: 1751106176
-template: photography
+template: page
 page_builder:
   -
     id: mc1r95ns

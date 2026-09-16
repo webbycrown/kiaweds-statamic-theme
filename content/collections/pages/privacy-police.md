@@ -3,7 +3,7 @@ id: abb37b2a-a628-4671-b0d4-1e41bd3ea37d
 blueprint: page
 title: 'Privacy Police'
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
-template: privacy-police
+template: page
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_at: 1751106166
 page_builder:

@@ -3,7 +3,7 @@ id: 08132636-c0b7-4f74-bbee-a052ac67f4f1
 blueprint: page
 title: 'Terms & Condition'
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
-template: terms-condition
+template: page
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_at: 1751106159
 page_builder:

@@ -1,3 +1,6 @@
+title: Kiaweds Theme
+user: webbycrown
+repo: webbycrown/kiaweds-statamic-theme
 export_paths:
   - routes
   - content

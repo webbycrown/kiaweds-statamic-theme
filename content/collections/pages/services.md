@@ -3,7 +3,7 @@ id: 09ac9d8a-70a0-47dc-8538-3fef36636184
 blueprint: page
 title: 'Our Services'
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
-template: services
+template: page
 seo_title: 'Our Services'
 seo_description: 'Our Services'
 seo_image: 'images/Kia Weds OG Image.png'

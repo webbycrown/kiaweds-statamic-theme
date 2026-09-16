@@ -3,7 +3,7 @@ id: 9dc9c06c-896f-412b-8656-33fd3c0dd059
 blueprint: page
 title: Testimonials
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
-template: testimonials
+template: page
 seo_title: Testimonials
 seo_description: Testimonials
 seo_image: 'images/Kia Weds OG Image.png'

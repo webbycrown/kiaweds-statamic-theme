@@ -2,7 +2,7 @@
 id: home
 blueprint: pages
 title: 'Wedding Planner Website Templates'
-template: home
+template: page
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_by: 7a456eac-2bba-4018-a5f5-91500218e80a
 updated_at: 1751107892

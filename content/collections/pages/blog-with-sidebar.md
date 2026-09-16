@@ -3,7 +3,7 @@ id: 0789590b-78fc-4cb1-b96b-45e2de15041a
 blueprint: page
 title: 'Blog With Sidebar'
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
-template: blog-with-sidebar
+template: page
 page_builder:
   -
     id: mc4j720f

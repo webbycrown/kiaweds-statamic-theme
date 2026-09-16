@@ -3,7 +3,7 @@ id: 86f60ddc-9e20-46ae-89de-2bc1eab7e3a7
 blueprint: page
 title: Team
 author: 7a456eac-2bba-4018-a5f5-91500218e80a
-template: team
+template: page
 page_builder:
   -
     id: mc8syns6
